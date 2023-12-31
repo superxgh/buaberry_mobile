@@ -14,3 +14,4 @@ export 'ujg_text_link.dart';
 export 'ujg_text_link_2line.dart';
 export 'ujg_dropdown_list.dart';
 export 'components/components.dart';
+export 'commons/directionality_rtl.dart';

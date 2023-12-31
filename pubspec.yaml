@@ -25,6 +25,7 @@ dependencies:
   data_table_2: 2.3.10
   pinput: 2.2.16
   get_storage: 2.0.3
+  google_fonts: 3.0.1
 
 dev_dependencies:
   flutter_test:

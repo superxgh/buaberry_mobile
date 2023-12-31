@@ -12,4 +12,8 @@ class CommonConstants {
   static const double paddingCell = .02;
 
   static const double buttonHeight = 32;
+
+  static const bool isRTL = false;
+  static const String languageVal = "in";
+
 }
