@@ -17,13 +17,13 @@ class NotifyTab extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          UJGText(
-              text: 'Notification Tab', fontSize: CommonConstants.topicText),
-          CommonWidget.rowHeight(height: 30.0),
-          UJGText(
-            text: "Notifications",
-            fontSize: CommonConstants.labelText,
-          ),
+          // UJGText(
+          //     text: 'Notification Tab', fontSize: CommonConstants.topicText),
+          // CommonWidget.rowHeight(height: 30.0),
+          // UJGText(
+          //   text: "Notifications",
+          //   fontSize: CommonConstants.labelText,
+          // ),
           CommonWidget.rowHeight(height: 12.0),
           Container(
               width: Get.width * 0.95,

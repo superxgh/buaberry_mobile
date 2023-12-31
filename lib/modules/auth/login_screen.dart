@@ -18,8 +18,7 @@ class LoginScreen extends GetView<LoginController> {
   Widget build(BuildContext context) {
     AppController appController = Get.find<AppController>();
     SizeConfig().init(context);
-    return DirectionalityRtl(
-        child: Scaffold(
+    return Scaffold(
             backgroundColor: Theme.of(context).primaryColor,
             appBar: AppBar(
                 elevation: 0, backgroundColor: Theme.of(context).primaryColor),
@@ -47,7 +46,7 @@ class LoginScreen extends GetView<LoginController> {
                               //enter phone number text
                               FoodLoginWidget().PhoneNumberLabel(
                                   appController,
-                                  trans(CommonFonts.phoneNumber.tr)),
+                                  trans(commonFonts.phoneNumber.tr)),
                               const VSpace(Sizes.s20),
 
                               //enter phone number text box
@@ -73,6 +72,6 @@ class LoginScreen extends GetView<LoginController> {
                         onTap: () => Get.toNamed(Routes.foOtp),
                         title: FoodOrderingThemeFont.next.tr)
                   ]),
-            )));
+            ));
   }
 }

@@ -14,10 +14,10 @@ class SPProductCategoryWidget extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
-          UJGText(
-            text: category,
-            fontSize: CommonConstants.labelText,
-          ),
+          // UJGText(
+          //   text: category,
+          //   fontSize: CommonConstants.labelText,
+          // ),
           CommonWidget.rowHeight(height: 12.0),
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Container(

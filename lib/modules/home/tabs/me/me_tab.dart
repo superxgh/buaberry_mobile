@@ -17,18 +17,18 @@ class MeTab extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            UJGText(text: 'Me Tab', fontSize: CommonConstants.topicText),
+            // UJGText(text: 'Me Tab', fontSize: CommonConstants.topicText),
             CommonWidget.rowHeight(height: 30.0),
-            UJGText(
-              text: "Notifications",
-              fontSize: CommonConstants.labelText,
-            ),
+            // UJGText(
+            //   text: "Notifications",
+            //   fontSize: CommonConstants.labelText,
+            // ),
             CommonWidget.rowHeight(height: 15.0),
-            UJGText(
-              text: "New promotions",
-              fontSize: CommonConstants.labelText,
-              textAlign: Alignment.centerLeft,
-            ),
+            // UJGText(
+            //   text: "New promotions",
+            //   fontSize: CommonConstants.labelText,
+            //   textAlign: Alignment.centerLeft,
+            // ),
             CommonWidget.rowHeight(height: 10.0),
             Container(
                 width: Get.width * 0.95,
@@ -41,11 +41,11 @@ class MeTab extends StatelessWidget {
                   ),
                 )),
             CommonWidget.rowHeight(height: 15.0),
-            UJGText(
-              text: "My Orders",
-              fontSize: CommonConstants.labelText,
-              textAlign: Alignment.centerLeft,
-            ),
+            // UJGText(
+            //   text: "My Orders",
+            //   fontSize: CommonConstants.labelText,
+            //   textAlign: Alignment.centerLeft,
+            // ),
             CommonWidget.rowHeight(height: 10.0),
             Container(
                 width: Get.width * 0.95,
@@ -58,11 +58,11 @@ class MeTab extends StatelessWidget {
                   ),
                 )),
             CommonWidget.rowHeight(height: 15.0),
-            UJGText(
-              text: "Wallet",
-              fontSize: CommonConstants.labelText,
-              textAlign: Alignment.centerLeft,
-            ),
+            // UJGText(
+            //   text: "Wallet",
+            //   fontSize: CommonConstants.labelText,
+            //   textAlign: Alignment.centerLeft,
+            // ),
             CommonWidget.rowHeight(height: 10.0),
             Container(
                 width: Get.width * 0.95,
@@ -75,11 +75,11 @@ class MeTab extends StatelessWidget {
                   ),
                 )),
             CommonWidget.rowHeight(height: 15.0),
-            UJGText(
-              text: "Order monitoring",
-              fontSize: CommonConstants.labelText,
-              textAlign: Alignment.centerLeft,
-            ),
+            // UJGText(
+            //   text: "Order monitoring",
+            //   fontSize: CommonConstants.labelText,
+            //   textAlign: Alignment.centerLeft,
+            // ),
             CommonWidget.rowHeight(height: 10.0),
             Container(
                 width: Get.width * 0.95,
@@ -92,11 +92,11 @@ class MeTab extends StatelessWidget {
                   ),
                 )),
             CommonWidget.rowHeight(height: 15.0),
-            UJGText(
-              text: "Account setting",
-              fontSize: CommonConstants.labelText,
-              textAlign: Alignment.centerLeft,
-            ),
+            // UJGText(
+            //   text: "Account setting",
+            //   fontSize: CommonConstants.labelText,
+            //   textAlign: Alignment.centerLeft,
+            // ),
             CommonWidget.rowHeight(height: 10.0),
             Container(
                 width: Get.width * 0.95,

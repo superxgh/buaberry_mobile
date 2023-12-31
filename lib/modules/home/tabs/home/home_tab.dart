@@ -16,7 +16,7 @@ class HomeTab extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            UJGText(text: 'Home Tab', fontSize: CommonConstants.topicText),
+            // UJGText(text: 'Home Tab', fontSize: CommonConstants.topicText),
             CommonWidget.rowHeight(height: 30.0),
             SPFeatureMenuWidget(),
             CommonWidget.rowHeight(height: 15.0),

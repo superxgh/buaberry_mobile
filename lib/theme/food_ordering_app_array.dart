@@ -1,6 +1,6 @@
 
 import 'package:buaberry_mobile/routes/app_pages.dart';
-import 'package:buaberry_mobile/shared/assets/index.dart';
+import 'package:buaberry_mobile/shared/assets/assets.dart';
 
 class FoodOrderingAppArray {
   var bottomList = [

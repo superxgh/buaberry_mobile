@@ -1,7 +1,8 @@
-import 'package:buaberry_mobile/modules/splash/splash_controller.dart';
-import 'package:flutter/material.dart';
-import 'package:buaberry_mobile/shared/shared.dart';
-import 'package:get/get_state_manager/src/simple/get_view.dart';
+
+
+
+
+import '../../config.dart';
 
 class SplashScreen extends GetView<SplashController>  {
   @override
@@ -16,7 +17,7 @@ class SplashScreen extends GetView<SplashController>  {
       child: Scaffold(
         backgroundColor: Theme.of(context).primaryColor,
         body: Center(
-          child: Image.asset(FOGifAssets.splashLogo),
+          child: Image.asset(foGifAssets.splashLogo),
         ),
       ),
     );

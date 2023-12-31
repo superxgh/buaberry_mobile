@@ -10,9 +10,6 @@ abstract class Routes {
   static const  FOOD_ON_BOARD = '/food_on_board';
 
   static const String dashboard = '/dashboard';
-  static const String foodOrderingSplash = '/foodOrderingSplash';
-  static const String foOnBoard = '/foOnBoard';
-  static const String foLogin = '/foLogin';
   static const String foOtp = '/foOtp';
   static const String foLocation = '/foLocation';
   static const String foFindRestaurant = '/foFindRestaurant';

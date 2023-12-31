@@ -13,10 +13,10 @@ class SPProtionMenuWidget extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
-          UJGText(
-            text: "Promotions",
-            fontSize: CommonConstants.labelText,
-          ),
+          // UJGText(
+          //   text: "Promotions",
+          //   fontSize: CommonConstants.labelText,
+          // ),
           CommonWidget.rowHeight(height: 12.0),
           Container(
               width: Get.width * 0.95,

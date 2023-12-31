@@ -3,9 +3,7 @@ import 'common_image.dart';
 import 'common_svg.dart';
 import 'ecomm_image_assets.dart';
 import 'gif_assets.dart';
-
 import 'svg_assets.dart';
-
 import 'image_assets.dart';
 import 'icon_assets.dart';
 

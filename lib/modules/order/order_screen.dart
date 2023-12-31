@@ -13,12 +13,12 @@ class OrderScreen extends GetView<OrderController> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            UJGText(text: 'Order', fontSize: CommonConstants.topicText),
+            // UJGText(text: 'Order', fontSize: CommonConstants.topicText),
             CommonWidget.rowHeight(height: 30.0),
-            UJGText(
-              text: "Order header",
-              fontSize: CommonConstants.labelText,
-            ),
+            // UJGText(
+            //   text: "Order header",
+            //   fontSize: CommonConstants.labelText,
+            // ),
             CommonWidget.rowHeight(height: 15.0),
             Container(
                 width: Get.width * 0.95,
@@ -31,11 +31,11 @@ class OrderScreen extends GetView<OrderController> {
                   ),
                 )),
             CommonWidget.rowHeight(height: 15.0),
-            UJGText(
-              text: "Order item list",
-              fontSize: CommonConstants.labelText,
-              textAlign: Alignment.centerLeft,
-            ),
+            // UJGText(
+            //   text: "Order item list",
+            //   fontSize: CommonConstants.labelText,
+            //   textAlign: Alignment.centerLeft,
+            // ),
             CommonWidget.rowHeight(height: 10.0),
             Container(
                 width: Get.width * 0.95,

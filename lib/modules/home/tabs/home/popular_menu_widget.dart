@@ -13,10 +13,10 @@ class SPPopularMenuWidget extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
-          UJGText(
-            text: "Popular Menu",
-            fontSize: CommonConstants.labelText,
-          ),
+          // UJGText(
+          //   text: "Popular Menu",
+          //   fontSize: CommonConstants.labelText,
+          // ),
           CommonWidget.rowHeight(height: 10.0),
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Container(

@@ -18,14 +18,14 @@ class MenuTab extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            UJGText(text: 'Menu Tab', fontSize: CommonConstants.topicText),
+            // UJGText(text: 'Menu Tab', fontSize: CommonConstants.topicText),
             CommonWidget.rowHeight(height: 30.0),
-            UJGTextLink(
-              text: "Order",
-              onPressed: () {
-                Get.toNamed(Routes.ORDER);
-              },
-            ),
+            // UJGTextLink(
+            //   text: "Order",
+            //   onPressed: () {
+            //     Get.toNamed(Routes.ORDER);
+            //   },
+            // ),
             SPProductCategoryWidget(category: "Breads"),
             CommonWidget.rowHeight(height: 30.0),
             SPProductCategoryWidget(category: "Cakes"),

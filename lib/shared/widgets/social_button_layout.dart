@@ -1,10 +1,5 @@
 
-import 'package:buaberry_mobile/app_controller.dart';
-import 'package:buaberry_mobile/shared/assets/index.dart';
-import 'package:buaberry_mobile/theme/scale.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get_state_manager/src/simple/get_state.dart';
+import '../../config.dart';
 
 class SocialButtonLayout extends StatelessWidget {
   final String? image;

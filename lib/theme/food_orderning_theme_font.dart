@@ -1,7 +1,7 @@
 
 
 class FoodOrderingThemeFont{
-  static const String ultikit = "ultikit";
+  static const String buaberry = "ultikit";
   static const String onBoardTitle = 'onBoardTitle';
   static const String onBoardDesc = 'onBoardDesc';
   static const String madeWithLove = 'madeWithLove';

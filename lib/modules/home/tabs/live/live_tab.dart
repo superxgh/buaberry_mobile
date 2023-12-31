@@ -18,7 +18,7 @@ class LiveTab extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            UJGText(text: 'Menu Tab', fontSize: CommonConstants.topicText),
+            // UJGText(text: 'Menu Tab', fontSize: CommonConstants.topicText),
             CommonWidget.rowHeight(height: 30.0),
             SPLiveCategoryWidget(category: "How about bakery meterial ?"),
             CommonWidget.rowHeight(height: 30.0),

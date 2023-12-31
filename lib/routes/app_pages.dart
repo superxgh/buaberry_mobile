@@ -13,6 +13,11 @@ class AppPages {
       binding: SplashBinding(),
     ),
     GetPage(
+      name: Routes.FOOD_ON_BOARD,
+      page: () => OnBoardScreen(),
+      binding: OnBoardBinding(),
+    ),
+    GetPage(
       name: Routes.LOGIN,
       page: () => LoginScreen(),
       binding: LoginBinding(),
