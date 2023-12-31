@@ -1,4 +1,5 @@
 
+import 'package:buaberry_mobile/routes/app_pages.dart';
 import 'package:buaberry_mobile/shared/assets/index.dart';
 
 class FoodOrderingAppArray {
@@ -733,17 +734,17 @@ class FoodOrderingAppArray {
         {
           "title": "orders",
           "icon": foIconAssets.order,
-          "routeName": routeName.foOrderHistory
+          "Routes": Routes.foOrderHistory
         },
         {
           "title": "favouriteOrders",
           "icon": foIconAssets.placeholder,
-          "routeName": routeName.foFavourite
+          "Routes": Routes.foFavourite
         },
         {
           "title": "addressBook",
           "icon": foIconAssets.addressBook,
-          "routeName": routeName.foAddress
+          "Routes": Routes.foAddress
         }
       ]
     },
@@ -753,25 +754,25 @@ class FoodOrderingAppArray {
         {
           "title": "wallets",
           "icon": foIconAssets.wallet,
-          "routeName": routeName.foPayment
+          "Routes": Routes.foPayment
         },
         {
           "title": "savedCard",
           "icon": foIconAssets.card,
-          "routeName": routeName.foPayment
+          "Routes": Routes.foPayment
         }
       ]
     },
     {
       "title": "language",
       "profileList": [
-        {"title": "english", "icon": foIconAssets.language, "routeName": ""}
+        {"title": "english", "icon": foIconAssets.language, "Routes": ""}
       ]
     },
     {
       "title": "landing",
       "profileList": [
-        {"title": "home", "icon": eImageAssets.logo, "routeName": routeName.dashboard}
+        {"title": "home", "icon": eImageAssets.logo, "Routes": Routes.dashboard}
       ]
     },
   ];

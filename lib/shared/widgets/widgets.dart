@@ -15,3 +15,6 @@ export 'ujg_text_link_2line.dart';
 export 'ujg_dropdown_list.dart';
 export 'components/components.dart';
 export 'commons/directionality_rtl.dart';
+export 'food_text_box.dart';
+export 'social_login_layout.dart';
+export 'food_custom_buttom.dart';

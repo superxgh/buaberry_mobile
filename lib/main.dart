@@ -13,13 +13,9 @@ import 'theme/theme.dart';
 void main() async {
   logger.i(">>> App starting");
   WidgetsFlutterBinding.ensureInitialized();
-  logger.i(">>> WidgetsFlutterBinding.ensureInitialized()");
   await DenpendencyInjection.init();
-  logger.i(">>> DenpendencyInjection.init()");
   runApp(App());
-  logger.i(">>> runApp(App());");
   configLoading();
-  logger.i(">>> configLoading()");
 }
 
 class App extends StatelessWidget {

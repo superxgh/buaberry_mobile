@@ -1,7 +1,7 @@
 
 
 import 'dart:ui';
-
+import 'package:buaberry_mobile/theme/scale.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppCss {
@@ -152,7 +152,13 @@ class AppCss {
   //
   // static TextStyle get ubuntuSemiBold12 => ubuntu.semiBold.size(FontSizes.f12);
   // static TextStyle get latoSemiBold26 => lato.semiBold.size(FontSizes.f26);
-  // static TextStyle get latoSemiBold18 => lato.semiBold.size(FontSizes.f18);
+  static TextStyle get latoSemiBold18 => TextStyle(
+    fontFamily: GoogleFonts.lato().fontFamily,
+    fontWeight: FontWeight.w400,
+    fontSize: FontSizes.f18,
+    letterSpacing: 0,
+    height: 1,
+  );
   // static TextStyle get nunitoSemiSansBold18 => nunitoSans.semiBold.size(FontSizes.f18);
   // static TextStyle get nunitoSemiSansBold16 => nunitoSans.semiBold.size(FontSizes.f16);
   // static TextStyle get nunitoSemiSansBold12 => nunitoSans.semiBold.size(FontSizes.f12);

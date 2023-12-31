@@ -1,4 +1,4 @@
-part of 'app_css.dart';
+
 
 class Durations {
   static const Duration ms150 = Duration(milliseconds: 150);

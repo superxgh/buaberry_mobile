@@ -48,7 +48,9 @@ flutter:
     - assets/food_ordering_theme/gif/
     - assets/food_ordering_theme/icon/
 
-  
+    # common image, svg, gif
+    - assets/common/svg/
+    - assets/common/image/
   
 
   
