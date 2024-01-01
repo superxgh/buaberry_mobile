@@ -35,29 +35,29 @@ class LoginScreen extends GetView<LoginController> {
                             children: [
                               //enter phone number text
                               FoodLoginWidget().commonTextWithTitleColor(
-                                  FoodOrderingThemeFont.enterYourPhoneNumber.tr),
+                                  trans(FoodOrderingThemeFont.enterYourPhoneNumber)),
                               const VSpace(Sizes.s15),
                               //enter confirmation code text
                               FoodLoginWidget().confirmationCode(
                                   appController,
-                                  trans(FoodOrderingThemeFont.confirmationCode.tr)),
+                                  trans(FoodOrderingThemeFont.confirmationCode)),
                               const VSpace(Sizes.s80),
 
                               //enter phone number text
                               FoodLoginWidget().PhoneNumberLabel(
                                   appController,
-                                  trans(commonFonts.phoneNumber.tr)),
+                                  trans(commonFonts.phoneNumber)),
                               const VSpace(Sizes.s20),
 
                               //enter phone number text box
                               FoodTextBox(
-                                      hinText: FoodOrderingThemeFont.enterPhoneNumber)
+                                      hinText: trans(FoodOrderingThemeFont.enterPhoneNumber))
                                   .marginSymmetric(horizontal: Insets.i15),
                               const VSpace(Sizes.s50),
 
                               //social login with text
                               FoodLoginWidget().commonTextWithTitleColor(
-                                  FoodOrderingThemeFont.loginWith.tr),
+                                  trans(FoodOrderingThemeFont.loginWith)),
                               const VSpace(Sizes.s20),
 
                               //social login
@@ -69,8 +69,8 @@ class LoginScreen extends GetView<LoginController> {
                     //next button
                     FoodLoginWidget().nextButton(
                         appController,
-                        onTap: () => Get.toNamed(Routes.foOtp),
-                        title: FoodOrderingThemeFont.next.tr)
+                        onTap: () => Get.toNamed(Routes.FOOD_OTP),
+                        title: trans(FoodOrderingThemeFont.next))
                   ]),
             ));
   }

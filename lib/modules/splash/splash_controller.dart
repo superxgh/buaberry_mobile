@@ -12,7 +12,7 @@ class SplashController extends GetxController {
   void onInit() async {
     timer = Timer(
         const Duration(seconds: 5),
-            () =>  Get.toNamed(Routes.FOOD_ON_BOARD));
+            () =>  Get.toNamed(Routes.FOOD_OTP));
 
 
     super.onInit();

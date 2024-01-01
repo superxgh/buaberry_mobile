@@ -13,5 +13,6 @@ Map<String, String> en_US = {
   FoodOrderingThemeFont.madeWithLove : 'madeWithLove',
   FoodOrderingThemeFont.onBoardTitle : 'Good people, Good food, Good time.',
   FoodOrderingThemeFont.onBoardDesc : 'Make it every day, delicious every day.',
-  commonFonts.skip : 'Skip'
+  commonFonts.skip : 'Skip',
+  FoodOrderingThemeFont.verifyPhoneNumber : 'Verify Phone Number'
 };
