@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:buaberry_mobile/shared/shared.dart';
-import 'popular_menu_widget.dart';
-import 'feature_menu_widget.dart';
-import 'products_widget.dart';
-import 'promotions_widget.dart';
+
+
+import 'package:buaberry_mobile/config.dart';
+
+import 'food_home_widget.dart';
+import 'food_instruction.dart';
+import 'home_banner_layout.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({super.key});
@@ -12,21 +13,31 @@ class HomeTab extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return SingleChildScrollView(
-      child: Container(
-        child: Column(
+      child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            // UJGText(text: 'Home Tab', fontSize: CommonConstants.topicText),
-            CommonWidget.rowHeight(height: 30.0),
-            SPFeatureMenuWidget(),
-            CommonWidget.rowHeight(height: 15.0),
-            SPPopularMenuWidget(),
-            CommonWidget.rowHeight(height: 15.0),
-            SPProtionMenuWidget(),
-            CommonWidget.rowHeight(height: 15.0),
-            SPProductsWidget()
+            FoodTextBox(hinText: FoodOrderingThemeFont.searchForDessert)
+                .marginSymmetric(
+                horizontal: Insets.i15, vertical: Insets.i15),
+            //banner layout
+            const HomeBannerLayout(),
+            const VSpace(Sizes.s10),
+            //cuisine list
+            const CuisineList(),
+            const VSpace(Sizes.s20),
+            //food instruction
+            const FoodInstructionLayout(),
+            const VSpace(Sizes.s20),
+
+            //near by layout
+            const NearByLayout(),
+            const VSpace(Sizes.s20),
+            FoodHomeWidget().titleAndSeeAll(
+                trans(FoodOrderingThemeFont.featuredRestaurant)),
+            const VSpace(Sizes.s15),
+
+
           ],
-        ),
       ),
     );
   }

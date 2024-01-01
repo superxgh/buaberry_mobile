@@ -1,61 +1,44 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:buaberry_mobile/modules/home/home.dart';
-import 'package:buaberry_mobile/shared/shared.dart';
+import 'package:buaberry_mobile/config.dart';
+
+import 'home_app_bar.dart';
 
 class HomeScreen extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Obx(
       () => Scaffold(
-        backgroundColor: CommonWidget.getAppBlackgroundColor(),
-        appBar: AppBar(
-          centerTitle: true,
-          automaticallyImplyLeading: false,
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              CommonWidget.getAppBranner(iconSize: 40.0),
-              CommonWidget.getLogoutIcon(
-                  iconSize: 30.0,
-                  onPressed: () {
-                    // controller.signOut();
-                  }),
-            ],
-          ),
-          backgroundColor: Colors.transparent,
-          elevation: 0.0,
-        ),
+        backgroundColor: appController.appTheme.foodPrimaryLightColor,
+        appBar: const HomeAppbar(),
         body: _buildContent(controller.currentTab.value),
         bottomNavigationBar: Obx(
           () => BottomNavigationBar(
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
-                icon: Icon(Icons.newspaper),
+                icon: Icon(Icons.home_filled),
                 label: 'Home',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.history),
-                label: 'Menu',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: 'Live',
+                icon: Icon(Icons.search),
+                label: 'Search',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.shopping_cart),
-                label: 'Notify',
+                label: 'Cart',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.settings),
-                label: 'Me',
+                icon: Icon(Icons.check_circle_outline),
+                label: 'Offers',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.person_outline_outlined),
+                label: 'Profile',
               ),
             ],
             type: BottomNavigationBarType.fixed,
             currentIndex:
                 controller.getCurrentIndex(controller.currentTab.value),
-            selectedItemColor: Colors.orange,
-            backgroundColor: Colors.black,
+            selectedItemColor: Colors.black,
+            backgroundColor: appController.appTheme.foodPrimaryLightColor,
             unselectedItemColor: Colors.grey,
             onTap: (index) => controller.switchTab(index),
           ),
@@ -66,18 +49,18 @@ class HomeScreen extends GetView<HomeController> {
 
   Widget _buildContent(MainTabs tab) {
     switch (tab) {
-      case MainTabs.Features:
-        return controller.featuresTab;
-      case MainTabs.BBB:
-        return controller.bbbTab;
-      case MainTabs.Live:
-        return controller.liveTab;
-      case MainTabs.Nofity:
-        return controller.notifyTab;
-      case MainTabs.Me:
-        return controller.meTab;
+      case MainTabs.Home:
+        return controller.homeTab;
+      case MainTabs.Search:
+        return controller.searchTab;
+      case MainTabs.Cart:
+        return controller.cartTab;
+      case MainTabs.Offers:
+        return controller.offersTab;
+      case MainTabs.Profile:
+        return controller.profileTab;
       default:
-        return controller.featuresTab;
+        return controller.homeTab;
     }
   }
 }

@@ -26,7 +26,7 @@ class FoodOrderingThemeFont{
   static const String cart = 'cart';
   static const String offers = 'offers';
   static const String profile = 'profile';
-  static const String searchForRestaurant = 'searchForRestaurant';
+  static const String searchForDessert = 'searchForRestaurant';
   static const String searchForOffer = 'searchForOffer';
   static const String lakeForestAddress = 'lakeForestAddress';
   static const String nearByRestaurant = 'nearByRestaurant';

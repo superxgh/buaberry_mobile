@@ -1,1 +1,1 @@
-enum MainTabs { Features, BBB, Live, Nofity, Me }
+enum MainTabs { Home, Search, Cart, Offers, Profile }

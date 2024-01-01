@@ -7,8 +7,8 @@ import 'package:buaberry_mobile/shared/utils/utils.dart';
 import '../../../../shared/widgets/widgets.dart';
 import 'category_widget.dart';
 
-class LiveTab extends StatelessWidget {
-  const LiveTab({super.key});
+class CartTab extends StatelessWidget {
+  const CartTab({super.key});
 
   @override
   Widget build(BuildContext context) {

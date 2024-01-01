@@ -5,8 +5,8 @@ import 'package:buaberry_mobile/shared/utils/utils.dart';
 
 import '../../../../shared/widgets/widgets.dart';
 
-class MeTab extends StatelessWidget {
-  const MeTab({super.key});
+class ProfileTab extends StatelessWidget {
+  const ProfileTab({super.key});
 
   @override
   Widget build(BuildContext context) {

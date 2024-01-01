@@ -18,5 +18,6 @@ Map<String, String> en_US = {
   FoodOrderingThemeFont.sendCode : 'We have just send a code to ******5433',
   FoodOrderingThemeFont.havingNumber : 'Having problem?',
   FoodOrderingThemeFont.resendAgain : 'Resend Again',
-  commonFonts.continueTitle : 'Continue'
+  commonFonts.continueTitle : 'Continue',
+  FoodOrderingThemeFont.searchForDessert : 'Search for dessert.'
 };

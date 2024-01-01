@@ -1,40 +1,43 @@
-import 'package:get/get.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:buaberry_mobile/modules/home/tabs/tabs.dart';
+
+
+import 'package:buaberry_mobile/config.dart';
+
 
 class HomeController extends GetxController {
-  var currentTab = MainTabs.Features.obs;
-  late HomeTab featuresTab;
-  late MenuTab bbbTab;
-  late LiveTab liveTab;
-  late NotifyTab notifyTab;
-  late MeTab meTab;
+
+  final CarouselController controller = CarouselController();
+  FoodOrderingAppArray foAppArray = FoodOrderingAppArray();
+
+  var currentTab = MainTabs.Home.obs;
+  late HomeTab homeTab;
+  late SearchTab searchTab;
+  late CartTab cartTab;
+  late OffersTab offersTab;
+  late ProfileTab profileTab;
+
+  int current = 0;
+  List<FoodBannerModel> foodBannerList = [];
+  List instructionList =[];
+  List<Product> nearByList = [];
+  List<Product> featuredRestaurantList = [];
+  List<Product> mustTryList = [];
 
   @override
   void onInit() {
     super.onInit();
-    featuresTab = HomeTab();
-    bbbTab = MenuTab();
-    liveTab = LiveTab();
-    notifyTab = NotifyTab();
-    meTab = MeTab();
+    homeTab = HomeTab();
+    searchTab = SearchTab();
+    cartTab = CartTab();
+    offersTab = OffersTab();
+    profileTab = ProfileTab();
   }
 
   @override
   void onReady() async {
+    getData();
+
     super.onReady();
 
-    await Future.delayed(Duration(milliseconds: 2000));
-    var storage = Get.find<SharedPreferences>();
-    // try {
-    //   if (storage.getString(StorageConstants.token) != null) {
-    //     Get.toNamed(Routes.HOME);
-    //   } else {
-    //     Get.toNamed(Routes.AUTH);
-    //   }
-    // } catch (e) {
-    //   Get.toNamed(Routes.AUTH);
-    // }
   }
 
   void switchTab(index) {
@@ -44,15 +47,15 @@ class HomeController extends GetxController {
 
   int getCurrentIndex(MainTabs tab) {
     switch (tab) {
-      case MainTabs.Features:
+      case MainTabs.Home:
         return 0;
-      case MainTabs.BBB:
+      case MainTabs.Search:
         return 1;
-      case MainTabs.Live:
+      case MainTabs.Cart:
         return 2;
-      case MainTabs.Nofity:
+      case MainTabs.Offers:
         return 3;
-      case MainTabs.Me:
+      case MainTabs.Profile:
         return 4;
       default:
         return 0;
@@ -62,17 +65,38 @@ class HomeController extends GetxController {
   MainTabs _getCurrentTab(int index) {
     switch (index) {
       case 0:
-        return MainTabs.Features;
+        return MainTabs.Home;
       case 1:
-        return MainTabs.BBB;
+        return MainTabs.Search;
       case 2:
-        return MainTabs.Live;
+        return MainTabs.Cart;
       case 3:
-        return MainTabs.Nofity;
+        return MainTabs.Offers;
       case 4:
-        return MainTabs.Me;
+        return MainTabs.Profile;
       default:
-        return MainTabs.Features;
+        return MainTabs.Home;
     }
   }
+
+  getData(){
+
+    for (var i = 0; i < foAppArray.bannerList.length; i++) {
+      foodBannerList.add(FoodBannerModel.fromJson(foAppArray.bannerList[i]));
+    }
+
+    instructionList = foAppArray.instructionList;
+    for (var i = 0; i < foAppArray.nearByRestaurant.length; i++) {
+      nearByList.add(Product.fromJson(foAppArray.nearByRestaurant[i]));
+    }
+    for (var i = 0; i < foAppArray.featuredRestaurant.length; i++) {
+      featuredRestaurantList.add(Product.fromJson(foAppArray.featuredRestaurant[i]));
+    }
+    for (var i = 0; i < foAppArray.mustTryList.length; i++) {
+      mustTryList.add(Product.fromJson(foAppArray.featuredRestaurant[i]));
+    }
+    update();
+  }
+
+
 }

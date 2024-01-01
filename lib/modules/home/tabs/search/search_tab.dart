@@ -7,8 +7,8 @@ import 'package:buaberry_mobile/shared/utils/utils.dart';
 import '../../../../shared/widgets/widgets.dart';
 import 'category_widget.dart';
 
-class MenuTab extends StatelessWidget {
-  const MenuTab({super.key});
+class SearchTab extends StatelessWidget {
+  const SearchTab({super.key});
 
   @override
   Widget build(BuildContext context) {

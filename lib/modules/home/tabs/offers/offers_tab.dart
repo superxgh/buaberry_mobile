@@ -7,8 +7,8 @@ import 'package:buaberry_mobile/shared/utils/utils.dart';
 
 import '../../../../shared/widgets/widgets.dart';
 
-class NotifyTab extends StatelessWidget {
-  const NotifyTab({super.key});
+class OffersTab extends StatelessWidget {
+  const OffersTab({super.key});
 
   @override
   Widget build(BuildContext context) {
