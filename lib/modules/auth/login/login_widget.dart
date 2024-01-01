@@ -1,11 +1,6 @@
 
-import 'package:buaberry_mobile/app_controller.dart';
-import 'package:buaberry_mobile/shared/shared.dart';
-import 'package:buaberry_mobile/theme/app_css.dart';
-import 'package:buaberry_mobile/theme/app_theme.dart';
-import 'package:buaberry_mobile/theme/scale.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+import '../../../config.dart';
 
 class FoodLoginWidget {
   //common text style
@@ -22,7 +17,7 @@ class FoodLoginWidget {
   );
 
   //food confirmation code
-  Widget confirmationCode(AppController appController, String text) => Align(
+  Widget confirmationCode(String text) => Align(
     alignment: Alignment.center,
     child: FittedBox(
         child: Text(text,
@@ -38,7 +33,7 @@ class FoodLoginWidget {
     ),
   );
 
-  Widget PhoneNumberLabel(AppController appController, String text) => Align(
+  Widget PhoneNumberLabel(String text) => Align(
     alignment: Alignment.centerLeft,
     child:Text(text,
             style: TextStyle(
@@ -52,10 +47,11 @@ class FoodLoginWidget {
   );
 
 //next button
-  Widget nextButton(AppController appController, {GestureTapCallback? onTap,title}) => FoodCustomButton(
+  Widget nextButton({GestureTapCallback? onTap,title}) => FoodCustomButton(
         title: title,
         radius: AppRadius.r10,
         color: appController.appTheme.foodPrimaryColor,
+        fontColor: appController.appTheme.whiteColor,
         padding: Insets.i10,
         fontSize: FontSizes.f18,
         onTap: onTap,

@@ -1,10 +1,6 @@
 
-import 'package:buaberry_mobile/app_controller.dart';
-import 'package:buaberry_mobile/shared/shared.dart';
-import 'package:buaberry_mobile/theme/scale.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+import '../../config.dart';
 
 class FoodCustomButton extends StatelessWidget {
   final String title;
@@ -43,7 +39,6 @@ class FoodCustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppController appController = Get.find<AppController>();
     return InkWell(
       onTap: onTap,
       child: Container(

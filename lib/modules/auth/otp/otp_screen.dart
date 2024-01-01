@@ -1,5 +1,7 @@
 import '/../../config.dart';
+import 'food_otp_widget.dart';
 import 'otp_controller.dart';
+import 'otp_number_layout.dart';
 
 class OTPScreen extends GetView<OTPController> {
 
@@ -7,7 +9,6 @@ class OTPScreen extends GetView<OTPController> {
 
   @override
   Widget build(BuildContext context) {
-    AppController appController = Get.find<AppController>();
     return Scaffold(
           backgroundColor: appController.appTheme.foodPrimaryLightColor,
           appBar: AppBar(
@@ -25,19 +26,19 @@ class OTPScreen extends GetView<OTPController> {
                         appController, trans(FoodOrderingThemeFont.verifyPhoneNumber)),
                     const VSpace(Sizes.s15),
                     //enter confirmation code text
-                    // CommonFoodWidget()
-                    //     .confirmationCode(trans(foThemeFont.sendCode)),
-                    // const VSpace(Sizes.s80),
-                    // const OtpNumberLayout()
-                    //     .paddingSymmetric(horizontal: Insets.i15),
-                    // const VSpace(Sizes.s35),
-                    // FoodOtpWidget().resendAgain()
+                    CommonFoodWidget()
+                        .confirmationCode(trans(FoodOrderingThemeFont.sendCode)),
+                    const VSpace(Sizes.s80),
+                    const OtpNumberLayout()
+                        .paddingSymmetric(horizontal: Insets.i15),
+                    const VSpace(Sizes.s35),
+                    FoodOtpWidget().resendAgain()
                   ],
                 ),
               ),
-              // FoodLoginWidget().nextButton(
-              //     onTap: () => Get.toNamed(routeName.foLocation),
-              //     title: trans(commonFonts.continueTitle))
+              FoodLoginWidget().nextButton(
+                  onTap: () => Get.toNamed(Routes.foLocation),
+                  title: trans(commonFonts.continueTitle))
             ],
           ),
         );

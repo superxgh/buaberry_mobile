@@ -14,5 +14,9 @@ Map<String, String> en_US = {
   FoodOrderingThemeFont.onBoardTitle : 'Good people, Good food, Good time.',
   FoodOrderingThemeFont.onBoardDesc : 'Make it every day, delicious every day.',
   commonFonts.skip : 'Skip',
-  FoodOrderingThemeFont.verifyPhoneNumber : 'Verify Phone Number'
+  FoodOrderingThemeFont.verifyPhoneNumber : 'Verify Phone Number',
+  FoodOrderingThemeFont.sendCode : 'We have just send a code to ******5433',
+  FoodOrderingThemeFont.havingNumber : 'Having problem?',
+  FoodOrderingThemeFont.resendAgain : 'Resend Again',
+  commonFonts.continueTitle : 'Continue'
 };

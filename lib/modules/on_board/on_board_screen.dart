@@ -9,7 +9,6 @@ class OnBoardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppController appController = Get.find<AppController>();
     SizeConfig().init(context);
     return  Scaffold(
         backgroundColor: appController.appTheme.whiteColor,
