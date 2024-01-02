@@ -16,11 +16,11 @@ class HomeController extends GetxController {
   late ProfileTab profileTab;
 
   int current = 0;
-  List<FoodBannerModel> foodBannerList = [];
-  List instructionList =[];
-  List<Product> nearByList = [];
-  List<Product> featuredRestaurantList = [];
-  List<Product> mustTryList = [];
+  var foodBannerList = <FoodBannerModel>[].obs;
+  var instructionList =[].obs;
+  var nearByList = <Product>[].obs;
+  var featuredRestaurantList = <Product>[].obs;
+  var mustTryList = <Product>[].obs;
 
   @override
   void onInit() {
@@ -35,7 +35,7 @@ class HomeController extends GetxController {
   @override
   void onReady() async {
     getData();
-
+    logger.d("mustTryList length : ${mustTryList.length}");
     super.onReady();
 
   }
@@ -85,7 +85,7 @@ class HomeController extends GetxController {
       foodBannerList.add(FoodBannerModel.fromJson(foAppArray.bannerList[i]));
     }
 
-    instructionList = foAppArray.instructionList;
+    instructionList.value = foAppArray.instructionList;
     for (var i = 0; i < foAppArray.nearByRestaurant.length; i++) {
       nearByList.add(Product.fromJson(foAppArray.nearByRestaurant[i]));
     }

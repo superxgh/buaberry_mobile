@@ -14,6 +14,7 @@ export 'package:flutter/gestures.dart';
 export 'package:carousel_slider/carousel_slider.dart';
 export 'package:buaberry_mobile/models/models.dart';
 export 'package:shared_preferences/shared_preferences.dart';
+export 'package:buaberry_mobile/shared/utils/logger.dart';
 
 final appController = Get.isRegistered<AppController>()
     ? Get.find<AppController>()

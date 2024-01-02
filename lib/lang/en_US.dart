@@ -21,5 +21,6 @@ Map<String, String> en_US = {
   commonFonts.continueTitle : 'Continue',
   FoodOrderingThemeFont.searchForDessert : 'Search for dessert.',
   FoodOrderingThemeFont.featuredRestaurant : 'Featured restaurant',
-  FoodOrderingThemeFont.nearByRestaurant : 'Near by restaurant'
+  FoodOrderingThemeFont.nearByRestaurant : 'Near by restaurant',
+  FoodOrderingThemeFont.mustTry : 'Must try'
 };
