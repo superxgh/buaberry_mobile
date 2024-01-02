@@ -22,5 +22,6 @@ Map<String, String> en_US = {
   FoodOrderingThemeFont.searchForDessert : 'Search for dessert.',
   FoodOrderingThemeFont.featuredRestaurant : 'Featured restaurant',
   FoodOrderingThemeFont.nearByRestaurant : 'Near by restaurant',
-  FoodOrderingThemeFont.mustTry : 'Must try'
+  FoodOrderingThemeFont.mustTry : 'Must try',
+  FoodOrderingThemeFont.recentSearch : 'Recent search'
 };

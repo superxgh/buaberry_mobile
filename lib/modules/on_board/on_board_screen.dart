@@ -1,7 +1,4 @@
-
-
-
-import '../../config.dart';
+import 'package:buaberry_mobile/config.dart';
 import 'on_board_widget.dart';
 
 class OnBoardScreen extends StatelessWidget {

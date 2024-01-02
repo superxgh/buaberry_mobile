@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:buaberry_mobile/config.dart';
 
 import 'food_home_widget.dart';
@@ -25,7 +21,7 @@ class HomeBannerData extends StatelessWidget {
             alignment: Alignment.centerLeft,
             children: <Widget>[
               ClipRRect(
-                  borderRadius: BorderRadius.circular(AppRadius.r10 ),
+                  borderRadius: BorderRadius.circular(AppRadius.r10),
                   child: Image.asset(
                     data!.image.toString(),
                     fit: BoxFit.cover,
@@ -40,17 +36,15 @@ class HomeBannerData extends StatelessWidget {
                   (isOdd!)
                       ? FoodHomeWidget().oddData(data)
                       : FoodHomeWidget().evenData(data),
-
                   const VSpace(Sizes.s15),
-                  Text(trans(data!.desc.toString()),
-                      style: TextStyle(
-                        color: appController.appTheme.foodContentColor,
-                        fontFamily: GoogleFonts.lato().fontFamily,
-                        fontWeight: FontWeight.w400,
-                        fontSize: FontSizes.f12,
-                        letterSpacing: 0,
-                        height: 1,
-                      )),
+                  TextLabel(
+                    text: data!.desc.toString(),
+                    alignment: Alignment.centerLeft,
+                    fontFamily: FontFamily.LATO,
+                    fontWeight: FontWeight.w400,
+                    fontSize: FontSizes.f12,
+                    color: appController.appTheme.foodContentColor,
+                  ),
                 ],
               ).marginSymmetric(horizontal: Insets.i12, vertical: Insets.i30)
             ],

@@ -19,31 +19,27 @@ class OnBoardWidget {
   //on board title
   Widget onBoardTitle(AppController appController, String title) => Padding(
     padding: EdgeInsets.symmetric(horizontal: Insets.i25),
-    child: Text(title,
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          color: appController.appTheme.foodTitleColor,
-          fontFamily: GoogleFonts.lato().fontFamily,
-          fontSize: FontSizes.f30,
-          fontWeight: FontWeight.bold,
-          letterSpacing: 0,
-          height: 1,
-        )),
+    child: TextLabel(
+      text: title,
+      alignment: Alignment.center,
+      fontFamily: FontFamily.LATO,
+      fontSize: FontSizes.f30,
+      fontWeight: FontWeight.bold,
+      color: appController.appTheme.foodTitleColor,
+    )
   );
 
   //on board desc
   Widget onBoardDesc(AppController appController, String title) => Padding(
     padding: EdgeInsets.symmetric(horizontal: Insets.i25),
-    child: Text(title,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: appController.appTheme.foodContentColor,
-              fontFamily: GoogleFonts.nunitoSans().fontFamily,
-              fontSize: FontSizes.f20,
-              fontWeight: FontWeight.w400,
-              letterSpacing: 0,
-              height: 1,
-            )),
+    child : TextLabel(
+      text: title,
+      alignment: Alignment.center,
+      fontFamily: FontFamily.LATO,
+      fontSize: FontSizes.f20,
+      fontWeight: FontWeight.w400,
+      color: appController.appTheme.foodContentColor,
+    )
   );
 
   //button
@@ -60,16 +56,14 @@ class OnBoardWidget {
   //skip
   Widget skipText(AppController appController, {GestureTapCallback? onTap}) => InkWell(
     onTap: onTap,
-    child: Text(commonFonts.skip.tr,
-            style: TextStyle(
-              color: appController.appTheme.foodTitleColor,
-              fontFamily: GoogleFonts.nunitoSans().fontFamily,
-              fontSize: FontSizes.f16,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 0,
-              height: 1,
-            )
-  ));
+    child: TextLabel(
+      text: commonFonts.skip,
+      alignment: Alignment.center,
+      fontFamily: FontFamily.LATO,
+      fontSize: FontSizes.f16,
+      fontWeight: FontWeight.bold,
+      color: appController.appTheme.foodTitleColor,
+    ));
 
   //on board upper title
   Widget onBoardUpperTitle(AppController appController) => Padding(
@@ -81,15 +75,14 @@ class OnBoardWidget {
               title: FoodOrderingThemeFont.buaberry,
               color: appController.appTheme.whiteColor),
           const VSpace(Sizes.s10),
-          Text(trans(FoodOrderingThemeFont.madeWithLove),
-              style: TextStyle(
-                color: appController.appTheme.white,
-                fontFamily: GoogleFonts.oleoScriptSwashCaps().fontFamily,
-                fontWeight: FontWeight.w400,
-                fontSize: FontSizes.f35,
-                letterSpacing: 0,
-                height: 1,
-              )),
+          TextLabel(
+            text: FoodOrderingThemeFont.madeWithLove,
+            alignment: Alignment.center,
+            fontFamily: FontFamily.OLESCRIPTSWASHCAPS,
+            fontSize: FontSizes.f35,
+            fontWeight: FontWeight.w400,
+            color: appController.appTheme.white,
+          ),
           const VSpace(Sizes.s10),
           OnBoardWidget().onBoardImage(foImageAssets.onBoard)
         ]),

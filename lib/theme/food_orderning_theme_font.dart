@@ -4,6 +4,7 @@ class FoodOrderingThemeFont{
 
 
   static const String ratings = "ratings";
+  static const String searchForRestaurant = 'searchForRestaurant';
 
   static const String buaberry = "ultikit";
   static const String onBoardTitle = 'onBoardTitle';

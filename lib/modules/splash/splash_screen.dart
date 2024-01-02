@@ -1,8 +1,4 @@
-
-
-
-
-import '../../config.dart';
+import 'package:buaberry_mobile/config.dart';
 
 class SplashScreen extends GetView<SplashController>  {
   @override

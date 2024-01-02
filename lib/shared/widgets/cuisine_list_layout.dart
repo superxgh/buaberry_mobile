@@ -21,15 +21,13 @@ class CuisineList extends StatelessWidget {
                           fit: BoxFit.contain,
                         ),
                         const VSpace(Sizes.s10),
-                        Text(trans(e['title'].toString()),
-                            style: TextStyle(
-                              color: appController.appTheme.foodTitleColor,
-                              fontFamily: GoogleFonts.lato().fontFamily,
-                              fontWeight: FontWeight.w400,
-                              fontSize: FontSizes.f15,
-                              letterSpacing: 0,
-                              height: 1,
-                            ))
+                        TextLabel(
+                          text: e['title'].toString(),
+                          fontFamily: FontFamily.LATO,
+                          fontWeight: FontWeight.w400,
+                          fontSize: FontSizes.f15,
+                          color: appController.appTheme.foodTitleColor,
+                        )
                       ],
                     ).paddingOnly(right: Insets.i10),
                   ))

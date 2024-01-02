@@ -26,6 +26,7 @@ class LoginScreen extends GetView<LoginController> {
                               FoodLoginWidget().commonTextWithTitleColor(
                                   trans(FoodOrderingThemeFont.enterYourPhoneNumber)),
                               const VSpace(Sizes.s15),
+
                               //enter confirmation code text
                               FoodLoginWidget().confirmationCode(
                                   trans(FoodOrderingThemeFont.confirmationCode)),

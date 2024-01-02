@@ -1,41 +1,33 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:buaberry_mobile/routes/routes.dart';
-import 'package:buaberry_mobile/shared/constants/constants.dart';
-import 'package:buaberry_mobile/shared/utils/utils.dart';
 
-import '../../../../shared/widgets/widgets.dart';
-import 'category_widget.dart';
 
-class SearchTab extends StatelessWidget {
+import 'package:buaberry_mobile/config.dart';
+
+class SearchTab extends GetView<HomeController> {
   const SearchTab({super.key});
 
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return SingleChildScrollView(
-      child: Container(
+      child: Padding(
+        padding: EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            // UJGText(text: 'Menu Tab', fontSize: CommonConstants.topicText),
-            CommonWidget.rowHeight(height: 30.0),
-            // UJGTextLink(
-            //   text: "Order",
-            //   onPressed: () {
-            //     Get.toNamed(Routes.ORDER);
-            //   },
-            // ),
-            SPProductCategoryWidget(category: "Breads"),
-            CommonWidget.rowHeight(height: 30.0),
-            SPProductCategoryWidget(category: "Cakes"),
-            CommonWidget.rowHeight(height: 30.0),
-            SPProductCategoryWidget(category: "Cookies"),
-            CommonWidget.rowHeight(height: 30.0),
-            SPProductCategoryWidget(category: "Healthy"),
-            CommonWidget.rowHeight(height: 30.0),
-            SPProductCategoryWidget(category: "Drinking"),
-            CommonWidget.rowHeight(height: 30.0),
+            FoodTextBox(
+              controller: controller.searchTextController,
+              hinText: FoodOrderingThemeFont.searchForRestaurant,
+            ),
+            const VSpace(Sizes.s15),
+            TextLabel(
+              text: FoodOrderingThemeFont.recentSearch,
+              alignment: Alignment.centerLeft,
+              fontFamily: FontFamily.LATO,
+              fontWeight: FontWeight.bold,
+              fontSize: FontSizes.f16,
+              color: appController.appTheme.foodTitleColor,
+            ),
+            const VSpace(Sizes.s15),
           ],
         ),
       ),

@@ -5,27 +5,25 @@ class FoodHomeWidget {
   Widget oddData(data) => Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(trans(data!.title.toString()),
-              overflow: TextOverflow.clip,
-              style: TextStyle(
-                color: appController.appTheme.foodTitleColor1,
-                fontFamily: GoogleFonts.lato().fontFamily,
-                fontWeight: FontWeight.bold,
-                fontSize: FontSizes.f16,
-                letterSpacing: 0,
-                height: 1,
-              )),
+          TextLabel(
+            text: data!.title.toString(),
+            alignment: Alignment.centerLeft,
+            overflow: TextOverflow.clip,
+            fontFamily: FontFamily.LATO,
+            fontWeight: FontWeight.bold,
+            fontSize: FontSizes.f16,
+            color: appController.appTheme.foodTitleColor1,
+          ),
           Stack(alignment: Alignment.center, children: [
             Image.asset(foImageAssets.bannerOfferShape, width: Sizes.s120),
-            Text(trans(data!.offer.toString() + trans("off")),
-                style: TextStyle(
-                  color: appController.appTheme.white,
-                  fontFamily: GoogleFonts.lato().fontFamily,
-                  fontWeight: FontWeight.bold,
-                  fontSize: FontSizes.f16,
-                  letterSpacing: 0,
-                  height: 1,
-                )),
+            TextLabel(
+              text: data!.offer.toString(),
+              textExtend: 'off',
+              fontFamily: FontFamily.LATO,
+              fontWeight: FontWeight.bold,
+              fontSize: FontSizes.f16,
+              color: appController.appTheme.white,
+            ),
           ]),
         ],
       );
@@ -35,28 +33,26 @@ class FoodHomeWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(trans(data!.title.toString()),
-              overflow: TextOverflow.clip,
-              style: TextStyle(
-                color: appController.appTheme.foodTitleColor1,
-                fontFamily: GoogleFonts.lato().fontFamily,
-                fontWeight: FontWeight.bold,
-                fontSize: FontSizes.f16,
-                letterSpacing: 0,
-                height: 1,
-              )),
+          TextLabel(
+            text: data!.title.toString(),
+            alignment: Alignment.centerLeft,
+            overflow: TextOverflow.clip,
+            fontFamily: FontFamily.LATO,
+            fontWeight: FontWeight.bold,
+            fontSize: FontSizes.f16,
+            color: appController.appTheme.foodTitleColor1,
+          ),
           const VSpace(Sizes.s6),
           Stack(alignment: Alignment.center, children: [
             Image.asset(foImageAssets.bannerOfferShape, width: Sizes.s120),
-            Text(trans(data!.offer.toString()) + trans("off"),
-                style: TextStyle(
-                  color: appController.appTheme.white,
-                  fontFamily: GoogleFonts.lato().fontFamily,
-                  fontWeight: FontWeight.bold,
-                  fontSize: FontSizes.f16,
-                  letterSpacing: 0,
-                  height: 1,
-                )),
+            TextLabel(
+              text: data!.offer.toString(),
+              textExtend: 'off',
+              fontFamily: FontFamily.LATO,
+              fontWeight: FontWeight.bold,
+              fontSize: FontSizes.f16,
+              color: appController.appTheme.white,
+            ),
           ])
         ],
       );
@@ -65,24 +61,20 @@ class FoodHomeWidget {
   Widget titleAndSeeAll(title) => Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(title,
-              style: TextStyle(
-                color: appController.appTheme.foodTitleColor,
-                fontFamily: GoogleFonts.lato().fontFamily,
-                fontWeight: FontWeight.bold,
-                fontSize: FontSizes.f16,
-                letterSpacing: 0,
-                height: 1,
-              )),
-          Text(trans(commonFonts.seeAll),
-              style: TextStyle(
-                color: appController.appTheme.foodPrimaryColor,
-                fontFamily: GoogleFonts.lato().fontFamily,
-                fontWeight: FontWeight.bold,
-                fontSize: FontSizes.f16,
-                letterSpacing: 0,
-                height: 1,
-              )),
+          TextLabel(
+            text: title,
+            fontFamily: FontFamily.LATO,
+            fontWeight: FontWeight.bold,
+            fontSize: FontSizes.f16,
+            color: appController.appTheme.foodTitleColor,
+          ),
+          TextLabel(
+            text: commonFonts.seeAll,
+            fontFamily: FontFamily.LATO,
+            fontWeight: FontWeight.bold,
+            fontSize: FontSizes.f16,
+            color: appController.appTheme.foodPrimaryColor,
+          ),
         ],
       ).marginSymmetric(horizontal: Insets.i15);
 }

@@ -5,8 +5,10 @@ import 'package:buaberry_mobile/config.dart';
 
 class HomeController extends GetxController {
 
-  final CarouselController controller = CarouselController();
+  final CarouselController carouselController = CarouselController();
   FoodOrderingAppArray foAppArray = FoodOrderingAppArray();
+
+  TextEditingController searchTextController = TextEditingController();
 
   var currentTab = MainTabs.Home.obs;
   late HomeTab homeTab;

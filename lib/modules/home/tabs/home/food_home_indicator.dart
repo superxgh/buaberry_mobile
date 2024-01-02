@@ -13,7 +13,7 @@ class HomeDotIndicator extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: homeController.foodBannerList.asMap().entries.map((entry) {
             return GestureDetector(
-                onTap: () => homeController.controller.animateToPage(entry.key),
+                onTap: () => homeController.carouselController.animateToPage(entry.key),
                 child: Container(
                     height: homeController.current == entry.key ? 5 : 7,
                     width: homeController.current == entry.key ? 35 : 7,

@@ -1,49 +1,47 @@
 
 
-import '../../../config.dart';
+import 'package:buaberry_mobile/config.dart';
 
 class FoodLoginWidget {
   //common text style
   Widget commonTextWithTitleColor(text) => Align(
     alignment: Alignment.center,
-    child: Text(text,
-            style: TextStyle(
-              fontFamily: GoogleFonts.lato().fontFamily,
-              fontWeight: FontWeight.bold,
-              fontSize: FontSizes.f18,
-              letterSpacing: 0,
-              height: 1,
-            )),
+    child : TextLabel(
+      text: text,
+      alignment: Alignment.center,
+      fontFamily: FontFamily.LATO,
+      fontSize: FontSizes.f18,
+      fontWeight: FontWeight.bold,
+      color: appController.appTheme.foodContentColor,
+    )
   );
 
   //food confirmation code
   Widget confirmationCode(String text) => Align(
     alignment: Alignment.center,
     child: FittedBox(
-        child: Text(text,
-            style: TextStyle(
-              color: appController.appTheme.foodContentColor,
-              fontFamily: GoogleFonts.lato().fontFamily,
-              fontWeight: FontWeight.bold,
-              fontSize: FontSizes.f18,
-              letterSpacing: 0,
-              height: 1,
-            ))
+        child : TextLabel(
+          text: text,
+          alignment: Alignment.center,
+          fontFamily: FontFamily.LATO,
+          fontSize: FontSizes.f18,
+          fontWeight: FontWeight.bold,
+          color: appController.appTheme.foodContentColor,
+        )
 
     ),
   );
 
   Widget PhoneNumberLabel(String text) => Align(
     alignment: Alignment.centerLeft,
-    child:Text(text,
-            style: TextStyle(
-              color: appController.appTheme.textColor,
-              fontFamily: GoogleFonts.lato().fontFamily,
-              fontWeight: FontWeight.bold,
-              fontSize: FontSizes.f24,
-              letterSpacing: 0,
-              height: 1,
-            ))
+    child : TextLabel(
+      text: text,
+      alignment: Alignment.center,
+      fontFamily: FontFamily.LATO,
+      fontSize: FontSizes.f24,
+      fontWeight: FontWeight.bold,
+      color: appController.appTheme.textColor,
+    )
   );
 
 //next button
