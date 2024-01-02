@@ -27,6 +27,10 @@ dependencies:
   get_storage: 2.0.3
   google_fonts: 3.0.1
   carousel_slider: 4.1.1
+  shimmer: 2.0.0
+  flutter_rating_bar: 4.0.1
+  font_awesome_flutter: 10.2.1
+  dotted_border: 2.0.0+3
 
 dev_dependencies:
   flutter_test:

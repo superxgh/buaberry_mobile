@@ -29,6 +29,9 @@ class AppTheme {
   Color foodTitleColor;
   Color foodTitleColor1;
   Color foodUnselectTabColor;
+  Color foodUnRatedColor;
+
+
 
   Color txt;
   Color primary;
@@ -86,6 +89,7 @@ class AppTheme {
     required this.foodTitleColor,
     required this.foodTitleColor1,
     required this.foodUnselectTabColor,
+    required this.foodUnRatedColor,
 
     required this.txt,
     required this.primary,
@@ -146,6 +150,7 @@ class AppTheme {
           foodTitleColor: const Color(0xFF433417),
           foodTitleColor1: const Color(0xFF433417),
           foodUnselectTabColor: const Color(0xFFA4A4A4),
+          foodUnRatedColor: const Color(0xFFCACACA),
 
 
           txt: const Color(0xFF001928),
@@ -204,8 +209,7 @@ class AppTheme {
           foodTitleColor: Colors.white,
           foodTitleColor1: const Color(0xFF433417),
           foodUnselectTabColor: const Color(0xFFA4A4A4),
-
-
+          foodUnRatedColor: const Color(0xFFCACACA),
 
           txt: Colors.white,
           primary: const Color(0xFFFF4C3B),

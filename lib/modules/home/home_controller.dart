@@ -25,6 +25,11 @@ class HomeController extends GetxController {
   var mustTryList = <Product>[].obs;
   List recentList =[];
 
+
+  int selectedIndex = 0;
+  bool isShimmer = true;
+
+
   @override
   void onInit() {
     super.onInit();
