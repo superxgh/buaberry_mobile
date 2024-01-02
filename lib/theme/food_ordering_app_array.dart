@@ -14,13 +14,13 @@ class FoodOrderingAppArray {
   //banner list
   var bannerList = [
     {
-      "title": "foodBannerTitle",
+      "title": "Food1",
       "desc": "terms",
       "offer": "50%",
       "image": foImageAssets.banner1
     },
     {
-      "title": "foodBannerTitle",
+      "title": "Food2",
       "desc": "terms",
       "offer": "50%",
       "image": foImageAssets.banner2

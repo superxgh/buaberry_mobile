@@ -1,6 +1,10 @@
 
 
 class FoodOrderingThemeFont{
+
+
+  static const String ratings = "ratings";
+
   static const String buaberry = "ultikit";
   static const String onBoardTitle = 'onBoardTitle';
   static const String onBoardDesc = 'onBoardDesc';

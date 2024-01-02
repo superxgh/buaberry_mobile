@@ -1,6 +1,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
+import 'arrival_time_distance.dart';
+
 class DescriptionLayout extends StatelessWidget {
   final Product? product;
 
@@ -12,14 +14,22 @@ class DescriptionLayout extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         FittedBox(
-          child: Text(trans(product!.name!),
-              style:
-                  AppCss.latoSemiBold14.textColor(appCtrl.appTheme.foodTitleColor)),
+          child: TextLabel(
+            text: product!.name!,
+            fontFamily: FontFamily.LATO,
+            fontWeight: FontWeight.bold,
+            fontSize: FontSizes.f14,
+            color: appController.appTheme.foodTitleColor,
+          )
         ),
         const VSpace(Sizes.s8),
-        Text(trans(product!.foodType!),
-            style: AppCss.latoRegular14
-                .textColor(appCtrl.appTheme.foodContentColor)),
+        TextLabel(
+          text: product!.foodType!,
+          fontFamily: FontFamily.LATO,
+          fontWeight: FontWeight.w400,
+          fontSize: FontSizes.f14,
+          color: appController.appTheme.foodContentColor,
+        ),
         const VSpace(Sizes.s10),
         ArrivalTimeDistance(
             arrivalTime: trans(product!.arriveTime!),
@@ -29,11 +39,15 @@ class DescriptionLayout extends StatelessWidget {
           Row(
             children: [
               Image.asset(foGifAssets.offer,
-                  color: appCtrl.appTheme.foodPrimaryColor, height: Sizes.s20),
+                  color: appController.appTheme.foodPrimaryColor, height: Sizes.s20),
               const HSpace(Sizes.s5),
-              Text(trans(product!.offer!),
-                  style: AppCss.latoMedium12
-                      .textColor(appCtrl.appTheme.foodPrimaryColor))
+              TextLabel(
+                text: product!.offer!,
+                fontFamily: FontFamily.LATO,
+                fontWeight: FontWeight.w400,
+                fontSize: FontSizes.f12,
+                color: appController.appTheme.foodPrimaryColor,
+              )
             ],
           )
       ],

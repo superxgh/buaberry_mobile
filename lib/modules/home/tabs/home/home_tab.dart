@@ -5,6 +5,7 @@ import 'package:buaberry_mobile/config.dart';
 import 'food_home_widget.dart';
 import 'food_instruction.dart';
 import 'home_banner_layout.dart';
+import 'near_by.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({super.key});
@@ -35,8 +36,6 @@ class HomeTab extends StatelessWidget {
             FoodHomeWidget().titleAndSeeAll(
                 trans(FoodOrderingThemeFont.featuredRestaurant)),
             const VSpace(Sizes.s15),
-
-
           ],
       ),
     );

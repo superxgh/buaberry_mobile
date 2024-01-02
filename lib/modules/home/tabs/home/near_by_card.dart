@@ -16,29 +16,32 @@ class NearByCard extends StatelessWidget {
       decoration: BoxDecoration(
           color: appController.appTheme.whiteColor,
           borderRadius: BorderRadius.circular(AppRadius.r10)),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Row(
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(AppRadius.r10),
-                child: Image.asset(
-                    product!.image!,
-                    fit: BoxFit.cover,
-                    height: Sizes.s80,
-                    width: Sizes.s80),
-              ),
-              const HSpace(Sizes.s10),
-              DescriptionLayout(product: product)
-            ],
-          ),
-          RatingLayout(
-              rating: product!.rating.toString(),
-              color: appCtrl.appTheme.foodPrimaryLightColor)
-        ],
+      child: InkWell(
+        onTap:  ()=> Get.toNamed(Routes.foRestaurant,arguments: product),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(AppRadius.r10),
+                  child: Image.asset(
+                      product!.image!,
+                      fit: BoxFit.cover,
+                      height: Sizes.s80,
+                      width: Sizes.s80),
+                ),
+                const HSpace(Sizes.s10),
+                DescriptionLayout(product: product)
+              ],
+            ),
+            RatingLayout(
+                rating: product!.rating.toString(),
+                color: appController.appTheme.foodPrimaryLightColor)
+          ],
+        ),
       ),
-    ).inkWell(onTap: ()=> Get.toNamed(routeName.foRestaurant,arguments: product));
+    );
   }
 }

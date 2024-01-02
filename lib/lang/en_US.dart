@@ -19,5 +19,7 @@ Map<String, String> en_US = {
   FoodOrderingThemeFont.havingNumber : 'Having problem?',
   FoodOrderingThemeFont.resendAgain : 'Resend Again',
   commonFonts.continueTitle : 'Continue',
-  FoodOrderingThemeFont.searchForDessert : 'Search for dessert.'
+  FoodOrderingThemeFont.searchForDessert : 'Search for dessert.',
+  FoodOrderingThemeFont.featuredRestaurant : 'Featured restaurant',
+  FoodOrderingThemeFont.nearByRestaurant : 'Near by restaurant'
 };
