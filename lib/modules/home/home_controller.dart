@@ -23,6 +23,7 @@ class HomeController extends GetxController {
   var nearByList = <Product>[].obs;
   var featuredRestaurantList = <Product>[].obs;
   var mustTryList = <Product>[].obs;
+  List recentList =[];
 
   @override
   void onInit() {
@@ -38,6 +39,9 @@ class HomeController extends GetxController {
   void onReady() async {
     getData();
     logger.d("mustTryList length : ${mustTryList.length}");
+
+    recentList = foAppArray.recentList;
+
     super.onReady();
 
   }
