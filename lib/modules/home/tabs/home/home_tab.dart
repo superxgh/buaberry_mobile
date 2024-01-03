@@ -1,9 +1,8 @@
 import 'package:buaberry_mobile/config.dart';
-
-import 'food_home_widget.dart';
-import 'food_instruction.dart';
-import 'home_banner_layout.dart';
-import 'near_by.dart';
+import 'widgets/food_instruction.dart';
+import 'widgets/food_home_widget.dart';
+import 'widgets/home_banner_layout.dart';
+import 'widgets/near_by.dart';
 
 class HomeTab extends GetView<HomeController> {
   const HomeTab({super.key});

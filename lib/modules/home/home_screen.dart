@@ -1,6 +1,6 @@
 import 'package:buaberry_mobile/config.dart';
 
-import 'home_app_bar.dart';
+import 'widgets/home_app_bar.dart';
 
 class HomeScreen extends GetView<HomeController> {
   @override
@@ -8,52 +8,7 @@ class HomeScreen extends GetView<HomeController> {
     return Obx(
       () => Scaffold(
         backgroundColor: appController.appTheme.foodPrimaryLightColor,
-        appBar:  AppBar(
-          automaticallyImplyLeading: false,
-          elevation: 0,
-          backgroundColor: appController.appTheme.foodPrimaryLightColor,
-          title: Row(
-            children: [
-              Image.asset(
-                foIconAssets.sendColor,
-                height: Sizes.s20,
-                fit: BoxFit.cover,
-              ),
-              const HSpace(Sizes.s10),
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Row(
-                  children: [
-                    Text(trans('home'),
-                        style: TextStyle(
-                          color: appController.appTheme.foodTitleColor,
-                          fontFamily: GoogleFonts.lato().fontFamily,
-                          fontWeight: FontWeight.w400,
-                          fontSize: FontSizes.f16,
-                          letterSpacing: 0,
-                          height: 1,
-                        )),
-                    const Icon(Icons.keyboard_arrow_down_rounded, size: Sizes.s20)
-                  ],
-                ),
-                Text(trans(FoodOrderingThemeFont.lakeForestAddress),
-                    style: TextStyle(
-                      color: appController.appTheme.foodContentColor,
-                      fontFamily: GoogleFonts.lato().fontFamily,
-                      fontWeight: FontWeight.w400,
-                      fontSize: FontSizes.f14,
-                      letterSpacing: 0,
-                      height: 1,
-                    ))
-              ])
-            ],
-          ),
-          actions: [
-            SvgPicture.asset(
-              commonSvgAssets.bell,
-              height: Sizes.s20,
-            ).marginSymmetric(horizontal: Insets.i15)
-          ],
-        ),
+        appBar:  AppBar(),
         body: _buildContent(controller.currentTab.value),
         bottomNavigationBar: Obx(
           () => BottomNavigationBar(

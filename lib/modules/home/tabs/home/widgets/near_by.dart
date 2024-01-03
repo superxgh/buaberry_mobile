@@ -1,7 +1,6 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-
 import 'food_home_widget.dart';
 import 'near_by_card.dart';
 
