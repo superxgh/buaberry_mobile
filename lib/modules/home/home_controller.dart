@@ -26,8 +26,7 @@ class HomeController extends GetxController {
   List recentList =[];
 
 
-  int selectedIndex = 0;
-  bool isShimmer = true;
+  bool isShimmer = false;
 
 
   @override

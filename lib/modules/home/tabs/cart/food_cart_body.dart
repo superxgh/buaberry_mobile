@@ -1,19 +1,18 @@
 
 import 'package:buaberry_mobile/config.dart';
 
+import 'food_address_layout.dart';
 import 'food_bill_detail_layout.dart';
 import 'food_cart_list.dart';
 import 'food_coupon_layout.dart';
 import 'food_delivery_instruction_layout.dart';
 
-class FoodCartBody extends StatelessWidget {
+class FoodCartBody extends GetView<FoodCartController> {
   const FoodCartBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<FoodCartController>(
-      builder: (foodCartCtrl) {
-        return SingleChildScrollView(
+    return SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: Insets.i15,bottom: Insets.i100),
             child: Column(
@@ -21,9 +20,9 @@ class FoodCartBody extends StatelessWidget {
               children: [
                 //cart list
                 FoodCartList(
-                    cartList: foodCartCtrl.cartList.isNotEmpty
-                        ? foodCartCtrl.cartList
-                        : foodCartCtrl.cartData),
+                    cartList: controller.cartList.isNotEmpty
+                        ? controller.cartList
+                        : controller.cartData),
                 const VSpace(Sizes.s20),
 
                 //coupon layout
@@ -42,7 +41,5 @@ class FoodCartBody extends StatelessWidget {
             ),
           )
         );
-      }
-    );
   }
 }

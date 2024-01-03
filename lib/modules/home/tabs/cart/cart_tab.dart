@@ -2,6 +2,7 @@
 
 import 'package:buaberry_mobile/config.dart';
 
+import 'food_cart_body.dart';
 import 'food_cart_shimmer.dart';
 
 class CartTab extends GetView<HomeController> {
@@ -10,9 +11,10 @@ class CartTab extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    return controller.selectedIndex == 2
+    // return FoodCartBody();
+    return controller.getCurrentIndex(controller.currentTab.value) == 2
         ? controller.isShimmer
-        ? const FoodCartShimmer()
+          ? const FoodCartShimmer()
         : const FoodCartBody()
         : const FoodCartBody();
   }
