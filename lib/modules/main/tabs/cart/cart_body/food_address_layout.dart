@@ -1,6 +1,6 @@
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/main/tabs/cart/bill/total_bill_pay.dart';
+import 'package:buaberry_mobile/modules/main/tabs/cart/cart_body/total_bill_pay.dart';
 
 import 'address_layout.dart';
 

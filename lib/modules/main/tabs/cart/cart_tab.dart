@@ -2,8 +2,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-import 'cart/cart_body.dart';
-import 'cart/cart_shimmer.dart';
+import 'cart_body/cart_body.dart';
+import 'cart_shimmer/cart_shimmer.dart';
 
 class CartTab extends GetView<MainController> {
   const CartTab({super.key});
