@@ -33,8 +33,7 @@ class OTPScreen extends GetView<OTPController> {
                 ),
               ),
               OTPWidget().nextButton(
-                  onTap: () => Get.toNamed(Routes.foLocation),
-                  title: trans(commonFonts.continueTitle))
+                  onTap: () => Get.toNamed(Routes.foLocation))
             ],
           ),
         );

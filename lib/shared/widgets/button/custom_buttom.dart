@@ -1,8 +1,8 @@
 
 
-import '../../config.dart';
+import 'package:buaberry_mobile/config.dart';
 
-class FoodCustomButton extends StatelessWidget {
+class CustomButton extends StatelessWidget {
   final String title;
   final double padding;
   final double margin;
@@ -19,7 +19,7 @@ class FoodCustomButton extends StatelessWidget {
   final FontWeight? fontWeight;
   final List<BoxShadow>? boxShadow;
 
-  const FoodCustomButton(
+  const CustomButton(
       {Key? key,
       required this.title,
       this.padding = 15,

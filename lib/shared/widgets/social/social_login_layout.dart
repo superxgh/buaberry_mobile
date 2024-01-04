@@ -1,10 +1,5 @@
 
-import 'package:buaberry_mobile/shared/assets/assets.dart';
-import 'package:buaberry_mobile/shared/extensions/spacing.dart';
-import 'package:buaberry_mobile/theme/scale.dart';
-import 'package:flutter/cupertino.dart';
-
-import 'social_button_layout.dart';
+import 'package:buaberry_mobile/config.dart';
 
 class SocialLoginLayout extends StatelessWidget {
 

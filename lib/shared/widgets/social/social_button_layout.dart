@@ -1,5 +1,4 @@
-
-import '../../../config.dart';
+import 'package:buaberry_mobile/config.dart';
 
 class SocialButtonLayout extends StatelessWidget {
   final String? image;

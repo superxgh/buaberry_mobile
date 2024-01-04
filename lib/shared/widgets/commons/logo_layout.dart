@@ -1,4 +1,4 @@
-import '../../../config.dart';
+import 'package:buaberry_mobile/config.dart';
 
 class LogoLayout extends StatelessWidget {
   final String? logo, title;

@@ -58,19 +58,8 @@ class OTPWidget {
         ),
       );
 
-  Widget commonTextWithTitleColor(String text) => Align(
-      alignment: Alignment.center,
-      child: Text(text,
-          style: TextStyle(
-            fontFamily: GoogleFonts.lato().fontFamily,
-            fontWeight: FontWeight.bold,
-            fontSize: FontSizes.f18,
-            letterSpacing: 0,
-            height: 1,
-          )));
-
-  Widget nextButton({GestureTapCallback? onTap, title}) => FoodCustomButton(
-        title: title,
+  Widget nextButton({GestureTapCallback? onTap}) => CustomButton(
+        title: trans(commonFonts.continueTitle),
         radius: AppRadius.r10,
         color: appController.appTheme.foodPrimaryColor,
         fontColor: appController.appTheme.whiteColor,

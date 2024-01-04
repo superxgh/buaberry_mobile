@@ -59,7 +59,7 @@ class OnBoardWidget {
       ));
 
   //button
-  Widget button({GestureTapCallback? onTap}) => FoodCustomButton(
+  Widget button({GestureTapCallback? onTap}) => CustomButton(
         title: commonFonts.getStarted,
         radius: AppRadius.r8,
         color: appController.appTheme.foodPrimaryColor,

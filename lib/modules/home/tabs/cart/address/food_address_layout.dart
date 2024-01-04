@@ -61,7 +61,7 @@ class FoodAddressLayout extends StatelessWidget {
             const TotalBillPay()
                 .marginOnly(bottom: Insets.i12)
                 .paddingSymmetric(horizontal: Insets.i20),
-            FoodCustomButton(
+            CustomButton(
               title: trans(FoodOrderingThemeFont.proceedToPay),
               color: appController.appTheme.foodPrimaryColor,
               width: MediaQuery.of(context).size.width,
