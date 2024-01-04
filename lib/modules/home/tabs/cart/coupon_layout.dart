@@ -1,8 +1,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-class FoodCouponLayout extends StatelessWidget {
-  const FoodCouponLayout({Key? key}) : super(key: key);
+class CouponLayout extends StatelessWidget {
+  const CouponLayout({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

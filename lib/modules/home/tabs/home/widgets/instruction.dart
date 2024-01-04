@@ -1,8 +1,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-class FoodInstructionLayout extends StatelessWidget {
-  const FoodInstructionLayout({Key? key}) : super(key: key);
+class InstructionLayout extends StatelessWidget {
+  const InstructionLayout({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

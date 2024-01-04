@@ -2,12 +2,12 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-import 'food_home_indicator.dart';
-import 'home_banner_data.dart';
+import '../dot_indicator.dart';
+import 'banner_data.dart';
 
 
-class HomeBannerLayout extends StatelessWidget {
-  const HomeBannerLayout({Key? key}) : super(key: key);
+class BannerLayout extends StatelessWidget {
+  const BannerLayout({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,14 +27,14 @@ class HomeBannerLayout extends StatelessWidget {
             itemCount: homeController.foodBannerList.length,
             itemBuilder:
                 (BuildContext context, int index, int pageViewIndex) {
-              return homeController.foodBannerList.isNotEmpty ? HomeBannerData(
+              return homeController.foodBannerList.isNotEmpty ? BannerData(
                 data: homeController.foodBannerList[index],
                 isOdd: index.isOdd,
               ): Container();
             },
           ),
           const Space(0, 10),
-          const HomeDotIndicator()
+          const DotIndicator()
         ],
       ).marginOnly(left: Insets.i8);
     });

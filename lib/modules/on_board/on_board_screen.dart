@@ -1,5 +1,5 @@
 import 'package:buaberry_mobile/config.dart';
-import 'on_board_widget.dart';
+import 'widgets/on_board_widget.dart';
 
 class OnBoardScreen extends StatelessWidget {
   const OnBoardScreen({Key? key}) : super(key: key);

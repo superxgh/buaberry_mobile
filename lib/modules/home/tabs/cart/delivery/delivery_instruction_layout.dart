@@ -3,12 +3,12 @@ import 'package:buaberry_mobile/config.dart';
 
 import 'delivery_instruction_card.dart';
 
-class FoodDeliveryInstructionLayout extends StatelessWidget {
-  const FoodDeliveryInstructionLayout({Key? key}) : super(key: key);
+class DeliveryInstructionLayout extends StatelessWidget {
+  const DeliveryInstructionLayout({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<FoodCartController>(builder: (foodCartController) {
+    return GetBuilder<CartController>(builder: (foodCartController) {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

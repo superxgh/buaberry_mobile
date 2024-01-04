@@ -1,6 +1,6 @@
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/home/tabs/cart/total_bill_pay.dart';
+import 'package:buaberry_mobile/modules/home/tabs/cart/bill/total_bill_pay.dart';
 
 import 'address_layout.dart';
 
@@ -9,7 +9,7 @@ class FoodAddressLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<FoodCartController>(builder: (foodCtrl) {
+    return GetBuilder<CartController>(builder: (foodCtrl) {
       return Container(
         padding: const EdgeInsets.symmetric(
           vertical: Insets.i15,

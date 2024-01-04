@@ -1,7 +1,7 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'food_home_widget.dart';
+import '../home_widget.dart';
 import 'near_by_card.dart';
 
 class NearByLayout extends StatelessWidget {
@@ -12,7 +12,7 @@ class NearByLayout extends StatelessWidget {
     return GetBuilder<HomeController>(builder: (homeCtrl) {
       return Column(
         children: [
-          FoodHomeWidget().titleAndSeeAll(trans(FoodOrderingThemeFont.nearByRestaurant)),
+          HomeWidget().titleAndSeeAll(trans(FoodOrderingThemeFont.nearByRestaurant)),
           const VSpace(Sizes.s12),
           ...homeCtrl.nearByList.map((e) {
             return NearByCard(

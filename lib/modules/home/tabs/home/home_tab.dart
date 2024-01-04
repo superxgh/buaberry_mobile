@@ -1,8 +1,8 @@
 import 'package:buaberry_mobile/config.dart';
-import 'widgets/food_instruction.dart';
-import 'widgets/food_home_widget.dart';
-import 'widgets/home_banner_layout.dart';
-import 'widgets/near_by.dart';
+import 'widgets/instruction.dart';
+import 'widgets/home_widget.dart';
+import 'widgets/banner/banner_layout.dart';
+import 'widgets/near_by/near_by_layout.dart';
 
 class HomeTab extends GetView<HomeController> {
   const HomeTab({super.key});
@@ -17,19 +17,19 @@ class HomeTab extends GetView<HomeController> {
           FoodTextBox(hinText: FoodOrderingThemeFont.searchForDessert)
               .marginSymmetric(horizontal: Insets.i15, vertical: Insets.i15),
           //banner layout
-          const HomeBannerLayout(),
+          const BannerLayout(),
           const VSpace(Sizes.s10),
           //cuisine list
           const CuisineList(),
           const VSpace(Sizes.s20),
           //food instruction
-          const FoodInstructionLayout(),
+          const InstructionLayout(),
           const VSpace(Sizes.s20),
 
           //near by layout
           const NearByLayout(),
           const VSpace(Sizes.s20),
-          FoodHomeWidget()
+          HomeWidget()
               .titleAndSeeAll(trans(FoodOrderingThemeFont.featuredRestaurant)),
           const VSpace(Sizes.s15),
 
@@ -41,7 +41,7 @@ class HomeTab extends GetView<HomeController> {
                     .marginSymmetric(horizontal: Insets.i15);
           }),
           const VSpace(Sizes.s24),
-          FoodHomeWidget().titleAndSeeAll(trans(FoodOrderingThemeFont.mustTry)),
+          HomeWidget().titleAndSeeAll(trans(FoodOrderingThemeFont.mustTry)),
           const VSpace(Sizes.s15),
 
           //must try

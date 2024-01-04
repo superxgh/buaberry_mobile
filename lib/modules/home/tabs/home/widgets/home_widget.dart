@@ -1,6 +1,6 @@
 import 'package:buaberry_mobile/config.dart';
 
-class FoodHomeWidget {
+class HomeWidget {
   // odd banner data
   Widget oddData(data) => Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

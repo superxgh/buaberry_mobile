@@ -12,7 +12,7 @@ class CartAddRemove extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<FoodCartController>(
+    return GetBuilder<CartController>(
       builder: (cartCtrl) => !cartCtrl.isInCart(product!)
           ? InkWell(onTap: onTap , child: AddButton())
           : IncDecButton(

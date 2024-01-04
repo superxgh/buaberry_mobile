@@ -1,12 +1,12 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/home/tabs/cart/vertical_food_shimmer.dart';
+import 'package:buaberry_mobile/modules/home/tabs/cart/shimmer/vertical_food_shimmer.dart';
 
-import 'food_shimmer.dart';
+import '../shimmer/food_shimmer.dart';
 
-class FoodCartShimmer extends StatelessWidget {
-  const FoodCartShimmer({Key? key}) : super(key: key);
+class CartShimmer extends StatelessWidget {
+  const CartShimmer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,13 +1,13 @@
 import '/../../config.dart';
-import 'dotted_button.dart';
+import '../dotted_button.dart';
 
-class FoodCartList extends StatelessWidget {
+class CartList extends StatelessWidget {
   final List<Product>? cartList;
-  const FoodCartList({Key? key,this.cartList}) : super(key: key);
+  const CartList({Key? key,this.cartList}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<FoodCartController>(builder: (foodCartController) {
+    return GetBuilder<CartController>(builder: (foodCartController) {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

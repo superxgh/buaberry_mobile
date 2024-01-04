@@ -2,9 +2,9 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-class HomeDotIndicator extends StatelessWidget {
+class DotIndicator extends StatelessWidget {
 
-  const HomeDotIndicator({Key? key}) : super(key: key);
+  const DotIndicator({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

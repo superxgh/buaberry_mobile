@@ -1,4 +1,4 @@
-import '../../../../../../../config.dart';
+import '../../../../../../../../config.dart';
 
 class TotalBillPay extends StatelessWidget {
   const TotalBillPay({Key? key}) : super(key: key);
