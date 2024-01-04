@@ -1,5 +1,5 @@
 import '/../../config.dart';
-import 'widgets/food_otp_widget.dart';
+import 'widgets/otp_widget.dart';
 import 'otp_controller.dart';
 import 'widgets/otp_number_layout.dart';
 
@@ -22,20 +22,20 @@ class OTPScreen extends GetView<OTPController> {
                 child: Column(
                   children: [
                     //enter phone number text
-                    CommonFoodWidget().commonTextWithTitleColor( trans(FoodOrderingThemeFont.verifyPhoneNumber)),
+                    OTPWidget().commonTextWithTitleColor( trans(FoodOrderingThemeFont.verifyPhoneNumber)),
                     const VSpace(Sizes.s15),
                     //enter confirmation code text
-                    CommonFoodWidget()
+                    OTPWidget()
                         .confirmationCode(trans(FoodOrderingThemeFont.sendCode)),
                     const VSpace(Sizes.s80),
                     const OtpNumberLayout()
                         .paddingSymmetric(horizontal: Insets.i15),
                     const VSpace(Sizes.s35),
-                    FoodOtpWidget().resendAgain()
+                    OTPWidget().resendAgain()
                   ],
                 ),
               ),
-              CommonFoodWidget().nextButton(
+              OTPWidget().nextButton(
                   onTap: () => Get.toNamed(Routes.foLocation),
                   title: trans(commonFonts.continueTitle))
             ],

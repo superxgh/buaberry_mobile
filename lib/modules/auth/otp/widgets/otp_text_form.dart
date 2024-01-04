@@ -1,6 +1,6 @@
 
 import '../../../../../config.dart';
-import 'food_otp_widget.dart';
+import 'otp_widget.dart';
 
 class OtpTextForm extends StatelessWidget {
   final TextEditingController? controller;
@@ -34,10 +34,10 @@ class OtpTextForm extends StatelessWidget {
           decoration: InputDecoration(
               fillColor: appCtrl.appTheme.whiteColor,
               filled: true,
-              border: FoodOtpWidget().decoration(),
-              focusedBorder: FoodOtpWidget().decoration(),
-              disabledBorder: FoodOtpWidget().decoration(),
-              enabledBorder: FoodOtpWidget().decoration(),
+              border: OTPWidget().decoration(),
+              focusedBorder: OTPWidget().decoration(),
+              disabledBorder: OTPWidget().decoration(),
+              enabledBorder: OTPWidget().decoration(),
               counterText: '',
               hintStyle: TextStyle(
                   color: appCtrl.appTheme.blackColor, fontSize: 20.0)),

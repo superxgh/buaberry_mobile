@@ -23,7 +23,7 @@ class AppPages {
       binding: LoginBinding(),
     ),
     GetPage(
-      name: Routes.FOOD_OTP,
+      name: Routes.OTP,
       page: () => OTPScreen(),
       binding: OTPBinding(),
     ),
