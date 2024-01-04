@@ -5,7 +5,7 @@ import 'package:buaberry_mobile/config.dart';
 import 'cart/cart_body.dart';
 import 'cart/cart_shimmer.dart';
 
-class CartTab extends GetView<HomeController> {
+class CartTab extends GetView<MainController> {
   const CartTab({super.key});
 
   @override

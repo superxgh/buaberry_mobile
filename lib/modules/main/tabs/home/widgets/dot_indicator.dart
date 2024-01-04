@@ -8,7 +8,7 @@ class DotIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomeController>(builder: (homeController) {
+    return GetBuilder<MainController>(builder: (homeController) {
       return Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: homeController.foodBannerList.asMap().entries.map((entry) {

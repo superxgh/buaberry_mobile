@@ -1,7 +1,7 @@
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/widgets/home_app_bar.dart';
 
-class HomeScreen extends GetView<HomeController> {
+class MainScreen extends GetView<MainController> {
   @override
   Widget build(BuildContext context) {
     return Obx(

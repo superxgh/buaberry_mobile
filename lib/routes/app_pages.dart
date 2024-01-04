@@ -29,8 +29,8 @@ class AppPages {
     ),
     GetPage(
       name: Routes.HOME,
-      page: () => HomeScreen(),
-      binding: HomeBinding(),
+      page: () => MainScreen(),
+      binding: MainBinding(),
     ),
     // GetPage(
     //   name: Routes.AUTH,

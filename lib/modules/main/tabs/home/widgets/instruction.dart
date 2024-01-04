@@ -6,7 +6,7 @@ class InstructionLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomeController>(builder: (homeCtrl) {
+    return GetBuilder<MainController>(builder: (homeCtrl) {
       return SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(

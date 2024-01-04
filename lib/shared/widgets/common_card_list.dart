@@ -94,7 +94,7 @@ class CommonCardList extends StatelessWidget {
               ])
             ],
           ),
-          GetBuilder<HomeController>(
+          GetBuilder<MainController>(
               builder: (controller) =>
                   CartAddRemove(product: product, onTap: onTap))
         ],
