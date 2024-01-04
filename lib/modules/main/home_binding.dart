@@ -1,5 +1,5 @@
-import 'package:buaberry_mobile/modules/home/tabs/cart/cart/cart_controller.dart';
-import 'package:buaberry_mobile/modules/home/tabs/offers/offer_controller.dart';
+import 'package:buaberry_mobile/modules/main/tabs/cart/cart/cart_controller.dart';
+import 'package:buaberry_mobile/modules/main/tabs/offers/offer_controller.dart';
 import 'package:get/get.dart';
 import 'home_controller.dart';
 

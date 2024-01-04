@@ -1,5 +1,5 @@
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/home/tabs/offers/widgets/food_offer_list.dart';
+import 'package:buaberry_mobile/modules/main/tabs/offers/widgets/food_offer_list.dart';
 import 'package:buaberry_mobile/shared/widgets/food_extension.dart';
 
 class OffersTab extends GetView<OfferController> {

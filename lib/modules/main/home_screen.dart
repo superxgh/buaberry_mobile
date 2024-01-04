@@ -1,6 +1,5 @@
 import 'package:buaberry_mobile/config.dart';
-
-import 'widgets/home_app_bar.dart';
+import 'package:buaberry_mobile/modules/main/widgets/home_app_bar.dart';
 
 class HomeScreen extends GetView<HomeController> {
   @override
@@ -8,7 +7,7 @@ class HomeScreen extends GetView<HomeController> {
     return Obx(
       () => Scaffold(
         backgroundColor: appController.appTheme.foodPrimaryLightColor,
-        appBar:  AppBar(),
+        appBar:  HomeAppbar(),
         body: _buildContent(controller.currentTab.value),
         bottomNavigationBar: Obx(
           () => BottomNavigationBar(

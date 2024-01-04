@@ -1,6 +1,6 @@
 import 'package:buaberry_mobile/config.dart';
 
-class HomeAppbar extends StatelessWidget {
+class HomeAppbar extends StatelessWidget implements PreferredSizeWidget{
   const HomeAppbar({Key? key}) : super(key: key);
 
   @override
@@ -52,4 +52,8 @@ class HomeAppbar extends StatelessWidget {
       ],
     );
   }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+
 }

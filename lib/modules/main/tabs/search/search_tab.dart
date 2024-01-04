@@ -1,7 +1,7 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/home/tabs/search/recent_search_card.dart';
+import 'package:buaberry_mobile/modules/main/tabs/search/recent_search_card.dart';
 
 class SearchTab extends GetView<HomeController> {
   const SearchTab({super.key});

@@ -1,7 +1,7 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/home/tabs/cart/shimmer/vertical_food_shimmer.dart';
+import 'package:buaberry_mobile/modules/main/tabs/cart/shimmer/vertical_food_shimmer.dart';
 
 import '../shimmer/food_shimmer.dart';
 
