@@ -1,4 +1,5 @@
 import 'package:buaberry_mobile/modules/home/tabs/cart/cart/cart_controller.dart';
+import 'package:buaberry_mobile/modules/home/tabs/offers/offer_controller.dart';
 import 'package:get/get.dart';
 import 'home_controller.dart';
 
@@ -7,5 +8,6 @@ class HomeBinding extends Bindings {
   void dependencies() {
     Get.put<HomeController>(HomeController());
     Get.put<CartController>(CartController());
+    Get.put<OfferController>(OfferController());
   }
 }

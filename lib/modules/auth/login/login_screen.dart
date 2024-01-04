@@ -23,29 +23,24 @@ class LoginScreen extends GetView<LoginController> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               //enter phone number text
-                              FoodLoginWidget().commonTextWithTitleColor(
-                                  trans(FoodOrderingThemeFont.enterYourPhoneNumber)),
+                              FoodLoginWidget().enterYourPhoneNumber(),
                               const VSpace(Sizes.s15),
 
                               //enter confirmation code text
-                              FoodLoginWidget().confirmationCode(
-                                  trans(FoodOrderingThemeFont.confirmationCode)),
+                              FoodLoginWidget().confirmationCode(),
                               const VSpace(Sizes.s80),
 
                               //enter phone number text
-                              FoodLoginWidget().PhoneNumberLabel(
-                                  trans(commonFonts.phoneNumber)),
+                              FoodLoginWidget().phoneNumberLabel(),
                               const VSpace(Sizes.s20),
 
                               //enter phone number text box
-                              FoodTextBox(
-                                      hinText: trans(FoodOrderingThemeFont.enterPhoneNumber))
-                                  .marginSymmetric(horizontal: Insets.i15),
+                              FoodLoginWidget().phoneNumberTextBox(),
+
                               const VSpace(Sizes.s50),
 
                               //social login with text
-                              FoodLoginWidget().commonTextWithTitleColor(
-                                  trans(FoodOrderingThemeFont.loginWith)),
+                              FoodLoginWidget().loginWith(),
                               const VSpace(Sizes.s20),
 
                               //social login
@@ -53,9 +48,7 @@ class LoginScreen extends GetView<LoginController> {
                             ]),
                       ),
                     ),
-
-                    //next button
-                    FoodLoginWidget().nextButton(
+                    CommonFoodWidget().nextButton(
                         onTap: () => Get.toNamed(Routes.FOOD_OTP),
                         title: trans(FoodOrderingThemeFont.next))
                   ]),

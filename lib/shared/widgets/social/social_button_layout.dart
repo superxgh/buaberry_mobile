@@ -1,5 +1,5 @@
 
-import '../../config.dart';
+import '../../../config.dart';
 
 class SocialButtonLayout extends StatelessWidget {
   final String? image;

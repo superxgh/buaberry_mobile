@@ -1,7 +1,7 @@
 
 
 
-import '../../../../../config.dart';
+import '../../../../../../config.dart';
 
 class FoodOtpWidget {
   //common decoration

@@ -1,5 +1,6 @@
+
 import 'package:buaberry_mobile/config.dart';
-import 'widgets/on_board_widget.dart';
+import 'package:buaberry_mobile/modules/on_board/widgets/on_board_widget.dart';
 
 class OnBoardScreen extends StatelessWidget {
   const OnBoardScreen({Key? key}) : super(key: key);
@@ -14,19 +15,19 @@ class OnBoardScreen extends StatelessWidget {
             children: [
               Stack(children: <Widget>[
                 OnBoardWidget().bgImage(foImageAssets.bg),
-                OnBoardWidget().onBoardUpperTitle(appController)
+                OnBoardWidget().onBoardUpperTitle()
               ]),
               const VSpace(Sizes.s24),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  OnBoardWidget().onBoardTitle(appController, FoodOrderingThemeFont.onBoardTitle.tr),
+                  OnBoardWidget().onBoardTitle(),
                   const VSpace(Sizes.s20),
-                  OnBoardWidget().onBoardDesc(appController, FoodOrderingThemeFont.onBoardDesc.tr),
+                  OnBoardWidget().onBoardDesc(),
                   const VSpace(Sizes.s30),
-                  OnBoardWidget().button(appController, onTap: () => Get.toNamed(Routes.LOGIN)),
+                  OnBoardWidget().button(onTap: () => Get.toNamed(Routes.LOGIN)),
                   const VSpace(Sizes.s20),
-                  OnBoardWidget().skipText(appController, onTap: () => Get.toNamed(Routes.LOGIN)),
+                  OnBoardWidget().skipText(onTap: () => Get.toNamed(Routes.LOGIN)),
                   const VSpace(Sizes.s20),
                 ],
               )

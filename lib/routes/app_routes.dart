@@ -8,7 +8,7 @@ abstract class Routes {
   static const String ORDER = '/order';
 
 
-  static const String FOOD_ON_BOARD = '/food_on_board';
+  static const String ON_BOARD = '/food_on_board';
   static const String FOOD_OTP = '/food_otp';
 
   static const String dashboard = '/dashboard';

@@ -31,6 +31,9 @@ class TextLabel extends StatelessWidget {
       case FontFamily.OLESCRIPTSWASHCAPS:
         activeFontFamily = GoogleFonts.oleoScriptSwashCaps().fontFamily;
         break;
+      case FontFamily.MONTSERRAT:
+        activeFontFamily = GoogleFonts.montserrat().fontFamily;
+        break;
       default:
     }
     return Align(

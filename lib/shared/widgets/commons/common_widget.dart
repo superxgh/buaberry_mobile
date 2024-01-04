@@ -1,8 +1,10 @@
-import '../../../config.dart';
+
+
+import 'package:buaberry_mobile/config.dart';
 
 class CommonFoodWidget {
   // //common text style
-  Widget commonTextWithTitleColor(AppController appController, String text) =>
+  Widget commonTextWithTitleColor(String text) =>
       Align(
           alignment: Alignment.center,
           child: Text(text,
@@ -14,7 +16,7 @@ class CommonFoodWidget {
                 height: 1,
               )));
   //food confirmation code
-  Widget confirmationCode(text) => Align(
+  Widget confirmationCode(String text) => Align(
       alignment: Alignment.center,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: Insets.i15),
@@ -31,16 +33,16 @@ class CommonFoodWidget {
         ),
       ));
 
-  // //next button
-  // Widget nextButton({GestureTapCallback? onTap, title}) => FoodCustomButton(
-  //   title: title,
-  //   radius: AppRadius.r10,
-  //   color: appCtrl.appTheme.foodPrimaryColor,
-  //   padding: Insets.i10,
-  //   fontSize: FontSizes.f18,
-  //   onTap: onTap,
-  // ).marginOnly(bottom: Sizes.s20, top: 50);
-  //
+  //next button
+  Widget nextButton({GestureTapCallback? onTap,title}) => FoodCustomButton(
+    title: title,
+    radius: AppRadius.r10,
+    color: appController.appTheme.foodPrimaryColor,
+    fontColor: appController.appTheme.whiteColor,
+    padding: Insets.i10,
+    fontSize: FontSizes.f18,
+    onTap: onTap,
+  );
   // //defaultImage
   // Widget defaultImage(cardWidth, imageHeight) => Container(
   //     height: imageHeight,

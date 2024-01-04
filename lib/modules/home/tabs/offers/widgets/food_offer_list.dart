@@ -1,4 +1,8 @@
-import '/../../config.dart';
+
+
+import 'package:buaberry_mobile/config.dart';
+
+import 'coupon_code.dart';
 
 class FoodOfferList extends StatelessWidget {
   final OfferModel? offerModel;
@@ -14,28 +18,35 @@ class FoodOfferList extends StatelessWidget {
         Expanded(
           child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
             TextLabel(
-              text: data!.desc.toString(),
+              text: offerModel!.offer.toString(),
               alignment: Alignment.centerLeft,
-              fontFamily: FontFamily.LATO,
-              fontWeight: FontWeight.w400,
-              fontSize: FontSizes.f12,
-              color: appController.appTheme.foodContentColor,
+              fontFamily: FontFamily.MONTSERRAT,
+              fontWeight: FontWeight.bold,
+              fontSize: FontSizes.f50,
+              color: appController.appTheme.foodPrimaryColor,
             ),
-            Text(offerModel!.offer.toString(),
-                style: AppCss.montserratBold50
-                    .textColor(appCtrl.appTheme.foodPrimaryColor)),
             const HSpace(Sizes.s8),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('%',
-                    style: AppCss.latoMedium14
-                        .textColor(appCtrl.appTheme.foodTitleColor)),
+                TextLabel(
+                  text: '%',
+                  alignment: Alignment.centerLeft,
+                  fontFamily: FontFamily.LATO,
+                  fontWeight: FontWeight.w400,
+                  fontSize: FontSizes.f14,
+                  color: appController.appTheme.foodTitleColor,
+                ),
                 const VSpace(Sizes.s2),
-                Text(trans(foThemeFont.off),
-                    style: AppCss.latoMedium14
-                        .textColor(appCtrl.appTheme.foodTitleColor))
+                TextLabel(
+                  text: FoodOrderingThemeFont.off,
+                  alignment: Alignment.centerLeft,
+                  fontFamily: FontFamily.LATO,
+                  fontWeight: FontWeight.w400,
+                  fontSize: FontSizes.f14,
+                  color: appController.appTheme.foodTitleColor,
+                )
               ],
             ),
             const HSpace(Sizes.s10),
@@ -44,13 +55,23 @@ class FoodOfferList extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                  Text(trans(offerModel!.title!),
-                      style: AppCss.latoRegular14
-                          .textColor(appCtrl.appTheme.foodTitleColor)),
+                      TextLabel(
+                        text: offerModel!.title!,
+                        alignment: Alignment.centerLeft,
+                        fontFamily: FontFamily.LATO,
+                        fontWeight: FontWeight.w400,
+                        fontSize: FontSizes.f14,
+                        color: appController.appTheme.foodTitleColor,
+                      ),
                   const VSpace(Sizes.s2),
-                  Text(trans(offerModel!.desc!),
-                      style: AppCss.latoMedium14
-                          .textColor(appCtrl.appTheme.foodContentColor))
+                      TextLabel(
+                        text: offerModel!.desc!,
+                        alignment: Alignment.centerLeft,
+                        fontFamily: FontFamily.LATO,
+                        fontWeight: FontWeight.w400,
+                        fontSize: FontSizes.f14,
+                        color: appController.appTheme.foodContentColor,
+                      )
                 ]))
           ]),
         ),

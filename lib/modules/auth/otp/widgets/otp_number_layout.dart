@@ -1,4 +1,4 @@
-import '../../../../../config.dart';
+import '../../../../../../config.dart';
 import 'otp_text_form.dart';
 
 class OtpNumberLayout extends StatelessWidget {
