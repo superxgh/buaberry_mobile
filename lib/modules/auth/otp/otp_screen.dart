@@ -21,12 +21,9 @@ class OTPScreen extends GetView<OTPController> {
                 padding: EdgeInsets.only(top: (Get.height / Sizes.s15)),
                 child: Column(
                   children: [
-                    //enter phone number text
-                    OTPWidget().commonTextWithTitleColor( trans(FoodOrderingThemeFont.verifyPhoneNumber)),
+                    OTPWidget().verifyPhoneNumber(),
                     const VSpace(Sizes.s15),
-                    //enter confirmation code text
-                    OTPWidget()
-                        .confirmationCode(trans(FoodOrderingThemeFont.sendCode)),
+                    OTPWidget().confirmationCode(),
                     const VSpace(Sizes.s80),
                     const OtpNumberLayout()
                         .paddingSymmetric(horizontal: Insets.i15),
