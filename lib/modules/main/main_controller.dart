@@ -12,7 +12,7 @@ class MainController extends GetxController {
 
   var currentTab = MainTabs.Home.obs;
   late HomeTab homeTab;
-  late SearchTab searchTab;
+  late FoodSearchTab searchTab;
   late CartTab cartTab;
   late OffersTab offersTab;
   late ProfileTab profileTab;
@@ -33,7 +33,7 @@ class MainController extends GetxController {
   void onInit() {
     super.onInit();
     homeTab = HomeTab();
-    searchTab = SearchTab();
+    searchTab = FoodSearchTab();
     cartTab = CartTab();
     offersTab = OffersTab();
     profileTab = ProfileTab();

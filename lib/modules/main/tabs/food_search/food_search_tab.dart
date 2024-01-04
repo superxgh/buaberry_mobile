@@ -1,10 +1,10 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/main/tabs/search/recent_search_card.dart';
+import 'package:buaberry_mobile/modules/main/tabs/food_search/recent_search_card.dart';
 
-class SearchTab extends GetView<MainController> {
-  const SearchTab({super.key});
+class FoodSearchTab extends GetView<MainController> {
+  const FoodSearchTab({super.key});
 
   @override
   Widget build(BuildContext context) {
