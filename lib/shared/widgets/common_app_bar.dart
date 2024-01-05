@@ -47,7 +47,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
       ],
       title : TextLabel(
         text: name!,
-        alignment: Alignment.center,
+        alignment: Alignment.centerLeft,
         fontFamily: FontFamily.LATO,
         fontSize: FontSizes.f18,
         fontWeight: FontWeight.bold,

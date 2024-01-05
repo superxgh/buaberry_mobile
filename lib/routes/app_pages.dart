@@ -32,6 +32,11 @@ class AppPages {
       page: () => MainScreen(),
       binding: MainBinding(),
     ),
+    GetPage(
+      name: Routes.PROFILE_ORDER,
+      page: () => OrderHistoryScreen(),
+      binding: MainBinding(),
+    ),
     // GetPage(
     //   name: Routes.AUTH,
     //   page: () => AuthScreen(),

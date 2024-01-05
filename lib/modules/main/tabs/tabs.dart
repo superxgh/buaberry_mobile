@@ -11,4 +11,6 @@ export 'offers/offer_controller.dart';
 export 'profile/profile_controller.dart';
 export 'food_search/food_search_controller.dart';
 
+export 'profile/profile.dart';
+
 enum MainTabs { Home, Search, Cart, Offers, Profile }

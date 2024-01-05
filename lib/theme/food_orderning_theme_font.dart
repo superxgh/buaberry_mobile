@@ -9,7 +9,7 @@ class FoodOrderingThemeFont{
 
   static const String profile_menu_payments_head = 'profileMenuPaymentsHead';
   static const String profile_menu_wallets = 'profileMenuWallets';
-  static const String profile_menu_saved_card = 'profileMenuSavedCard';
+  static const String profile_menu_saved_book = 'profileMenuSavedCard';
 
   static const String profile_menu_language_head = 'profileMenuLanguageHead';
   static const String profile_menu_english = 'profileMenuEnglish';

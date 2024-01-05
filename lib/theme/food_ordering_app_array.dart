@@ -736,17 +736,17 @@ class FoodOrderingAppArray {
         {
           "title": FoodOrderingThemeFont.profile_menu_orders,
           "icon": foIconAssets.order,
-          "Routes": Routes.foOrderHistory
+          "routeName": Routes.PROFILE_ORDER
         },
         {
           "title": FoodOrderingThemeFont.profile_menu_favourite_orders,
           "icon": foIconAssets.placeholder,
-          "Routes": Routes.foFavourite
+          "routeName": Routes.PROFILE_FAVOURITE_ORDER
         },
         {
           "title": FoodOrderingThemeFont.profile_menu_address_book,
           "icon": foIconAssets.addressBook,
-          "Routes": Routes.foAddress
+          "routeName": Routes.PROFILE_ADDRESS_BOOK
         }
       ]
     },
@@ -756,25 +756,25 @@ class FoodOrderingAppArray {
         {
           "title": FoodOrderingThemeFont.profile_menu_wallets,
           "icon": foIconAssets.wallet,
-          "Routes": Routes.foPayment
+          "routeName": Routes.PROFILE_WALLETS
         },
         {
-          "title": FoodOrderingThemeFont.profile_menu_saved_card,
+          "title": FoodOrderingThemeFont.profile_menu_saved_book,
           "icon": foIconAssets.card,
-          "Routes": Routes.foPayment
+          "routeName": Routes.PROFILE_SAVED_BOOK
         }
       ]
     },
     {
       "title": FoodOrderingThemeFont.profile_menu_language_head,
       "profileList": [
-        {"title": "ENGLISH", "icon": foIconAssets.language, "Routes": ""}
+        {"title": "ENGLISH", "icon": foIconAssets.language, "routeName": Routes.PROFILE_ENGLISH}
       ]
     },
     {
       "title": "landing",
       "profileList": [
-        {"title": "HOME", "icon": commonImageAssets.logo, "Routes": Routes.dashboard}
+        {"title": "HOME", "icon": commonImageAssets.logo, "routeName": Routes.HOME}
       ]
     },
   ];

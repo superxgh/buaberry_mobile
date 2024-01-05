@@ -32,7 +32,7 @@ Map<String, String> en_US = {
 
   FoodOrderingThemeFont.profile_menu_payments_head : 'Payments',
   FoodOrderingThemeFont.profile_menu_wallets : 'Wallets',
-  FoodOrderingThemeFont.profile_menu_saved_card : 'Saved book',
+  FoodOrderingThemeFont.profile_menu_saved_book : 'Saved book',
 
   FoodOrderingThemeFont.profile_menu_language_head : 'Language',
   FoodOrderingThemeFont.profile_menu_english : 'English',

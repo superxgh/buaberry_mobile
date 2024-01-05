@@ -9,6 +9,14 @@ class ProfileController extends GetxController {
     for(int i=0;i<foAppArray.profileList.length;i++) {
       userProfileList.add(ProfileModel.fromJson(foAppArray.profileList[i]));
     }
+    logger.d("userProfileList length : ${userProfileList.length}");
+    userProfileList.forEach((e) {
+      logger.d("userProfile : ${e.title}");
+      e.profileList?.forEach((l) {
+        logger.d("title : ${l.title}");
+        logger.d("routeName : ${l.routeName}");
+      });
+    });
     update();
   }
 

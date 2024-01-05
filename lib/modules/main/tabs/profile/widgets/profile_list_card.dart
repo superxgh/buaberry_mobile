@@ -10,6 +10,7 @@ class ProfileListCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
+        logger.d("Route : ${profileList!.routeName!}");
         Get.toNamed(profileList!.routeName!);
         // if(trans(profileList!.title!) == FoodOrderingThemeFont.profile_menu_orders.tr){
         //   Get.offAllNamed(Routes.ORDER);
