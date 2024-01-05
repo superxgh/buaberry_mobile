@@ -23,5 +23,20 @@ Map<String, String> en_US = {
   FoodOrderingThemeFont.featuredRestaurant : 'Featured restaurant',
   FoodOrderingThemeFont.nearByRestaurant : 'Near by restaurant',
   FoodOrderingThemeFont.mustTry : 'Must try',
-  FoodOrderingThemeFont.recentSearch : 'Recent search'
+  FoodOrderingThemeFont.recentSearch : 'Recent search',
+
+  FoodOrderingThemeFont.profile_menu_orders_head : 'Orders',
+  FoodOrderingThemeFont.profile_menu_orders : 'Orders',
+  FoodOrderingThemeFont.profile_menu_favourite_orders : 'Favourite orders',
+  FoodOrderingThemeFont.profile_menu_address_book : 'Address book',
+
+  FoodOrderingThemeFont.profile_menu_payments_head : 'Payments',
+  FoodOrderingThemeFont.profile_menu_wallets : 'Wallets',
+  FoodOrderingThemeFont.profile_menu_saved_card : 'Saved book',
+
+  FoodOrderingThemeFont.profile_menu_language_head : 'Language',
+  FoodOrderingThemeFont.profile_menu_english : 'English',
+
+  FoodOrderingThemeFont.profile_menu_landing_head : 'Landing',
+  FoodOrderingThemeFont.profile_menu_home : 'Home',
 };

@@ -1,11 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:buaberry_mobile/shared/constants/constants.dart';
-import 'package:buaberry_mobile/shared/utils/utils.dart';
 
-import '../../../../shared/widgets/widgets.dart';
 
-class ProfileTab extends StatelessWidget {
+import 'package:buaberry_mobile/config.dart';
+import 'package:buaberry_mobile/modules/main/tabs/profile/widgets/profile_list_layout.dart';
+import 'package:buaberry_mobile/modules/main/tabs/profile/widgets/user_profile.dart';
+
+class ProfileTab extends GetView<ProfileController> {
   const ProfileTab({super.key});
 
   @override
@@ -13,104 +12,35 @@ class ProfileTab extends StatelessWidget {
     SizeConfig().init(context);
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // UJGText(text: 'Me Tab', fontSize: CommonConstants.topicText),
-            CommonWidget.rowHeight(height: 30.0),
-            // UJGText(
-            //   text: "Notifications",
-            //   fontSize: CommonConstants.labelText,
-            // ),
-            CommonWidget.rowHeight(height: 15.0),
-            // UJGText(
-            //   text: "New promotions",
-            //   fontSize: CommonConstants.labelText,
-            //   textAlign: Alignment.centerLeft,
-            // ),
-            CommonWidget.rowHeight(height: 10.0),
-            Container(
-                width: Get.width * 0.95,
-                height: 120.0,
-                color: Colors.white,
-                child: Center(
-                  child: Text(
-                    "Promotions",
-                    textAlign: TextAlign.center,
-                  ),
-                )),
-            CommonWidget.rowHeight(height: 15.0),
-            // UJGText(
-            //   text: "My Orders",
-            //   fontSize: CommonConstants.labelText,
-            //   textAlign: Alignment.centerLeft,
-            // ),
-            CommonWidget.rowHeight(height: 10.0),
-            Container(
-                width: Get.width * 0.95,
-                height: 120.0,
-                color: Colors.white,
-                child: Center(
-                  child: Text(
-                    "Orders",
-                    textAlign: TextAlign.center,
-                  ),
-                )),
-            CommonWidget.rowHeight(height: 15.0),
-            // UJGText(
-            //   text: "Wallet",
-            //   fontSize: CommonConstants.labelText,
-            //   textAlign: Alignment.centerLeft,
-            // ),
-            CommonWidget.rowHeight(height: 10.0),
-            Container(
-                width: Get.width * 0.95,
-                height: 120.0,
-                color: Colors.white,
-                child: Center(
-                  child: Text(
-                    "Wallet",
-                    textAlign: TextAlign.center,
-                  ),
-                )),
-            CommonWidget.rowHeight(height: 15.0),
-            // UJGText(
-            //   text: "Order monitoring",
-            //   fontSize: CommonConstants.labelText,
-            //   textAlign: Alignment.centerLeft,
-            // ),
-            CommonWidget.rowHeight(height: 10.0),
-            Container(
-                width: Get.width * 0.95,
-                height: 120.0,
-                color: Colors.white,
-                child: Center(
-                  child: Text(
-                    "Order status",
-                    textAlign: TextAlign.center,
-                  ),
-                )),
-            CommonWidget.rowHeight(height: 15.0),
-            // UJGText(
-            //   text: "Account setting",
-            //   fontSize: CommonConstants.labelText,
-            //   textAlign: Alignment.centerLeft,
-            // ),
-            CommonWidget.rowHeight(height: 10.0),
-            Container(
-                width: Get.width * 0.95,
-                height: 120.0,
-                color: Colors.white,
-                child: Center(
-                  child: Text(
-                    "setting list",
-                    textAlign: TextAlign.center,
-                  ),
-                )),
+            const UserProfile(),
+            const VSpace(Sizes.s10),
+            ...controller.userProfileList
+                .asMap()
+                .entries
+                .map((e) => Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                TextLabel(
+                  text: e.value.title!,
+                  alignment: Alignment.center,
+                  fontFamily: FontFamily.LATO,
+                  fontSize: FontSizes.f16,
+                  fontWeight: FontWeight.bold,
+                  color: appController.appTheme.foodTitleColor,
+                ).marginOnly(top: Insets.i20),
+                const VSpace(Sizes.s25),
+                ProfileListLayout(profileList: e.value.profileList)
+              ],
+            ))
+                .toList(),
           ],
         ),
       ),
+
     );
   }
 }

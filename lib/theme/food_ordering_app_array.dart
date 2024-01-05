@@ -2,6 +2,8 @@
 import 'package:buaberry_mobile/routes/app_pages.dart';
 import 'package:buaberry_mobile/shared/assets/assets.dart';
 
+import 'food_orderning_theme_font.dart';
+
 class FoodOrderingAppArray {
   var bottomList = [
     {'icon': foSvgAssets.foodHome, 'title': "home"},
@@ -729,50 +731,50 @@ class FoodOrderingAppArray {
   //var profile list
   var profileList = [
     {
-      "title": "orders",
+      "title": FoodOrderingThemeFont.profile_menu_orders_head,
       "profileList": [
         {
-          "title": "orders",
+          "title": FoodOrderingThemeFont.profile_menu_orders,
           "icon": foIconAssets.order,
           "Routes": Routes.foOrderHistory
         },
         {
-          "title": "favouriteOrders",
+          "title": FoodOrderingThemeFont.profile_menu_favourite_orders,
           "icon": foIconAssets.placeholder,
           "Routes": Routes.foFavourite
         },
         {
-          "title": "addressBook",
+          "title": FoodOrderingThemeFont.profile_menu_address_book,
           "icon": foIconAssets.addressBook,
           "Routes": Routes.foAddress
         }
       ]
     },
     {
-      "title": "payments",
+      "title": FoodOrderingThemeFont.profile_menu_payments_head,
       "profileList": [
         {
-          "title": "wallets",
+          "title": FoodOrderingThemeFont.profile_menu_wallets,
           "icon": foIconAssets.wallet,
           "Routes": Routes.foPayment
         },
         {
-          "title": "savedCard",
+          "title": FoodOrderingThemeFont.profile_menu_saved_card,
           "icon": foIconAssets.card,
           "Routes": Routes.foPayment
         }
       ]
     },
     {
-      "title": "language",
+      "title": FoodOrderingThemeFont.profile_menu_language_head,
       "profileList": [
-        {"title": "english", "icon": foIconAssets.language, "Routes": ""}
+        {"title": "ENGLISH", "icon": foIconAssets.language, "Routes": ""}
       ]
     },
     {
       "title": "landing",
       "profileList": [
-        {"title": "home", "icon": eImageAssets.logo, "Routes": Routes.dashboard}
+        {"title": "HOME", "icon": commonImageAssets.logo, "Routes": Routes.dashboard}
       ]
     },
   ];

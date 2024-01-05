@@ -1,7 +1,6 @@
 import 'common_fonts.dart';
 import 'common_image.dart';
 import 'common_svg.dart';
-import 'ecomm_image_assets.dart';
 import 'gif_assets.dart';
 import 'svg_assets.dart';
 import 'image_assets.dart';
@@ -15,5 +14,3 @@ FOGifAssets foGifAssets = FOGifAssets();
 CommonSvgAssets commonSvgAssets = CommonSvgAssets();
 CommonImageAssets commonImageAssets = CommonImageAssets();
 CommonFonts commonFonts = CommonFonts();
-
-ECommerceImageAssets eImageAssets = ECommerceImageAssets();

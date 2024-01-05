@@ -2,7 +2,22 @@
 
 class FoodOrderingThemeFont{
 
+  static const String profile_menu_orders_head = 'profileMenuOrdersHead';
+  static const String profile_menu_orders = 'profileMenuOrders';
+  static const String profile_menu_favourite_orders = 'profileMenuFavouriteOrders';
+  static const String profile_menu_address_book = 'profileMenuAddressBook';
 
+  static const String profile_menu_payments_head = 'profileMenuPaymentsHead';
+  static const String profile_menu_wallets = 'profileMenuWallets';
+  static const String profile_menu_saved_card = 'profileMenuSavedCard';
+
+  static const String profile_menu_language_head = 'profileMenuLanguageHead';
+  static const String profile_menu_english = 'profileMenuEnglish';
+
+  static const String profile_menu_landing_head = 'profileMenuLandingHead';
+  static const String profile_menu_home = 'profileMenuHome';
+
+  static const String home = 'home';
   static const String ratings = "ratings";
   static const String searchForRestaurant = 'searchForRestaurant';
 
@@ -27,7 +42,6 @@ class FoodOrderingThemeFont{
   static const String enterAddress = 'enterAddress';
   static const String addressLocation = 'addressLocation';
   static const String enterLocation = 'enterLocation';
-  static const String home = 'home';
   static const String cart = 'cart';
   static const String offers = 'offers';
   static const String profile = 'profile';
@@ -75,11 +89,9 @@ class FoodOrderingThemeFont{
   static const String userAddressName = 'userAddressName';
   static const String account = 'account';
   static const String paid = 'paid';
-  static const String orders = 'orders';
   static const String date = 'date';
   static const String rateFood = 'rateFood';
   static const String reorder = 'reorder';
-  static const String favouriteOrders = 'favouriteOrders';
   static const String off = 'off';
   static const String alert = 'alert';
   static const String selectAnyIngredients = 'selectAnyIngredients';
