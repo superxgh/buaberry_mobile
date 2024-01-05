@@ -1,7 +1,5 @@
-
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/tabs/profile/order_history/widgets/history_card.dart';
-
 import 'order_history_controller.dart';
 
 class OrderHistoryScreen extends StatelessWidget {

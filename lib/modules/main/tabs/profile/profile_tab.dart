@@ -1,5 +1,3 @@
-
-
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/tabs/profile/widgets/profile_list_layout.dart';
 import 'package:buaberry_mobile/modules/main/tabs/profile/widgets/user_profile.dart';

@@ -9,6 +9,7 @@ class TextLabel extends StatelessWidget {
   final Color? color;
   final AlignmentGeometry? alignment;
   final TextOverflow? overflow;
+  final double? fontHeight;
 
   const TextLabel(
       {super.key,
@@ -19,7 +20,8 @@ class TextLabel extends StatelessWidget {
       this.fontWeight,
       this.color,
       this.alignment,
-      this.overflow});
+      this.overflow,
+      this.fontHeight});
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class TextLabel extends StatelessWidget {
             fontWeight: fontWeight,
             fontSize: fontSize,
             letterSpacing: 0,
-            height: 1,
+            height: fontHeight ?? 1,
           )),
     );
   }
