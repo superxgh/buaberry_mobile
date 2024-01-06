@@ -1,4 +1,6 @@
-import '/../../config.dart';
+
+
+import 'package:buaberry_mobile/config.dart';
 
 class FoodPaymentScreen extends StatelessWidget {
   final paymentCtrl = Get.put(FoodPaymentController());
