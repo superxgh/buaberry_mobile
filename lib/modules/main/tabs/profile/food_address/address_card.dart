@@ -37,23 +37,23 @@ class AddressCard extends StatelessWidget {
                   Container(
                     width: 250.0,
                     child: TextLabel(
-                      text: '${trans(addressModel!.address!)}, ${trans(addressModel!.pinCode.toString())} ${trans(addressModel!.state.toString())}',
+                      text:
+                          '${trans(addressModel!.address!)}, ${trans(addressModel!.pinCode.toString())} ${trans(addressModel!.state.toString())}',
                       alignment: Alignment.center,
                       fontFamily: FontFamily.LATO,
                       fontSize: FontSizes.f14,
                       fontWeight: FontWeight.w400,
-                      fontHeight: 1.3,
                       color: appController.appTheme.foodContentColor,
                     ),
                   ),
                   const VSpace(Sizes.s5),
                   TextLabel(
-                    text: '${trans(FoodOrderingThemeFont.phone)} ${trans(addressModel!.phone.toString())}',
+                    text:
+                        '${trans(FoodOrderingThemeFont.phone)} ${trans(addressModel!.phone.toString())}',
                     alignment: Alignment.center,
                     fontFamily: FontFamily.LATO,
                     fontSize: FontSizes.f14,
                     fontWeight: FontWeight.w400,
-                    fontHeight: 1.3,
                     color: appController.appTheme.foodContentColor,
                   )
                 ]),
@@ -70,12 +70,11 @@ class AddressCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppRadius.r5)
                 ),
                 child: TextLabel(
-                  text: FoodOrderingThemeFont.edit,
+                  text : FoodOrderingThemeFont.edit,
                   alignment: Alignment.center,
                   fontFamily: FontFamily.LATO,
                   fontSize: FontSizes.f14,
                   fontWeight: FontWeight.bold,
-                  fontHeight: 1.3,
                   color: appController.appTheme.white,
                 ).paddingSymmetric(horizontal: Insets.i20, vertical: Insets.i8),
               ),
@@ -86,12 +85,11 @@ class AddressCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppRadius.r5)
                 ),
                 child: TextLabel(
-                  text: FoodOrderingThemeFont.delete,
+                  text : FoodOrderingThemeFont.delete,
                   alignment: Alignment.center,
                   fontFamily: FontFamily.LATO,
                   fontSize: FontSizes.f14,
                   fontWeight: FontWeight.bold,
-                  fontHeight: 1.3,
                   color: appController.appTheme.white,
                 ).paddingSymmetric(horizontal: Insets.i20, vertical: Insets.i8),
               )
