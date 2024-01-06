@@ -1,7 +1,7 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/main/tabs/profile/order_history/widgets/rating_reorder.dart';
+import 'package:buaberry_mobile/modules/main/widgets/orders/rating_reorder.dart';
 
 import 'hisory_name_detail.dart';
 import 'history_item.dart';

@@ -1,4 +1,6 @@
-import '/../../config.dart';
+
+
+import 'package:buaberry_mobile/config.dart';
 
 class FoodFavouriteScreen extends StatelessWidget {
   final favouriteCtrl = Get.put(FoodFavouriteController());
