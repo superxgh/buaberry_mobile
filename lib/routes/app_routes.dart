@@ -11,7 +11,7 @@ abstract class Routes {
   static const String HOME = '/home';
   static const String ORDER = '/order';
 
-  static const String PROFILE_ORDER = '/profile_order';
+  static const String PROFILE_ORDER_HISTORY = '/profile_order_history';
   static const String PROFILE_FAVOURITE_ORDER = '/profile_favourite_order';
   static const String PROFILE_ADDRESS_BOOK = '/profile_address_book_order';
   static const String PROFILE_WALLETS = '/profile_wallets';

@@ -16,9 +16,10 @@ class FoodAddressBookScreen extends StatelessWidget {
           body: ListView.builder(
                   itemBuilder: (context, index) =>
                       Container(
-                        color: Colors.white,
                         decoration: BoxDecoration(
-                          boxShadow: [BoxShadow(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
                             color: appController.appTheme.foodShadowColor,
                             blurRadius: 6,
                             offset: const Offset(2, 3)
@@ -28,11 +29,6 @@ class FoodAddressBookScreen extends StatelessWidget {
                         child: AddressCard(addressModel: addressCtrl.addressList[index])
                             .paddingSymmetric(
                                 horizontal: Insets.i12, vertical: Insets.i15)
-                            // .backgroundColor(Colors.white)
-                            // .boxShadow(
-                            //     color: appController.appTheme.foodShadowColor,
-                            //     blurRadius: 6,
-                            //     offset: const Offset(2, 3))
                             .paddingSymmetric(horizontal: Insets.i20)
                             .marginOnly(bottom: Insets.i15),
                       ),

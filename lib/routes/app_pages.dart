@@ -33,8 +33,28 @@ class AppPages {
       binding: MainBinding(),
     ),
     GetPage(
-      name: Routes.PROFILE_ORDER,
-      page: () => OrderHistoryScreen()
+        name: Routes.PROFILE_ORDER_HISTORY,
+        page: () => OrderHistoryScreen()
+    ),
+    GetPage(
+        name: Routes.PROFILE_FAVOURITE_ORDER,
+        page: () => FoodFavouriteScreen()
+    ),
+    GetPage(
+        name: Routes.PROFILE_ADDRESS_BOOK,
+        page: () => FoodAddressBookScreen()
+    ),
+    GetPage(
+        name: Routes.PROFILE_WALLETS,
+        page: () => FoodPaymentScreen()
+    ),
+    GetPage(
+        name: Routes.PROFILE_SAVED_BOOK,
+        page: () => FoodPaymentScreen()
+    ),
+    GetPage(
+        name: Routes.PROFILE_ENGLISH,
+        page: () => FoodPaymentScreen()
     ),
     // GetPage(
     //   name: Routes.AUTH,

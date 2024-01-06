@@ -736,7 +736,7 @@ class FoodOrderingAppArray {
         {
           "title": FoodOrderingThemeFont.profile_menu_orders,
           "icon": foIconAssets.order,
-          "routeName": Routes.PROFILE_ORDER
+          "routeName": Routes.PROFILE_ORDER_HISTORY
         },
         {
           "title": FoodOrderingThemeFont.profile_menu_favourite_orders,

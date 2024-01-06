@@ -1,4 +1,3 @@
-
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/tabs/profile/food_payment/widgets/payment_card.dart';
 
@@ -13,15 +12,12 @@ class CardList extends StatelessWidget {
     return ClipRRect(
         borderRadius: BorderRadius.circular(AppRadius.r8),
         child: Container(
-          color: Colors.white,
-          decoration: BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                  color: appController.appTheme.foodShadowColor,
-                  blurRadius: 6,
-                  offset: const Offset(2, 3))
-            ]
-          ),
+          decoration: BoxDecoration(color: Colors.white, boxShadow: [
+            BoxShadow(
+                color: appController.appTheme.foodShadowColor,
+                blurRadius: 6,
+                offset: const Offset(2, 3))
+          ]),
           child: Column(children: [
             ...methodList!
                 .asMap()
@@ -36,12 +32,15 @@ class CardList extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  DottedButton(name: trans(index == 1 ? FoodOrderingThemeFont.addNewCard : index == 2 ? FoodOrderingThemeFont.addUpi : "")),
+                  DottedButton(
+                      name: trans(index == 1
+                          ? FoodOrderingThemeFont.addNewCard
+                          : index == 2
+                              ? FoodOrderingThemeFont.addUpi
+                              : "")),
                 ],
               ).paddingOnly(top: Insets.i20),
-          ])
-              .paddingSymmetric(vertical: Insets.i20),
-        )
-    );
+          ]).paddingSymmetric(vertical: Insets.i20),
+        ));
   }
 }
