@@ -1,6 +1,7 @@
 
 
 import 'package:buaberry_mobile/config.dart';
+import 'package:buaberry_mobile/modules/main/tabs/profile/food_payment/widgets/card_list.dart';
 
 class FoodPaymentScreen extends StatelessWidget {
   final paymentCtrl = Get.put(FoodPaymentController());
@@ -34,11 +35,14 @@ class FoodPaymentScreen extends StatelessWidget {
                             color: appController.appTheme.foodTitleColor,
                           ),
                           const VSpace(Sizes.s12),
-                          CardList(index: e.key, methodList: e.value.methodList)
-                              .inkWell(
-                                  onTap: () =>
-                                      Get.toNamed(Routes.foOrderSuccess))
-                              .marginOnly(bottom: Insets.i20)
+                          InkWell(
+                            onTap: () => Get.toNamed(Routes.foOrderSuccess),
+                            child: CardList(index: e.key, methodList: e.value.methodList)
+                                // .inkWell(
+                                //     onTap: () =>
+                                //         Get.toNamed(Routes.foOrderSuccess))
+                                .marginOnly(bottom: Insets.i20),
+                          )
                         ],
                       ))
                   .toList()

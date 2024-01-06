@@ -97,4 +97,7 @@ class FoodOrderingThemeFont{
   static const String selectAnyIngredients = 'selectAnyIngredients';
 
   static const String favouriteOrders = 'favouriteOrders';
+  static const String addNewCard = 'addNewCard';
+  static const String addUpi = 'addUpi';
+
 }

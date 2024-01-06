@@ -18,23 +18,35 @@ class PaymentCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                Image.asset(methodList!.icon!,
-                    width: Sizes.s40,height: Sizes.s40, fit: BoxFit.contain)
-                    .paddingSymmetric(horizontal: Insets.i15,vertical: Insets.i8)
-                    .height(Sizes.s40)
-                    .decorated(
-                        color: appController.appTheme.dividerColor,
-                        borderRadius: BorderRadius.circular(AppRadius.r8)),
+                Container(
+                  height: Sizes.s40,
+                  decoration: BoxDecoration(
+                      color: appController.appTheme.dividerColor,
+                      borderRadius: BorderRadius.circular(AppRadius.r8)
+                  ),
+                  child: Image.asset(methodList!.icon!,
+                      width: Sizes.s40,height: Sizes.s40, fit: BoxFit.contain)
+                      .paddingSymmetric(horizontal: Insets.i15,vertical: Insets.i8),
+                ),
                 const HSpace(Sizes.s12),
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text(methodList!.cardNo!.tr,
-                      style: AppCss.latoSemiBold14
-                          .textColor(appController.appTheme.foodTitleColor)),
+                  TextLabel(
+                    text: methodList!.cardNo!,
+                    alignment: Alignment.center,
+                    fontFamily: FontFamily.LATO,
+                    fontSize: FontSizes.f14,
+                    fontWeight: FontWeight.bold,
+                    color: appController.appTheme.foodTitleColor,
+                  ),
                   const VSpace(Sizes.s5),
-                  Text(
-                      "${(!methodList!.expiryDate!.contains("@") && (!methodList!.expiryDate!.contains("link")) ) ? "${trans(foThemeFont.expiry)} "  :""}${methodList!.expiryDate!}",
-                      style: AppCss.latoMedium13
-                          .textColor(appController.appTheme.foodContentColor))
+                  TextLabel(
+                    text: "${(!methodList!.expiryDate!.contains("@") && (!methodList!.expiryDate!.contains("link")) ) ? "${trans(FoodOrderingThemeFont.expiry)} "  :""}${methodList!.expiryDate!}",
+                    alignment: Alignment.center,
+                    fontFamily: FontFamily.LATO,
+                    fontSize: FontSizes.f13,
+                    fontWeight: FontWeight.bold,
+                    color: appController.appTheme.foodContentColor,
+                  )
                 ]),
 
               ],

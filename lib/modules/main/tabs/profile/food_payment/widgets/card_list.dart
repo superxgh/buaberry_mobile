@@ -1,5 +1,6 @@
 
 import 'package:buaberry_mobile/config.dart';
+import 'package:buaberry_mobile/modules/main/tabs/profile/food_payment/widgets/payment_card.dart';
 
 class CardList extends StatelessWidget {
   final List<MethodList>? methodList;
@@ -11,29 +12,36 @@ class CardList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
         borderRadius: BorderRadius.circular(AppRadius.r8),
-        child: Column(children: [
-          ...methodList!
-              .asMap()
-              .entries
-              .map((method) => PaymentCard(
-                    index: method.key,
-                    methodList: method.value,
-                    totalLength: methodList!.length - 1,
-                  ))
-              .toList(),
-          if (index == 1 || index == 2)
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                DottedButton(name: trans(index == 1 ? hotelThemeFont.addNewCard : index == 2 ? hotelThemeFont.addUpi : "")),
-              ],
-            ).paddingOnly(top: Insets.i20),
-        ])
-            .paddingSymmetric(vertical: Insets.i20)
-            .backgroundColor(Colors.white)
-            .boxShadow(
-                color: appCtrl.appTheme.foodShadowColor,
-                blurRadius: 6,
-                offset: const Offset(2, 3)));
+        child: Container(
+          color: Colors.white,
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                  color: appController.appTheme.foodShadowColor,
+                  blurRadius: 6,
+                  offset: const Offset(2, 3))
+            ]
+          ),
+          child: Column(children: [
+            ...methodList!
+                .asMap()
+                .entries
+                .map((method) => PaymentCard(
+                      index: method.key,
+                      methodList: method.value,
+                      totalLength: methodList!.length - 1,
+                    ))
+                .toList(),
+            if (index == 1 || index == 2)
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  DottedButton(name: trans(index == 1 ? FoodOrderingThemeFont.addNewCard : index == 2 ? FoodOrderingThemeFont.addUpi : "")),
+                ],
+              ).paddingOnly(top: Insets.i20),
+          ])
+              .paddingSymmetric(vertical: Insets.i20),
+        )
+    );
   }
 }
