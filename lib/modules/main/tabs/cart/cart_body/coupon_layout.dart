@@ -10,7 +10,7 @@ class CouponLayout extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         TextLabel(
-          text: FoodOrderingThemeFont.coupons,
+          text: ThemeFont.coupons,
           alignment: Alignment.centerLeft,
           fontFamily: FontFamily.LATO,
           fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class CouponLayout extends StatelessWidget {
                       color: appController.appTheme.foodPrimaryColor),
                   const HSpace(Sizes.s5),
                   TextLabel(
-                    text: FoodOrderingThemeFont.applyCoupons,
+                    text: ThemeFont.applyCoupons,
                     alignment: Alignment.centerLeft,
                     fontFamily: FontFamily.LATO,
                     fontWeight: FontWeight.w400,

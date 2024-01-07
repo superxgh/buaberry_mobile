@@ -49,7 +49,7 @@ class AddressCard extends StatelessWidget {
                   const VSpace(Sizes.s5),
                   TextLabel(
                     text:
-                        '${trans(FoodOrderingThemeFont.phone)} ${trans(addressModel!.phone.toString())}',
+                        '${trans(ThemeFont.phone)} ${trans(addressModel!.phone.toString())}',
                     alignment: Alignment.center,
                     fontFamily: FontFamily.LATO,
                     fontSize: FontSizes.f14,
@@ -70,7 +70,7 @@ class AddressCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppRadius.r5)
                 ),
                 child: TextLabel(
-                  text : FoodOrderingThemeFont.edit,
+                  text : ThemeFont.edit,
                   alignment: Alignment.center,
                   fontFamily: FontFamily.LATO,
                   fontSize: FontSizes.f14,
@@ -85,7 +85,7 @@ class AddressCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppRadius.r5)
                 ),
                 child: TextLabel(
-                  text : FoodOrderingThemeFont.delete,
+                  text : ThemeFont.delete,
                   alignment: Alignment.center,
                   fontFamily: FontFamily.LATO,
                   fontSize: FontSizes.f14,

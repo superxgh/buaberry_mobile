@@ -1,9 +1,9 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/shared/widgets/qty_dec_button.dart';
+import 'package:buaberry_mobile/shared/widgets/button/qty_dec_button.dart';
 
-import 'add_button.dart';
+import '../button/add_button.dart';
 
 class CartAddRemove extends StatelessWidget {
   final Product? product;

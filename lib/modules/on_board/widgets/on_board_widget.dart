@@ -20,11 +20,11 @@ class OnBoardWidget {
           LogoLayout(
               isCenter: true,
               logo: foImageAssets.foLogo,
-              title: FoodOrderingThemeFont.buaberry,
+              title: ThemeFont.buaberry,
               color: appController.appTheme.whiteColor),
           const VSpace(Sizes.s10),
           TextLabel(
-            text: FoodOrderingThemeFont.madeWithLove,
+            text: ThemeFont.madeWithLove,
             alignment: Alignment.center,
             fontFamily: FontFamily.OLESCRIPTSWASHCAPS,
             fontSize: FontSizes.f35,
@@ -39,7 +39,7 @@ class OnBoardWidget {
   Widget onBoardTitle() => Padding(
       padding: EdgeInsets.symmetric(horizontal: Insets.i25),
       child: TextLabel(
-        text: FoodOrderingThemeFont.onBoardTitle,
+        text: ThemeFont.onBoardTitle,
         alignment: Alignment.center,
         fontFamily: FontFamily.LATO,
         fontSize: FontSizes.f30,
@@ -50,7 +50,7 @@ class OnBoardWidget {
   Widget onBoardDesc() => Padding(
       padding: EdgeInsets.symmetric(horizontal: Insets.i25),
       child: TextLabel(
-        text: FoodOrderingThemeFont.onBoardDesc,
+        text: ThemeFont.onBoardDesc,
         alignment: Alignment.center,
         fontFamily: FontFamily.LATO,
         fontSize: FontSizes.f20,

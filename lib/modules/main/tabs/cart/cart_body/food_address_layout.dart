@@ -33,8 +33,8 @@ class FoodAddressLayout extends StatelessWidget {
                   AddressLayout(addressModel: foodCtrl.addressModel),
                 TextLabel(
                   text: foodCtrl.addressModel != null
-                       ? FoodOrderingThemeFont.change
-                       : FoodOrderingThemeFont.selectAddress ,
+                       ? ThemeFont.change
+                       : ThemeFont.selectAddress ,
                   fontFamily: FontFamily.LATO,
                   fontWeight: FontWeight.bold,
                   fontSize: FontSizes.f16,
@@ -62,7 +62,7 @@ class FoodAddressLayout extends StatelessWidget {
                 .marginOnly(bottom: Insets.i12)
                 .paddingSymmetric(horizontal: Insets.i20),
             CustomButton(
-              title: trans(FoodOrderingThemeFont.proceedToPay),
+              title: trans(ThemeFont.proceedToPay),
               color: appController.appTheme.foodPrimaryColor,
               width: MediaQuery.of(context).size.width,
               onTap: ()=> Get.toNamed(Routes.foPayment,arguments: "290"),

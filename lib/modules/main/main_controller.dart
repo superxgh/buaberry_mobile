@@ -6,7 +6,7 @@ import 'package:buaberry_mobile/config.dart';
 class MainController extends GetxController {
 
   final CarouselController carouselController = CarouselController();
-  FoodOrderingAppArray foAppArray = FoodOrderingAppArray();
+  AppArray foAppArray = AppArray();
 
   TextEditingController searchTextController = TextEditingController();
 

@@ -12,7 +12,7 @@ class FoodAddressScreen extends StatelessWidget {
     return GetBuilder<FoodAddressController>(builder: (_) {
       return  Scaffold(
           backgroundColor: appController.appTheme.foodPrimaryLightColor,
-          appBar: CommonAppBar(name: trans(FoodOrderingThemeFont.address)),
+          appBar: CommonAppBar(name: trans(ThemeFont.address)),
           body: ListView.builder(
                   itemBuilder: (context, index) =>
                       Container(

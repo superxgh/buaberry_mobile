@@ -10,7 +10,7 @@ class OTPWidget {
   Widget verifyPhoneNumber() => Align(
       alignment: Alignment.center,
       child: TextLabel(
-          text: FoodOrderingThemeFont.verifyPhoneNumber,
+          text: ThemeFont.verifyPhoneNumber,
           alignment: Alignment.center,
           fontFamily: FontFamily.LATO,
           fontSize: FontSizes.f18,
@@ -21,7 +21,7 @@ class OTPWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: Insets.i15),
         child: TextLabel(
-            text: FoodOrderingThemeFont.sendCode,
+            text: ThemeFont.sendCode,
             alignment: Alignment.center,
             fontFamily: FontFamily.LATO,
             fontSize: FontSizes.f18,
@@ -33,7 +33,7 @@ class OTPWidget {
         child: RichText(
           text: TextSpan(
             recognizer: TapGestureRecognizer()..onTap = onTap,
-            text: trans(FoodOrderingThemeFont.havingNumber),
+            text: trans(ThemeFont.havingNumber),
             style: TextStyle(
               color: appController.appTheme.foodContentColor,
               fontFamily: GoogleFonts.lato().fontFamily,
@@ -44,7 +44,7 @@ class OTPWidget {
             ),
             children: <TextSpan>[
               TextSpan(
-                  text: trans(FoodOrderingThemeFont.resendAgain),
+                  text: trans(ThemeFont.resendAgain),
                   style: TextStyle(
                     color: appController.appTheme.foodPrimaryColor,
                     fontFamily: GoogleFonts.lato().fontFamily,

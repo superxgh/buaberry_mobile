@@ -32,7 +32,7 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget{
                 const Icon(Icons.keyboard_arrow_down_rounded, size: Sizes.s20)
               ],
             ),
-            Text(trans(FoodOrderingThemeFont.lakeForestAddress),
+            Text(trans(ThemeFont.lakeForestAddress),
                 style: TextStyle(
                   color: appController.appTheme.foodContentColor,
                   fontFamily: GoogleFonts.lato().fontFamily,

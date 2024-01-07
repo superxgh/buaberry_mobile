@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../shared.dart';
+import '../../shared.dart';
 
 class GradientButton extends StatelessWidget {
   final String text;

@@ -3,7 +3,7 @@ import 'package:buaberry_mobile/config.dart';
 class FoodLoginWidget {
 
   Widget enterYourPhoneNumber() => TextLabel(
-        text: FoodOrderingThemeFont.enterYourPhoneNumber,
+        text: ThemeFont.enterYourPhoneNumber,
         alignment: Alignment.center,
         fontFamily: FontFamily.LATO,
         fontSize: FontSizes.f18,
@@ -15,7 +15,7 @@ class FoodLoginWidget {
     alignment: Alignment.center,
     child: FittedBox(
         child : TextLabel(
-          text: FoodOrderingThemeFont.confirmationCode,
+          text: ThemeFont.confirmationCode,
           alignment: Alignment.center,
           fontFamily: FontFamily.LATO,
           fontSize: FontSizes.f18,
@@ -36,11 +36,11 @@ class FoodLoginWidget {
   );
 
   Widget phoneNumberTextBox() => FoodTextBox(
-      hinText: trans(FoodOrderingThemeFont.enterPhoneNumber))
+      hinText: trans(ThemeFont.enterPhoneNumber))
       .marginSymmetric(horizontal: Insets.i15);
 
   Widget loginWith() => TextLabel(
-      text: FoodOrderingThemeFont.loginWith,
+      text: ThemeFont.loginWith,
       alignment: Alignment.center,
       fontFamily: FontFamily.LATO,
       fontSize: FontSizes.f18,

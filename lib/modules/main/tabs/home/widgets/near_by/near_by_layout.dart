@@ -12,7 +12,7 @@ class NearByLayout extends StatelessWidget {
     return GetBuilder<MainController>(builder: (homeCtrl) {
       return Column(
         children: [
-          HomeWidget().titleAndSeeAll(trans(FoodOrderingThemeFont.nearByRestaurant)),
+          HomeWidget().titleAndSeeAll(trans(ThemeFont.nearByRestaurant)),
           const VSpace(Sizes.s12),
           ...homeCtrl.nearByList.map((e) {
             return NearByCard(

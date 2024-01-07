@@ -40,7 +40,7 @@ class PaymentCard extends StatelessWidget {
                   ),
                   const VSpace(Sizes.s5),
                   TextLabel(
-                    text: "${(!methodList!.expiryDate!.contains("@") && (!methodList!.expiryDate!.contains("link")) ) ? "${trans(FoodOrderingThemeFont.expiry)} "  :""}${methodList!.expiryDate!}",
+                    text: "${(!methodList!.expiryDate!.contains("@") && (!methodList!.expiryDate!.contains("link")) ) ? "${trans(ThemeFont.expiry)} "  :""}${methodList!.expiryDate!}",
                     alignment: Alignment.center,
                     fontFamily: FontFamily.LATO,
                     fontSize: FontSizes.f13,

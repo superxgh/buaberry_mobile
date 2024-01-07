@@ -84,7 +84,7 @@ class ArrivalTimeDistance extends StatelessWidget {
                         letterSpacing: 0,
                         height: 1,
                       )),
-                  Text(FoodOrderingThemeFont.ratings.tr,
+                  Text(ThemeFont.ratings.tr,
                       style: TextStyle(
                         color: appController.appTheme.whiteColor,
                         fontFamily: GoogleFonts.lato().fontFamily,

@@ -19,11 +19,11 @@ class FoodSearchTab extends GetView<MainController> {
               children: [
                 FoodTextBox(
                   controller: controller.searchTextController,
-                  hinText: FoodOrderingThemeFont.searchForRestaurant,
+                  hinText: ThemeFont.searchForRestaurant,
                 ),
                 const VSpace(Sizes.s15),
                 TextLabel(
-                  text: FoodOrderingThemeFont.recentSearch,
+                  text: ThemeFont.recentSearch,
                   alignment: Alignment.centerLeft,
                   fontFamily: FontFamily.LATO,
                   fontWeight: FontWeight.bold,
@@ -37,7 +37,7 @@ class FoodSearchTab extends GetView<MainController> {
                     .toList(),
                 const VSpace(Sizes.s20),
                 TextLabel(
-                  text: FoodOrderingThemeFont.topCuisine,
+                  text: ThemeFont.topCuisine,
                   fontFamily: FontFamily.LATO,
                   fontWeight: FontWeight.bold,
                   fontSize: FontSizes.f16,

@@ -1,6 +1,6 @@
 
 
-class FoodOrderingThemeFont{
+class ThemeFont{
 
   static const String profile_menu_orders_head = 'profileMenuOrdersHead';
   static const String profile_menu_orders = 'profileMenuOrders';

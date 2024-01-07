@@ -11,7 +11,7 @@ class CouponCode extends StatelessWidget {
 
       children: [
         TextLabel(
-          text: FoodOrderingThemeFont.useCode,
+          text: ThemeFont.useCode,
           alignment: Alignment.centerLeft,
           fontFamily: FontFamily.LATO,
           fontWeight: FontWeight.w400,

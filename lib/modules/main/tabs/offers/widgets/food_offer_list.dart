@@ -40,7 +40,7 @@ class FoodOfferList extends StatelessWidget {
                 ),
                 const VSpace(Sizes.s2),
                 TextLabel(
-                  text: FoodOrderingThemeFont.off,
+                  text: ThemeFont.off,
                   alignment: Alignment.centerLeft,
                   fontFamily: FontFamily.LATO,
                   fontWeight: FontWeight.w400,

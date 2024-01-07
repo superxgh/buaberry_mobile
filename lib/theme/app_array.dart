@@ -2,9 +2,9 @@
 import 'package:buaberry_mobile/routes/app_pages.dart';
 import 'package:buaberry_mobile/shared/assets/assets.dart';
 
-import 'food_orderning_theme_font.dart';
+import 'theme_font.dart';
 
-class FoodOrderingAppArray {
+class AppArray {
   var bottomList = [
     {'icon': foSvgAssets.foodHome, 'title': "home"},
     {'icon': foSvgAssets.foodSearch, 'title': "search"},
@@ -731,42 +731,42 @@ class FoodOrderingAppArray {
   //var profile list
   var profileList = [
     {
-      "title": FoodOrderingThemeFont.profile_menu_orders_head,
+      "title": ThemeFont.profile_menu_orders_head,
       "profileList": [
         {
-          "title": FoodOrderingThemeFont.profile_menu_orders,
+          "title": ThemeFont.profile_menu_orders,
           "icon": foIconAssets.order,
           "routeName": Routes.PROFILE_ORDER_HISTORY
         },
         {
-          "title": FoodOrderingThemeFont.profile_menu_favourite_orders,
+          "title": ThemeFont.profile_menu_favourite_orders,
           "icon": foIconAssets.placeholder,
           "routeName": Routes.PROFILE_FAVOURITE_ORDER
         },
         {
-          "title": FoodOrderingThemeFont.profile_menu_address_book,
+          "title": ThemeFont.profile_menu_address_book,
           "icon": foIconAssets.addressBook,
           "routeName": Routes.PROFILE_ADDRESS_BOOK
         }
       ]
     },
     {
-      "title": FoodOrderingThemeFont.profile_menu_payments_head,
+      "title": ThemeFont.profile_menu_payments_head,
       "profileList": [
         {
-          "title": FoodOrderingThemeFont.profile_menu_wallets,
+          "title": ThemeFont.profile_menu_wallets,
           "icon": foIconAssets.wallet,
           "routeName": Routes.PROFILE_WALLETS
         },
         {
-          "title": FoodOrderingThemeFont.profile_menu_saved_book,
+          "title": ThemeFont.profile_menu_saved_book,
           "icon": foIconAssets.card,
           "routeName": Routes.PROFILE_SAVED_BOOK
         }
       ]
     },
     {
-      "title": FoodOrderingThemeFont.profile_menu_language_head,
+      "title": ThemeFont.profile_menu_language_head,
       "profileList": [
         {"title": "ENGLISH", "icon": foIconAssets.language, "routeName": Routes.PROFILE_ENGLISH}
       ]

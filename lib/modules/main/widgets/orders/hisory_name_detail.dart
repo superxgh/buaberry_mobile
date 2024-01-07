@@ -33,7 +33,7 @@ class HistoryNameDetail extends StatelessWidget {
         children: [
           Row(children: [
             TextLabel(
-              text: FoodOrderingThemeFont.paid,
+              text: ThemeFont.paid,
               alignment: Alignment.center,
               fontFamily: FontFamily.LATO,
               fontSize: FontSizes.f16,
@@ -53,7 +53,7 @@ class HistoryNameDetail extends StatelessWidget {
           Row(
             children: [
               TextLabel(
-                text: FoodOrderingThemeFont.date,
+                text: ThemeFont.date,
                 alignment: Alignment.center,
                 fontFamily: FontFamily.LATO,
                 fontSize: FontSizes.f16,

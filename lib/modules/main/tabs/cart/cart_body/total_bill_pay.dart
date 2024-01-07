@@ -9,7 +9,7 @@ class TotalBillPay extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         TextLabel(
-          text: FoodOrderingThemeFont.billAmount ,
+          text: ThemeFont.billAmount ,
           fontFamily: FontFamily.LATO,
           fontWeight: FontWeight.w400,
           fontSize: FontSizes.f16,

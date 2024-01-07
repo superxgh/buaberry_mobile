@@ -14,7 +14,7 @@ class HomeTab extends GetView<MainController> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          FoodTextBox(hinText: FoodOrderingThemeFont.searchForDessert)
+          FoodTextBox(hinText: ThemeFont.searchForDessert)
               .marginSymmetric(horizontal: Insets.i15, vertical: Insets.i15),
           //banner layout
           const BannerLayout(),
@@ -30,7 +30,7 @@ class HomeTab extends GetView<MainController> {
           const NearByLayout(),
           const VSpace(Sizes.s20),
           HomeWidget()
-              .titleAndSeeAll(trans(FoodOrderingThemeFont.featuredRestaurant)),
+              .titleAndSeeAll(trans(ThemeFont.featuredRestaurant)),
           const VSpace(Sizes.s15),
 
           //featured restaurant
@@ -41,7 +41,7 @@ class HomeTab extends GetView<MainController> {
                     .marginSymmetric(horizontal: Insets.i15);
           }),
           const VSpace(Sizes.s24),
-          HomeWidget().titleAndSeeAll(trans(FoodOrderingThemeFont.mustTry)),
+          HomeWidget().titleAndSeeAll(trans(ThemeFont.mustTry)),
           const VSpace(Sizes.s15),
 
           //must try

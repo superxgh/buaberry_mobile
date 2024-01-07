@@ -50,7 +50,7 @@ class LoginScreen extends GetView<LoginController> {
                     ),
                     FoodLoginWidget().nextButton(
                         onTap: () => Get.toNamed(Routes.OTP),
-                        title: trans(FoodOrderingThemeFont.next))
+                        title: trans(ThemeFont.next))
                   ]),
             ));
   }

@@ -13,7 +13,7 @@ class FoodFavouriteScreen extends StatelessWidget {
       return Scaffold(
           backgroundColor: appController.appTheme.foodPrimaryLightColor,
           appBar:
-              CommonAppBar(name: trans(FoodOrderingThemeFont.favouriteOrders)),
+              CommonAppBar(name: trans(ThemeFont.favouriteOrders)),
           body: favouriteCtrl.isShimmer
               ? const FoodShopShimmer()
               : SingleChildScrollView(

@@ -13,7 +13,7 @@ class DeliveryInstructionLayout extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextLabel(
-            text: FoodOrderingThemeFont.deliveryInstruction,
+            text: ThemeFont.deliveryInstruction,
             alignment: Alignment.centerLeft,
             fontFamily: FontFamily.LATO,
             fontWeight: FontWeight.bold,

@@ -1,7 +1,6 @@
 
 
-import 'package:buaberry_mobile/theme/app_theme.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
+import 'package:buaberry_mobile/config.dart';
 
 class AppController extends GetxController {
   AppTheme _appTheme = AppTheme.fromType(ThemeType.light);
@@ -24,11 +23,11 @@ class AppController extends GetxController {
 //     WidgetPage()
 //   ];
 
-  //update theme
-  // updateTheme(theme) {
-  //   _appTheme = theme;
-  //   Get.forceAppUpdate();
-  // }
+  // update theme
+  updateTheme(theme) {
+    _appTheme = theme;
+    Get.forceAppUpdate();
+  }
 
   @override
   void onReady() {

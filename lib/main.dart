@@ -1,14 +1,10 @@
-import 'package:buaberry_mobile/shared/utils/logger.dart';
-import 'package:flutter/material.dart';
+
+
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:buaberry_mobile/shared/shared.dart';
-import 'package:get/get.dart';
 
 import 'app_binding.dart';
+import 'config.dart';
 import 'di.dart';
-import 'lang/lang.dart';
-import 'routes/routes.dart';
-import 'theme/theme.dart';
 
 void main() async {
   logger.i(">>> App starting");
@@ -30,7 +26,9 @@ class App extends StatelessWidget {
       initialBinding: AppBinding(),
       smartManagement: SmartManagement.keepFactory,
       title: 'BUABERRy Mobile Application',
-      theme: ThemeConfig.lightTheme,
+      theme: AppTheme.fromType(ThemeType.light).themeData,
+      darkTheme: AppTheme.fromType(ThemeType.dark).themeData,
+      themeMode: ThemeService().theme,
       locale: TranslationService.locale,
       fallbackLocale: TranslationService.fallbackLocale,
       translations: TranslationService(),

@@ -10,7 +10,7 @@ class BillLayout extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         TextLabel(
-          text: FoodOrderingThemeFont.billDetail,
+          text: ThemeFont.billDetail,
           alignment: Alignment.centerLeft,
           fontFamily: FontFamily.LATO,
           fontWeight: FontWeight.bold,

@@ -13,7 +13,7 @@ class RatingReorder extends StatelessWidget {
       children: [
         Row(children: [
           TextLabel(
-            text: FoodOrderingThemeFont.rateFood,
+            text: ThemeFont.rateFood,
             alignment: Alignment.center,
             fontFamily: FontFamily.LATO,
             fontSize: FontSizes.f14,
@@ -31,7 +31,7 @@ class RatingReorder extends StatelessWidget {
           ),
           child: Row(children: [
             TextLabel(
-              text: FoodOrderingThemeFont.reorder,
+              text: ThemeFont.reorder,
               alignment: Alignment.center,
               fontFamily: FontFamily.LATO,
               fontSize: FontSizes.f12,

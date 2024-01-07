@@ -23,8 +23,8 @@ class RowListWidget {
           borderRadius: BorderRadius.circular(AppRadius.r5)),
       child: TextLabel(
         text: isSeller
-            ? FoodOrderingThemeFont.bestSeller
-            : FoodOrderingThemeFont.newOpenly,
+            ? ThemeFont.bestSeller
+            : ThemeFont.newOpenly,
         fontFamily: FontFamily.LATO,
         fontWeight: FontWeight.w400,
         fontSize: FontSizes.f12,

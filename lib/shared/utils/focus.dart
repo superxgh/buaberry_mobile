@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class AppFocus {
+class AppFocuss {
   static void unfocus(BuildContext context) {
     FocusScopeNode currentFocus = FocusScope.of(context);
 

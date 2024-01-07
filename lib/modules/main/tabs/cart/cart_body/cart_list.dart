@@ -12,7 +12,7 @@ class CartList extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextLabel(
-            text: FoodOrderingThemeFont.addItem,
+            text: ThemeFont.addItem,
             alignment: Alignment.centerLeft,
             fontFamily: FontFamily.LATO,
             fontWeight: FontWeight.bold,

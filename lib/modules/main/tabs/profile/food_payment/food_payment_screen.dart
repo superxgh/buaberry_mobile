@@ -15,8 +15,8 @@ class FoodPaymentScreen extends StatelessWidget {
         backgroundColor: appController.appTheme.foodPrimaryLightColor,
         appBar: CommonAppBar(
             name: paymentCtrl.price != ""
-                ? '${trans(FoodOrderingThemeFont.payment)}:  ${appController.priceSymbol}${(double.parse(paymentCtrl.price) * appController.rateValue)}'
-                : trans(FoodOrderingThemeFont.payment)),
+                ? '${trans(ThemeFont.payment)}:  ${appController.priceSymbol}${(double.parse(paymentCtrl.price) * appController.rateValue)}'
+                : trans(ThemeFont.payment)),
         body: SingleChildScrollView(
           child: Column(
             children: [

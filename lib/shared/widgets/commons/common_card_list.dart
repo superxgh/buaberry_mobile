@@ -84,7 +84,7 @@ class CommonCardList extends StatelessWidget {
                 if (!isRatingShow) const VSpace(Sizes.s5),
                 if (!isRatingShow)
                   TextLabel(
-                    text: FoodOrderingThemeFont.edit,
+                    text: ThemeFont.edit,
                     alignment: Alignment.center,
                     fontFamily: FontFamily.LATO,
                     fontWeight: FontWeight.bold,

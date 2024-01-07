@@ -34,9 +34,9 @@ class CardList extends StatelessWidget {
                 children: [
                   DottedButton(
                       name: trans(index == 1
-                          ? FoodOrderingThemeFont.addNewCard
+                          ? ThemeFont.addNewCard
                           : index == 2
-                              ? FoodOrderingThemeFont.addUpi
+                              ? ThemeFont.addUpi
                               : "")),
                 ],
               ).paddingOnly(top: Insets.i20),

@@ -17,9 +17,12 @@ export 'package:shared_preferences/shared_preferences.dart';
 export 'package:buaberry_mobile/shared/utils/logger.dart';
 export 'package:shimmer/shimmer.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
+export 'package:get_storage/get_storage.dart';
+export 'lang/translation_service.dart';
+
 
 final appController = Get.isRegistered<AppController>()
     ? Get.find<AppController>()
     : Get.put(AppController());
 
-FoodOrderingAppArray foAppArray = FoodOrderingAppArray();
+AppArray foAppArray = AppArray();
