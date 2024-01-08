@@ -11,7 +11,7 @@ class SplashScreen extends GetView<SplashController>  {
         return true;
       },
       child: Scaffold(
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: appController.appTheme.foodPrimaryLightColor,
         body: Center(
           child: Image.asset(foGifAssets.splashLogo),
         ),
