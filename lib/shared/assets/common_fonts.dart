@@ -1,6 +1,7 @@
 class CommonFonts{
 
   final String appName = "BUABERRy";
+  final String loading = "Loanding...";
   final String username = "username";
   final String password = "password";
   final String next = 'next';

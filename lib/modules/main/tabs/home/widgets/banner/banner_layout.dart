@@ -2,7 +2,7 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-import '../dot_indicator.dart';
+import 'dot_indicator.dart';
 import 'banner_data.dart';
 
 
@@ -11,7 +11,7 @@ class BannerLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<MainController>(builder: (homeController) {
+    return GetBuilder<HomeController>(builder: (homeController) {
       return Column(
         children: [
           CarouselSlider.builder(

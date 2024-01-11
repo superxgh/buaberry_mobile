@@ -1,6 +1,7 @@
 import 'package:buaberry_mobile/config.dart';
 
 import '../home_widget.dart';
+import 'banner_widget.dart';
 
 class BannerData extends StatelessWidget {
   final FoodBannerModel? data;
@@ -34,8 +35,8 @@ class BannerData extends StatelessWidget {
                     isOdd! ? MainAxisAlignment.start : MainAxisAlignment.center,
                 children: [
                   (isOdd!)
-                      ? HomeWidget().oddData(data)
-                      : HomeWidget().evenData(data),
+                      ? BannerWidget().oddData(data)
+                      : BannerWidget().evenData(data),
                   const VSpace(Sizes.s15),
                   TextLabel(
                     text: data!.desc.toString(),

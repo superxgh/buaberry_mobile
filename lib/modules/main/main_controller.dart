@@ -5,7 +5,6 @@ import 'package:buaberry_mobile/config.dart';
 
 class MainController extends GetxController {
 
-  final CarouselController carouselController = CarouselController();
   AppArray foAppArray = AppArray();
 
   TextEditingController searchTextController = TextEditingController();
@@ -17,10 +16,7 @@ class MainController extends GetxController {
   late OffersTab offersTab;
   late ProfileTab profileTab;
 
-  int current = 0;
-  var foodBannerList = <FoodBannerModel>[].obs;
-  var instructionList =[].obs;
-  var nearByList = <Product>[].obs;
+
   List recentList =[];
 
 
@@ -39,7 +35,6 @@ class MainController extends GetxController {
 
   @override
   void onReady() async {
-    getData();
     recentList = foAppArray.recentList;
     super.onReady();
   }
@@ -83,15 +78,6 @@ class MainController extends GetxController {
     }
   }
 
-  getData(){
-    for (var i = 0; i < foAppArray.bannerList.length; i++) {
-      foodBannerList.add(FoodBannerModel.fromJson(foAppArray.bannerList[i]));
-    }
-    instructionList.value = foAppArray.instructionList;
-    for (var i = 0; i < foAppArray.nearByRestaurant.length; i++) {
-      nearByList.add(Product.fromJson(foAppArray.nearByRestaurant[i]));
-    }
-  }
 
 
 }

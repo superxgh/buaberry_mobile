@@ -18,6 +18,8 @@ Map<String, String> th_TH = {
 
   ThemeFont.loginWith : 'เข้าสู่ระบบโดย',
 
+  // Home tab
+  ThemeFont.searchForDessert : 'ค้นหาขนม',
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',
   ThemeFont.enterPhoneNumber : 'Enter phone number',
@@ -32,7 +34,6 @@ Map<String, String> th_TH = {
   ThemeFont.havingNumber : 'Having problem?',
   ThemeFont.resendAgain : 'Resend Again',
   commonFonts.continueTitle : 'Continue',
-  ThemeFont.searchForDessert : 'Search for dessert.',
   ThemeFont.featuredRestaurant : 'Featured restaurant',
   ThemeFont.nearByRestaurant : 'Near by restaurant',
   ThemeFont.mustTry : 'Must try',

@@ -10,6 +10,10 @@ class ThemeFont{
   static const String login_enter_password = 'login_enter_password';
 
   static const String loginWith = 'loginWith';
+
+  // Home tab
+  static const String searchForDessert = 'searchForRestaurant';
+
   // =============================
   static const String profile_menu_orders_head = 'profileMenuOrdersHead';
   static const String profile_menu_orders = 'profileMenuOrders';
@@ -52,7 +56,6 @@ class ThemeFont{
   static const String cart = 'cart';
   static const String offers = 'offers';
   static const String profile = 'profile';
-  static const String searchForDessert = 'searchForRestaurant';
   static const String searchForOffer = 'searchForOffer';
   static const String lakeForestAddress = 'lakeForestAddress';
   static const String nearByRestaurant = 'nearByRestaurant';

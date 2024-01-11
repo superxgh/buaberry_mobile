@@ -14,8 +14,7 @@ class HomeTab extends GetView<HomeController> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          FoodTextBox(hinText: ThemeFont.searchForDessert)
-              .marginSymmetric(horizontal: Insets.i15, vertical: Insets.i15),
+          HomeWidget().searchForDessert(),
           //banner layout
           const BannerLayout(),
           const VSpace(Sizes.s10),

@@ -9,7 +9,7 @@ class NearByLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<MainController>(builder: (homeCtrl) {
+    return GetBuilder<HomeController>(builder: (homeCtrl) {
       return Column(
         children: [
           HomeWidget().titleAndSeeAll(trans(ThemeFont.nearByRestaurant)),

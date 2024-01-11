@@ -18,6 +18,8 @@ Map<String, String> en_US = {
 
   ThemeFont.loginWith : 'Login with',
 
+  // Home tab
+  ThemeFont.searchForDessert : 'Search for dessert.',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',
@@ -33,7 +35,6 @@ Map<String, String> en_US = {
   ThemeFont.havingNumber : 'Having problem?',
   ThemeFont.resendAgain : 'Resend Again',
   commonFonts.continueTitle : 'Continue',
-  ThemeFont.searchForDessert : 'Search for dessert.',
   ThemeFont.featuredRestaurant : 'Featured restaurant',
   ThemeFont.nearByRestaurant : 'Near by restaurant',
   ThemeFont.mustTry : 'Must try',

@@ -17,7 +17,7 @@ class SplashScreen extends GetView<SplashController>  {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextLabel(
-                text: "BUABERRy",
+                text: commonFonts.appName,
                 fontFamily: FontFamily.LATO,
                 fontSize: FontSizes.f50,
                 fontWeight: FontWeight.bold,
@@ -27,7 +27,7 @@ class SplashScreen extends GetView<SplashController>  {
               Image.asset(foImageAssets.splashLogo),
               const VSpace(Sizes.s50),
               TextLabel(
-                text: "Loading...",
+                text: commonFonts.loading,
                 fontFamily: FontFamily.LATO,
                 fontSize: FontSizes.f30,
                 fontWeight: FontWeight.bold,
