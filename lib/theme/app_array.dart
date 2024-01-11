@@ -135,8 +135,8 @@ class AppArray {
     }
   ];
 
-  //featured restaurant
-  var featuredRestaurant = [
+  // breakfast list
+  var breakfastList = [
     {
       "image": foImageAssets.product1,
       "name": "cafeJack",

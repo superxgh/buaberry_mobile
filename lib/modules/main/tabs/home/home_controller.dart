@@ -5,8 +5,8 @@ class HomeController extends GetxController {
 
   var foodBannerList = <FoodBannerModel>[].obs;
   var healthyList = <Product>[].obs;
+  var breakfastList = <Product>[].obs;
 
-  var featuredRestaurantList = <Product>[].obs;
   var mustTryList = <Product>[].obs;
   int current = 0;
 
@@ -27,14 +27,14 @@ class HomeController extends GetxController {
     for (var i = 0; i < foAppArray.healthyList.length; i++) {
       healthyList.add(Product.fromJson(foAppArray.healthyList[i]));
     }
+    for (var i = 0; i < foAppArray.breakfastList.length; i++) {
+      breakfastList
+          .add(Product.fromJson(foAppArray.breakfastList[i]));
+    }
 
     instructionList.value = foAppArray.instructionList;
-    for (var i = 0; i < foAppArray.featuredRestaurant.length; i++) {
-      featuredRestaurantList
-          .add(Product.fromJson(foAppArray.featuredRestaurant[i]));
-    }
     for (var i = 0; i < foAppArray.mustTryList.length; i++) {
-      mustTryList.add(Product.fromJson(foAppArray.featuredRestaurant[i]));
+      mustTryList.add(Product.fromJson(foAppArray.breakfastList[i]));
     }
     update();
   }

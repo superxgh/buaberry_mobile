@@ -35,9 +35,9 @@ class HomeTab extends GetView<HomeController> {
           HomeWidget().displayBreakfastLabel(),
           const VSpace(Sizes.s12),
           Obx(() {
-            return (controller.featuredRestaurantList.length == 0)
+            return (controller.breakfastList.length == 0)
                 ? Container()
-                : RowListLayout(productList: controller.featuredRestaurantList)
+                : RowListLayout(productList: controller.breakfastList)
                     .marginSymmetric(horizontal: Insets.i15);
           }),
           const VSpace(Sizes.s20),
