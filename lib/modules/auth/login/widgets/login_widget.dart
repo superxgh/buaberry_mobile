@@ -2,8 +2,8 @@ import 'package:buaberry_mobile/config.dart';
 
 class FoodLoginWidget {
 
-  Widget enterYourPhoneNumber() => TextLabel(
-        text: ThemeFont.enterYourPhoneNumber,
+  Widget enterYourUsernameAndPasswordText() => TextLabel(
+        text: ThemeFont.login_input_username_password_text,
         alignment: Alignment.center,
         fontFamily: FontFamily.LATO,
         fontSize: FontSizes.f18,
@@ -11,11 +11,11 @@ class FoodLoginWidget {
         color: appController.appTheme.foodContentColor
   );
 
-  Widget confirmationCode() => Align(
+  Widget enterYourUsernameAndPasswordDescriptionText() => Align(
     alignment: Alignment.center,
     child: FittedBox(
         child : TextLabel(
-          text: ThemeFont.confirmationCode,
+          text: ThemeFont.login_input_username_password_description_text,
           alignment: Alignment.center,
           fontFamily: FontFamily.LATO,
           fontSize: FontSizes.f18,
@@ -26,17 +26,21 @@ class FoodLoginWidget {
     ),
   );
 
-  Widget phoneNumberLabel() => TextLabel(
-      text: commonFonts.phoneNumber,
+  Widget loginWithUsernameAndPasswordLabel() => TextLabel(
+      text: ThemeFont.login_with_username_pasword,
       alignment: Alignment.center,
       fontFamily: FontFamily.LATO,
-      fontSize: FontSizes.f24,
+      fontSize: FontSizes.f18,
       fontWeight: FontWeight.bold,
-      color: appController.appTheme.textColor
+      color: appController.appTheme.foodContentColor
   );
 
-  Widget phoneNumberTextBox() => FoodTextBox(
-      hinText: trans(ThemeFont.enterPhoneNumber))
+  Widget usernameTextBox() => FoodTextBox(
+      hinText: trans(ThemeFont.login_enter_username))
+      .marginSymmetric(horizontal: Insets.i15);
+
+  Widget passwordTextBox() => FoodTextBox(
+      hinText: trans(ThemeFont.login_enter_password))
       .marginSymmetric(horizontal: Insets.i15);
 
   Widget loginWith() => TextLabel(

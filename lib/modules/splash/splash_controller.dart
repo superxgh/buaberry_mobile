@@ -13,8 +13,6 @@ class SplashController extends GetxController {
     timer = Timer(
         const Duration(seconds: 5),
             () =>  Get.toNamed(Routes.LOGIN));
-
-
     super.onInit();
   }
 

@@ -13,7 +13,28 @@ class SplashScreen extends GetView<SplashController>  {
       child: Scaffold(
         backgroundColor: appController.appTheme.foodPrimaryLightColor,
         body: Center(
-          child: Image.asset(foGifAssets.splashLogo),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextLabel(
+                text: "BUABERRy",
+                fontFamily: FontFamily.LATO,
+                fontSize: FontSizes.f50,
+                fontWeight: FontWeight.bold,
+                color: appController.appTheme.redColor,
+              ),
+              const VSpace(Sizes.s15),
+              Image.asset(foImageAssets.splashLogo),
+              const VSpace(Sizes.s30),
+              TextLabel(
+                text: "Loading...",
+                fontFamily: FontFamily.LATO,
+                fontSize: FontSizes.f30,
+                fontWeight: FontWeight.bold,
+                color: appController.appTheme.redColor,
+              ),
+            ],
+          ),
         ),
       ),
     );

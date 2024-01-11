@@ -2,6 +2,16 @@
 
 class ThemeFont{
 
+  // Login Screen
+  static const String login_input_username_password_text = 'login_input_username_password_text';
+  static const String login_input_username_password_description_text = 'login_input_username_password_description_text';
+
+  static const String login_with_username_pasword = 'login_with_username_pasword';
+  static const String login_enter_username = 'login_enter_username';
+  static const String login_enter_password = 'login_enter_password';
+
+  static const String loginWith = 'loginWith';
+  // =============================
   static const String profile_menu_orders_head = 'profileMenuOrdersHead';
   static const String profile_menu_orders = 'profileMenuOrders';
   static const String profile_menu_favourite_orders = 'profileMenuFavouriteOrders';
@@ -28,8 +38,6 @@ class ThemeFont{
   static const String enterPhoneNumber = 'enterPhoneNumber';
   static const String enterYourPhoneNumber = 'enterYourPhoneNumber';
   static const String confirmationCode = 'confirmationCode';
-  static const String loginWith = 'loginWith';
-  static const String next = 'next';
 
   static const String verifyPhoneNumber = 'verifyPhoneNumber';
   static const String sendCode = 'sendCode';

@@ -1,4 +1,11 @@
 class CommonFonts{
+
+  final String username = "username";
+  final String password = "password";
+  final String next = 'next';
+  final String login = 'login';
+
+
   final String ultikit = "ultikit";
   final String search = "search";
   final String offers = "offers";
@@ -7,7 +14,6 @@ class CommonFonts{
   final String getStarted = 'getStarted';
   final String home = 'home';
   final String continueTitle = 'continueTitle';
-  final String login = 'login';
   final String signUp = 'signUp';
   final String skip = 'skip';
   final String continueWithFacebook = 'continueWithFacebook';
@@ -23,7 +29,6 @@ class CommonFonts{
   final String signIn = 'signIn';
   final String fullName = 'fullName';
   final String emailTitle = 'emailTitle';
-  final String password = 'password';
   final String ifYourAreNew = 'ifYourAreNew';
   final String alreadyAccount = 'alreadyAccount';
   final String phoneNumber = 'phoneNumber';

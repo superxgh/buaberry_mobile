@@ -2,26 +2,25 @@
 
 import '../config.dart';
 
-Map<String, String> en_US = {
+Map<String, String> th_TH = {
 
   // Common text
-  commonFonts.username : 'Username',
-  commonFonts.next : 'Next',
-  commonFonts.login : 'Login',
+  commonFonts.username : 'ชื่อผู้ใช้งาน',
+  commonFonts.next : 'ต่อไป',
+  commonFonts.login : 'เข้าสู่ระบบ',
 
   // Login screen
-  ThemeFont.login_input_username_password_text : 'Please input username and password',
-  ThemeFont.login_input_username_password_description_text : 'We will check information and login to the system',
+  ThemeFont.login_input_username_password_text : 'กรุณากรอกข้อมูลชื่อผู้ใช้งานและรหัสผ่าน',
+  ThemeFont.login_input_username_password_description_text : 'ระบบจะทำการตรวจสอบข้อมูลและทำการเข้าสู่ระบบ',
 
-  ThemeFont.login_with_username_pasword : 'Login with username and password',
-  ThemeFont.login_enter_username : 'Enter username',
-  ThemeFont.login_enter_password : 'Enter password',
+  ThemeFont.login_with_username_pasword : 'เข้าสู่ระบบโดยใช้ชื่อผู้ใช้งานและรหัสผ่าน',
+  ThemeFont.login_enter_username : 'กรุณากรอกชื่อผู้ใช้งาน',
+  ThemeFont.login_enter_password : 'กรุณากรอกรหัสผ่าน',
 
-  ThemeFont.loginWith : 'Login with',
-
+  ThemeFont.loginWith : 'เข้าสู่ระบบโดย',
 
   // ===========================================
-  ThemeFont.enterYourPhoneNumber : 'Enter your phone number',
+  ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',
   ThemeFont.enterPhoneNumber : 'Enter phone number',
   ThemeFont.confirmationCode : 'We will send you a confirmation code',
   ThemeFont.buaberry : 'BUABERRy',

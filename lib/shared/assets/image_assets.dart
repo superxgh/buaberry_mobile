@@ -1,5 +1,5 @@
 class FOImageAssets {
-  final String splashLogo = 'assets/food_ordering_theme/image/splashLogo.png';
+  final String splashLogo = 'assets/food_ordering_theme/image/buaberry_logo.png';
   final String bg = 'assets/food_ordering_theme/image/bg.png';
   final String onBoard = 'assets/food_ordering_theme/image/onBoard.png';
   final String foLogo = 'assets/food_ordering_theme/image/fo_logo.png';

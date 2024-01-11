@@ -29,7 +29,7 @@ class App extends StatelessWidget {
       theme: AppTheme.fromType(ThemeType.light).themeData,
       darkTheme: AppTheme.fromType(ThemeType.dark).themeData,
       themeMode: ThemeService().theme,
-      locale: TranslationService.locale,
+      locale: TranslationService.fallbackLocale, //TranslationService.locale,
       fallbackLocale: TranslationService.fallbackLocale,
       translations: TranslationService(),
       builder: EasyLoading.init(),
