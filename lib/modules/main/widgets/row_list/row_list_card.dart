@@ -2,6 +2,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
+import 'description_layout.dart';
+
 class RowListCard extends StatelessWidget {
   final Product? product;
   final bool? isFullWidth;

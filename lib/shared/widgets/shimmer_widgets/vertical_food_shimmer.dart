@@ -13,7 +13,7 @@ class VerticalFoodShimmer extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        ...foAppArray.nearByRestaurant
+        ...foAppArray.healthyList
             .map((e) => Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: isBottomShow ?CrossAxisAlignment.end : CrossAxisAlignment.start,

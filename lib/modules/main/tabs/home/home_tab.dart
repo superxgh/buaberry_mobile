@@ -14,18 +14,16 @@ class HomeTab extends GetView<HomeController> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           HomeWidget().searchForDessert(),
-          //banner layout
+
+          //banner list
           const BannerList(),
           const VSpace(Sizes.s10),
-          //cuisine list
+
+          //popular dessert list
           const PopularDessertList(),
           const VSpace(Sizes.s20),
-          //food instruction
-          // const InstructionLayout(),
-          // const VSpace(Sizes.s20),
 
-          //near by layout
-
+          // Healthy list
           HomeWidget().displayHealthyLabel(),
           const VSpace(Sizes.s12),
           const HealthyList(),

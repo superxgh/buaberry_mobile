@@ -64,13 +64,13 @@ class AppArray {
   ];
 
   //near by restaurant
-  var nearByRestaurant = [
+  var healthyList = [
     {
       "image": foImageAssets.nearBy1,
-      "name": "theSoupFactory",
-      "foodType": "northIndian",
+      "name": "ข้าวโพดนึ่ง",
+      "foodType": "ผลไม้นึ่ง",
       "rating": 4.7,
-      "arriveTime": "20min",
+      "arriveTime": "20 บาท",
       "distance": "1km",
       "isBestSeller": false,
       "isNewOpen": false,
@@ -84,10 +84,10 @@ class AppArray {
     },
     {
       "image": foImageAssets.nearBy2,
-      "name": "gourmetNachoSpot",
-      "foodType": "multiCuisine",
+      "name": "ผักนึ่งสุขภาพ",
+      "foodType": "ชุดผักนึ่ง",
       "rating": 5.0,
-      "arriveTime": "25min",
+      "arriveTime": "20 บาท",
       "distance": "1.5km",
       "isBestSeller": false,
       "isNewOpen": false,
@@ -101,10 +101,27 @@ class AppArray {
     },
     {
       "image": foImageAssets.nearBy3,
-      "name": "farmToTable",
-      "foodType": "mexicanContinental",
+      "name": "แซนวิช",
+      "foodType": "อาหารเช้า",
       "rating": 4.2,
-      "arriveTime": "28min",
+      "arriveTime": "20 บาท",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "30",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.nearBy3,
+      "name": "แฮมเบอเกอร์",
+      "foodType": "อาหารเช้า",
+      "rating": 4.2,
+      "arriveTime": "20 บาท",
       "distance": "2km",
       "isBestSeller": false,
       "isNewOpen": false,

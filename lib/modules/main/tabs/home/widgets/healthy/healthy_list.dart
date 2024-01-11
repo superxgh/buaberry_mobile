@@ -12,7 +12,7 @@ class HealthyList extends StatelessWidget {
     return GetBuilder<HomeController>(builder: (homeCtrl) {
       return Column(
         children: [
-          ...homeCtrl.nearByList.map((e) {
+          ...homeCtrl.healthyList.map((e) {
             return HealthyCard(
               product: e,
             ).marginSymmetric(horizontal: Insets.i15);

@@ -30,10 +30,10 @@ class DescriptionLayout extends StatelessWidget {
           fontSize: FontSizes.f14,
           color: appController.appTheme.foodContentColor,
         ),
-        const VSpace(Sizes.s10),
-        ArrivalTimeDistance(
-            arrivalTime: trans(product!.arriveTime!),
-            distance: trans(product!.distance!)),
+        // const VSpace(Sizes.s10),
+        // ArrivalTimeDistance(
+        //     arrivalTime: trans(product!.arriveTime!),
+        //     distance: trans(product!.distance!)),
         const VSpace(Sizes.s10),
         if (product!.offer != "")
           Row(
