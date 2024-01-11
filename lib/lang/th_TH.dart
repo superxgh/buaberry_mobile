@@ -10,8 +10,8 @@ Map<String, String> th_TH = {
   commonFonts.login : 'เข้าสู่ระบบ',
 
   // Login screen
-  ThemeFont.login_input_username_password_text : 'กรุณากรอกข้อมูลชื่อผู้ใช้งานและรหัสผ่าน',
-  ThemeFont.login_input_username_password_description_text : 'ระบบจะทำการตรวจสอบข้อมูลและทำการเข้าสู่ระบบ',
+  ThemeFont.login_input_screen_text : 'ล็อกอินเข้าสู่ระบบ',
+  ThemeFont.login_input_screen_description_text : 'ระบบจะทำการตรวจสอบข้อมูลและทำการเข้าสู่ระบบ',
 
   ThemeFont.login_with_username_pasword : 'เข้าสู่ระบบโดยใช้ชื่อผู้ใช้งานและรหัสผ่าน',
   ThemeFont.login_enter_username : 'กรุณากรอกชื่อผู้ใช้งาน',

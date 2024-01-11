@@ -22,13 +22,11 @@ class LoginScreen extends GetView<LoginController> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           //enter phone number text
-                          FoodLoginWidget().enterYourUsernameAndPasswordText(),
-                          const VSpace(Sizes.s15),
-
-                          //enter confirmation code text
+                          FoodLoginWidget().displayInputText(),
+                          const VSpace(Sizes.s10),
                           FoodLoginWidget()
-                              .enterYourUsernameAndPasswordDescriptionText(),
-                          const VSpace(Sizes.s80),
+                              .displayInputDescriptionText(),
+                          const VSpace(Sizes.s60),
 
                           //enter phone number text
                           FoodLoginWidget().loginWithUsernameAndPasswordLabel(),
@@ -43,7 +41,7 @@ class LoginScreen extends GetView<LoginController> {
                               onTap: () => Get.toNamed(Routes.OTP),
                               title: trans(commonFonts.login)),
                           //social login with text
-                          const VSpace(Sizes.s50),
+                          const VSpace(Sizes.s60),
                           FoodLoginWidget().loginWith(),
                           const VSpace(Sizes.s20),
 

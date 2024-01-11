@@ -10,8 +10,8 @@ Map<String, String> en_US = {
   commonFonts.login : 'Login',
 
   // Login screen
-  ThemeFont.login_input_username_password_text : 'Please input username and password',
-  ThemeFont.login_input_username_password_description_text : 'We will check information and login to the system',
+  ThemeFont.login_input_screen_text : 'Login to system',
+  ThemeFont.login_input_screen_description_text : 'We will check information and login to the system',
 
   ThemeFont.login_with_username_pasword : 'Login with username and password',
   ThemeFont.login_enter_username : 'Enter username',

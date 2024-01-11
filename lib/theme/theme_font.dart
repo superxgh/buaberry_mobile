@@ -3,8 +3,8 @@
 class ThemeFont{
 
   // Login Screen
-  static const String login_input_username_password_text = 'login_input_username_password_text';
-  static const String login_input_username_password_description_text = 'login_input_username_password_description_text';
+  static const String login_input_screen_text = 'login_input_head_screen_text';
+  static const String login_input_screen_description_text = 'login_input_screen_description_text';
 
   static const String login_with_username_pasword = 'login_with_username_pasword';
   static const String login_enter_username = 'login_enter_username';
