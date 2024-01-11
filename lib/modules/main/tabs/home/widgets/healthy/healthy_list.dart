@@ -2,20 +2,18 @@
 
 import 'package:buaberry_mobile/config.dart';
 import '../home_widget.dart';
-import 'near_by_card.dart';
+import 'healthy_card.dart';
 
-class NearByLayout extends StatelessWidget {
-  const NearByLayout({Key? key}) : super(key: key);
+class HealthyList extends StatelessWidget {
+  const HealthyList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(builder: (homeCtrl) {
       return Column(
         children: [
-          HomeWidget().titleAndSeeAll(trans(ThemeFont.nearByRestaurant)),
-          const VSpace(Sizes.s12),
           ...homeCtrl.nearByList.map((e) {
-            return NearByCard(
+            return HealthyCard(
               product: e,
             ).marginSymmetric(horizontal: Insets.i15);
           }).toList()

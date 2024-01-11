@@ -8,6 +8,7 @@ Map<String, String> th_TH = {
   commonFonts.username : 'ชื่อผู้ใช้งาน',
   commonFonts.next : 'ต่อไป',
   commonFonts.login : 'เข้าสู่ระบบ',
+  commonFonts.seeAll : 'ทั้งหมด',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'ล็อกอินเข้าสู่ระบบ',
@@ -20,6 +21,7 @@ Map<String, String> th_TH = {
 
   // Home tab
   ThemeFont.searchForDessert : 'ค้นหาขนม',
+  ThemeFont.healthyLabel : 'เมนูสุุขภาพ',
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',
   ThemeFont.enterPhoneNumber : 'Enter phone number',

@@ -8,6 +8,7 @@ Map<String, String> en_US = {
   commonFonts.username : 'Username',
   commonFonts.next : 'Next',
   commonFonts.login : 'Login',
+  commonFonts.seeAll : 'SeeAll',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',
@@ -20,6 +21,7 @@ Map<String, String> en_US = {
 
   // Home tab
   ThemeFont.searchForDessert : 'Search for dessert.',
+  ThemeFont.healthyLabel : 'Healthy list',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',

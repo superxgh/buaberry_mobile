@@ -25,7 +25,7 @@ class SplashScreen extends GetView<SplashController>  {
               ),
               const VSpace(Sizes.s100),
               Image.asset(foImageAssets.splashLogo),
-              const VSpace(Sizes.s50),
+              const VSpace(Sizes.s100),
               TextLabel(
                 text: commonFonts.loading,
                 fontFamily: FontFamily.LATO,

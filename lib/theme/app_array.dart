@@ -16,16 +16,34 @@ class AppArray {
   //banner list
   var bannerList = [
     {
-      "title": "Food1",
-      "desc": "terms",
-      "offer": "50%",
+      "title": "เมนูสุขภาพ",
+      "desc": "ข้าวโพดน มันม่วง มันม่วง เผือก ฝักทอง กล้วย เราใช้วิธีการนึ่ง เพื่อให้ได้ปริมาณคุณค่าอาหาร ที่ดีที่สุด",
+      "offer": "10%",
       "image": foImageAssets.banner1
     },
     {
-      "title": "Food2",
-      "desc": "terms",
-      "offer": "50%",
+      "title": "อาหารเช้า",
+      "desc": "แซนวิช ทูน่า ปูอัด แฮมชีส ซีซ่าร์ เราทำทุกวันทุกเช้า",
+      "offer": "15%",
       "image": foImageAssets.banner2
+    },
+    {
+      "title": "ขนมหวาน",
+      "desc": "บราวนี่ คุกกี้กรอบ คุกกี้นิ่ม ปังไส้กรอก ปังไส้ปูอัด ปังแยม ปังเนยกรอบ ...",
+      "offer": "10%",
+      "image": foImageAssets.banner1
+    },
+    {
+      "title": "ซาลาเปา",
+      "desc": "ซาลาเปา หมูสับไข่เค็ม หมูสับ หมูแดง ถั่วแดง เผือก ชาเขียว",
+      "offer": "15%",
+      "image": foImageAssets.banner2
+    },
+    {
+      "title": "ชุดเบรกงานต่างๆ",
+      "desc": "ชุด 1 ชิ้น, ชุด 2 ชิ้น, ชุด 3 ชิ้น เลือกเพิ่ม น้ำ นม ต้ำเต้าหู้,,,",
+      "offer": "10%",
+      "image": foImageAssets.banner1
     }
   ];
 

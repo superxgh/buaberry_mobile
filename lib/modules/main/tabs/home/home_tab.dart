@@ -1,8 +1,7 @@
 import 'package:buaberry_mobile/config.dart';
-import 'widgets/instruction.dart';
+import 'package:buaberry_mobile/modules/main/tabs/home/widgets/banner/banner_list.dart';
+import 'package:buaberry_mobile/modules/main/tabs/home/widgets/healthy/healthy_list.dart';
 import 'widgets/home_widget.dart';
-import 'widgets/banner/banner_layout.dart';
-import 'widgets/near_by/near_by_layout.dart';
 
 class HomeTab extends GetView<HomeController> {
   const HomeTab({super.key});
@@ -22,17 +21,22 @@ class HomeTab extends GetView<HomeController> {
           const PopularDessertList(),
           const VSpace(Sizes.s20),
           //food instruction
-          const InstructionLayout(),
-          const VSpace(Sizes.s20),
+          // const InstructionLayout(),
+          // const VSpace(Sizes.s20),
 
           //near by layout
-          const NearByLayout(),
+
+          HomeWidget().displayHealthyLabel(),
+          const VSpace(Sizes.s12),
+          const HealthyList(),
           const VSpace(Sizes.s20),
+
+
+
+          //featured restaurant
           HomeWidget()
               .titleAndSeeAll(trans(ThemeFont.featuredRestaurant)),
           const VSpace(Sizes.s15),
-
-          //featured restaurant
           Obx(() {
             return (controller.featuredRestaurantList.length == 0)
                 ? Container()

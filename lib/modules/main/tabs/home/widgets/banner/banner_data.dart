@@ -27,7 +27,7 @@ class BannerData extends StatelessWidget {
                     data!.image.toString(),
                     fit: BoxFit.cover,
                     height: Sizes.s180,
-                    width: MediaQuery.of(context).size.width,
+                    width: Get.width,
                   )),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,14 +37,17 @@ class BannerData extends StatelessWidget {
                   (isOdd!)
                       ? BannerWidget().oddData(data)
                       : BannerWidget().evenData(data),
-                  const VSpace(Sizes.s15),
-                  TextLabel(
-                    text: data!.desc.toString(),
-                    alignment: Alignment.centerLeft,
-                    fontFamily: FontFamily.LATO,
-                    fontWeight: FontWeight.w400,
-                    fontSize: FontSizes.f12,
-                    color: appController.appTheme.foodContentColor,
+                  VSpace( isOdd! ? Sizes.s35 : Sizes.s15),
+                  Container(
+                    width: isOdd! ? Get.width : Get.width / 2,
+                    child: TextLabel(
+                      text: data!.desc.toString(),
+                      alignment: Alignment.centerLeft,
+                      fontFamily: FontFamily.LATO,
+                      fontWeight: FontWeight.w400,
+                      fontSize: FontSizes.f12,
+                      color: appController.appTheme.textColor,
+                    ),
                   ),
                 ],
               ).marginSymmetric(horizontal: Insets.i12, vertical: Insets.i30)

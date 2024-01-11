@@ -2,10 +2,10 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-class NearByCard extends StatelessWidget {
+class HealthyCard extends StatelessWidget {
   final Product? product;
 
-  const NearByCard({Key? key, this.product}) : super(key: key);
+  const HealthyCard({Key? key, this.product}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
