@@ -12,36 +12,31 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget{
       title: Row(
         children: [
           Image.asset(
-            foIconAssets.sendColor,
+            foImageAssets.splashLogo,
             height: Sizes.s20,
             fit: BoxFit.cover,
           ),
           const HSpace(Sizes.s10),
-          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Row(
-              children: [
-                Text(trans('home'),
-                    style: TextStyle(
-                      color: appController.appTheme.foodTitleColor,
-                      fontFamily: GoogleFonts.lato().fontFamily,
-                      fontWeight: FontWeight.w400,
-                      fontSize: FontSizes.f16,
-                      letterSpacing: 0,
-                      height: 1,
-                    )),
-                const Icon(Icons.keyboard_arrow_down_rounded, size: Sizes.s20)
-              ],
-            ),
-            Text(trans(ThemeFont.lakeForestAddress),
-                style: TextStyle(
-                  color: appController.appTheme.foodContentColor,
-                  fontFamily: GoogleFonts.lato().fontFamily,
-                  fontWeight: FontWeight.w400,
-                  fontSize: FontSizes.f14,
-                  letterSpacing: 0,
-                  height: 1,
-                ))
-          ])
+          TextLabel(
+              text: commonFonts.appName,
+              alignment: Alignment.center,
+              fontFamily: FontFamily.LATO,
+              fontSize: FontSizes.f18,
+              fontWeight: FontWeight.bold,
+              color: appController.appTheme.foodTitleColor
+          ),
+          const HSpace(Sizes.s10),
+          Obx(() {
+              return TextLabel(
+                  text: appController.dateTime.value.format('d-m-Y H:i:s'),
+                  alignment: Alignment.center,
+                  fontFamily: FontFamily.LATO,
+                  fontSize: FontSizes.f18,
+                  fontWeight: FontWeight.bold,
+                  color: appController.appTheme.foodTitleColor
+              );
+            }
+          )
         ],
       ),
       actions: [

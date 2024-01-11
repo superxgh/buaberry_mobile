@@ -19,6 +19,7 @@ export 'package:shimmer/shimmer.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:get_storage/get_storage.dart';
 export 'lang/translation_service.dart';
+export 'package:date_time_format/date_time_format.dart';
 
 
 final appController = Get.isRegistered<AppController>()

@@ -4,7 +4,7 @@ import 'widgets/home_widget.dart';
 import 'widgets/banner/banner_layout.dart';
 import 'widgets/near_by/near_by_layout.dart';
 
-class HomeTab extends GetView<MainController> {
+class HomeTab extends GetView<HomeController> {
   const HomeTab({super.key});
 
   @override

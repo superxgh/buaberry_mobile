@@ -10,10 +10,11 @@ class MainBinding extends Bindings {
   @override
   void dependencies() {
     Get.put<MainController>(MainController());
-    Get.put<CartController>(CartController());
+
     Get.put<HomeController>(HomeController());
+    Get.put<FoodSearchController>(FoodSearchController());
+    Get.put<CartController>(CartController());
     Get.put<OfferController>(OfferController());
     Get.put<ProfileController>(ProfileController());
-    Get.put<FoodSearchController>(FoodSearchController());
   }
 }

@@ -23,9 +23,9 @@ class SplashScreen extends GetView<SplashController>  {
                 fontWeight: FontWeight.bold,
                 color: appController.appTheme.textColor,
               ),
-              const VSpace(Sizes.s50),
-              Image.asset(foImageAssets.splashLogo),
               const VSpace(Sizes.s100),
+              Image.asset(foImageAssets.splashLogo),
+              const VSpace(Sizes.s50),
               TextLabel(
                 text: "Loading...",
                 fontFamily: FontFamily.LATO,

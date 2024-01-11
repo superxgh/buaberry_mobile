@@ -1,5 +1,7 @@
 
 
+import 'dart:async';
+
 import 'package:buaberry_mobile/config.dart';
 
 class AppController extends GetxController {
@@ -14,6 +16,8 @@ class AppController extends GetxController {
   dynamic currencyVal;
   double rateValue = 0.0;
   List drawerList = [];
+  final dateTime = DateTime.now().obs;
+
 
 //list of bottommost page
 //   List<Widget> widgetOptions = <Widget>[
@@ -23,10 +27,13 @@ class AppController extends GetxController {
 //     WidgetPage()
 //   ];
 
-  // update theme
-  updateTheme(theme) {
-    _appTheme = theme;
-    Get.forceAppUpdate();
+
+  @override
+  void onInit() {
+    Timer.periodic(Duration(seconds: 1), (timer) {
+      dateTime.value  = DateTime.now();
+    });
+    super.onInit();
   }
 
   @override
@@ -37,6 +44,13 @@ class AppController extends GetxController {
     // update();
     super.onReady();
   }
+
+  // update theme
+  updateTheme(theme) {
+    _appTheme = theme;
+    Get.forceAppUpdate();
+  }
+
 
   //get data from storage
   // getData()async{

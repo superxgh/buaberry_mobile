@@ -21,8 +21,6 @@ class MainController extends GetxController {
   var foodBannerList = <FoodBannerModel>[].obs;
   var instructionList =[].obs;
   var nearByList = <Product>[].obs;
-  var featuredRestaurantList = <Product>[].obs;
-  var mustTryList = <Product>[].obs;
   List recentList =[];
 
 
@@ -42,12 +40,8 @@ class MainController extends GetxController {
   @override
   void onReady() async {
     getData();
-    logger.d("mustTryList length : ${mustTryList.length}");
-
     recentList = foAppArray.recentList;
-
     super.onReady();
-
   }
 
   void switchTab(index) {
@@ -90,22 +84,13 @@ class MainController extends GetxController {
   }
 
   getData(){
-
     for (var i = 0; i < foAppArray.bannerList.length; i++) {
       foodBannerList.add(FoodBannerModel.fromJson(foAppArray.bannerList[i]));
     }
-
     instructionList.value = foAppArray.instructionList;
     for (var i = 0; i < foAppArray.nearByRestaurant.length; i++) {
       nearByList.add(Product.fromJson(foAppArray.nearByRestaurant[i]));
     }
-    for (var i = 0; i < foAppArray.featuredRestaurant.length; i++) {
-      featuredRestaurantList.add(Product.fromJson(foAppArray.featuredRestaurant[i]));
-    }
-    for (var i = 0; i < foAppArray.mustTryList.length; i++) {
-      mustTryList.add(Product.fromJson(foAppArray.featuredRestaurant[i]));
-    }
-    update();
   }
 
 
