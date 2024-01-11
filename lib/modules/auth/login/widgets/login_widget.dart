@@ -11,21 +11,6 @@ class FoodLoginWidget {
         color: appController.appTheme.textColor
   );
 
-  Widget displayInputDescriptionText() => Align(
-    alignment: Alignment.center,
-    child: FittedBox(
-        child : TextLabel(
-          text: ThemeFont.login_input_screen_description_text,
-          alignment: Alignment.center,
-          fontFamily: FontFamily.LATO,
-          fontSize: FontSizes.f18,
-          fontWeight: FontWeight.bold,
-          color: appController.appTheme.foodContentColor,
-        )
-
-    ),
-  );
-
   Widget loginWithUsernameAndPasswordLabel() => TextLabel(
       text: ThemeFont.login_with_username_pasword,
       alignment: Alignment.center,
