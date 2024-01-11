@@ -46,7 +46,7 @@ class FoodSearchTab extends GetView<MainController> {
                 const VSpace(Sizes.s15),
               ],
             ),
-            const CuisineList()
+            const PopularDessertList()
           ],
         ),
       ),

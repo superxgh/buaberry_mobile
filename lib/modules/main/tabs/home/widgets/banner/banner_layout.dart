@@ -6,8 +6,8 @@ import 'dot_indicator.dart';
 import 'banner_data.dart';
 
 
-class BannerLayout extends StatelessWidget {
-  const BannerLayout({Key? key}) : super(key: key);
+class BannerList extends StatelessWidget {
+  const BannerList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

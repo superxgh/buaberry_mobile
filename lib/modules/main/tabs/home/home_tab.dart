@@ -16,10 +16,10 @@ class HomeTab extends GetView<HomeController> {
         children: [
           HomeWidget().searchForDessert(),
           //banner layout
-          const BannerLayout(),
+          const BannerList(),
           const VSpace(Sizes.s10),
           //cuisine list
-          const CuisineList(),
+          const PopularDessertList(),
           const VSpace(Sizes.s20),
           //food instruction
           const InstructionLayout(),

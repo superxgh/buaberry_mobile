@@ -29,12 +29,13 @@ class AppArray {
     }
   ];
 
-  //cuisine list
-  var cuisineList = [
-    {'title': 'mexican', 'image': foImageAssets.mexican},
-    {'title': 'chinese', 'image': foImageAssets.chinese},
-    {'title': 'italian', 'image': foImageAssets.italian},
-    {'title': 'thai', 'image': foImageAssets.thai}
+  //popular dessert list
+  var popularDessertList = [
+    {'title': 'บราวนี่', 'image': foImageAssets.mexican},
+    {'title': 'ซาลาเปา', 'image': foImageAssets.chinese},
+    {'title': 'เค้กกล้วยหอม', 'image': foImageAssets.italian},
+    {'title': 'คุกกี้กรอบ', 'image': foImageAssets.thai},
+    {'title': 'คุกกี้นิ่ม', 'image': foImageAssets.thai}
   ];
 
   //instruction list

@@ -1,7 +1,7 @@
 import 'package:buaberry_mobile/config.dart';
 
-class CuisineList extends StatelessWidget {
-  const CuisineList({Key? key}) : super(key: key);
+class PopularDessertList extends StatelessWidget {
+  const PopularDessertList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class CuisineList extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          ...foAppArray.cuisineList
+          ...foAppArray.popularDessertList
               .map((e) => InkWell(
                     onTap: () =>
                         Get.toNamed(Routes.foShop, arguments: e['title']),
