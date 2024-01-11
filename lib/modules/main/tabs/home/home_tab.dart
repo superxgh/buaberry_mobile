@@ -31,17 +31,18 @@ class HomeTab extends GetView<HomeController> {
 
 
 
-          //featured restaurant
-          HomeWidget()
-              .titleAndSeeAll(trans(ThemeFont.featuredRestaurant)),
-          const VSpace(Sizes.s15),
+          // Breakfast list
+          HomeWidget().displayBreakfastLabel(),
+          const VSpace(Sizes.s12),
           Obx(() {
             return (controller.featuredRestaurantList.length == 0)
                 ? Container()
                 : RowListLayout(productList: controller.featuredRestaurantList)
                     .marginSymmetric(horizontal: Insets.i15);
           }),
-          const VSpace(Sizes.s24),
+          const VSpace(Sizes.s20),
+
+
           HomeWidget().titleAndSeeAll(trans(ThemeFont.mustTry)),
           const VSpace(Sizes.s15),
 

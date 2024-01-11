@@ -7,8 +7,12 @@ class HomeWidget {
     return FoodTextBox(hinText: ThemeFont.searchForDessert)
         .marginSymmetric(horizontal: Insets.i15, vertical: Insets.i15);
   }
+
   // healthy list
   Widget displayHealthyLabel() => titleAndSeeAll(trans(ThemeFont.healthyLabel));
+
+  // breakfast list
+  Widget displayBreakfastLabel() => titleAndSeeAll(trans(ThemeFont.breakfastLabel));
 
   //title and see all layout
   Widget titleAndSeeAll(title) => Row(

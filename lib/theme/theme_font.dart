@@ -14,6 +14,7 @@ class ThemeFont{
   // Home tab
   static const String searchForDessert = 'searchForRestaurant';
   static const String healthyLabel = 'healthyLabel';
+  static const String breakfastLabel = 'breakfastLabel';
 
   // =============================
   static const String profile_menu_orders_head = 'profileMenuOrdersHead';
