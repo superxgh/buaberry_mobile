@@ -17,6 +17,6 @@ class OTPController extends GetxController {
   }
 
   void login() {
-    PageRouter.gotoHomeScreen();
+    PageRouter.gotoMainScreen();
   }
 }

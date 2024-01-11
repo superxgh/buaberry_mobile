@@ -30,8 +30,8 @@ class LoginScreen extends GetView<LoginController> {
                   const VSpace(Sizes.s10),
                   FoodLoginWidget().passwordTextBox(),
                   const VSpace(Sizes.s20),
-                  FoodLoginWidget().nextButton(
-                      onTap: () => Get.toNamed(Routes.OTP),
+                  FoodLoginWidget().loginWithUsernameAndPasswordButton(
+                      onTap: () => controller.login(),
                       title: trans(commonFonts.login)),
                   //social login with text
                   const VSpace(Sizes.s60),

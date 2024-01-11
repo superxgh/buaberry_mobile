@@ -21,6 +21,6 @@ class LoginController extends GetxController {
   }
 
   void login() {
-    PageRouter.gotoHomeScreen();
+    PageRouter.gotoMainScreen();
   }
 }

@@ -13,14 +13,14 @@ class AppPages {
       binding: SplashBinding(),
     ),
     GetPage(
-      name: Routes.ON_BOARD,
-      page: () => OnBoardScreen(),
-      binding: OnBoardBinding(),
-    ),
-    GetPage(
       name: Routes.LOGIN,
       page: () => LoginScreen(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: Routes.ON_BOARD,
+      page: () => OnBoardScreen(),
+      binding: OnBoardBinding(),
     ),
     GetPage(
       name: Routes.OTP,
@@ -28,9 +28,12 @@ class AppPages {
       binding: OTPBinding(),
     ),
     GetPage(
-      name: Routes.HOME,
+      name: Routes.MAIN,
       page: () => MainScreen(),
       binding: MainBinding(),
+      children: [
+
+      ]
     ),
     GetPage(
         name: Routes.PROFILE_ORDER_HISTORY,

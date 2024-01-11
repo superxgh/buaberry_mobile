@@ -37,7 +37,7 @@ class FoodLoginWidget {
       color: appController.appTheme.foodContentColor
   );
 
-  Widget nextButton({GestureTapCallback? onTap,title}) => CustomButton(
+  Widget loginWithUsernameAndPasswordButton({GestureTapCallback? onTap,title}) => CustomButton(
     title: title,
     radius: AppRadius.r10,
     color: appController.appTheme.foodPrimaryColor,
