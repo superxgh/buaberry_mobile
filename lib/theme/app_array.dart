@@ -47,8 +47,8 @@ class AppArray {
     }
   ];
 
-  //popular dessert list
-  var popularDessertList = [
+  //popular list
+  var popularList = [
     {'title': 'บราวนี่', 'image': foImageAssets.mexican},
     {'title': 'ซาลาเปา', 'image': foImageAssets.chinese},
     {'title': 'เค้กกล้วยหอม', 'image': foImageAssets.italian},
@@ -56,14 +56,7 @@ class AppArray {
     {'title': 'คุกกี้นิ่ม', 'image': foImageAssets.thai}
   ];
 
-  //instruction list
-  var instructionList = [
-    {'title': 'fastDelivery', 'image': foIconAssets.truck},
-    {'title': 'pureVeg', 'image': foIconAssets.veg},
-    {'title': 'greatOffer', 'image': foGifAssets.offer}
-  ];
-
-  //near by restaurant
+  // healthy list
   var healthyList = [
     {
       "image": foImageAssets.nearBy1,
@@ -139,8 +132,8 @@ class AppArray {
   var breakfastList = [
     {
       "image": foImageAssets.product1,
-      "name": "cafeJack",
-      "foodType": "multiCuisine",
+      "name": "แซนด์วิช-ทูน่า",
+      "foodType": "อาหารเช้า",
       "rating": 4.1,
       "arriveTime": "35min",
       "distance": "2km",
@@ -156,8 +149,8 @@ class AppArray {
     },
     {
       "image": foImageAssets.product2,
-      "name": "earthWind",
-      "foodType": "mexicanContinental",
+      "name": "แซนด์วิช-ปูอัด",
+      "foodType": "อาหารเช้า",
       "rating": 4.2,
       "arriveTime": "28min",
       "distance": "2km",
@@ -173,8 +166,59 @@ class AppArray {
     },
     {
       "image": foImageAssets.product3,
-      "name": "wokThisWay",
-      "foodType": "northIndian",
+      "name": "แซนด์วิช-แฮมชีส",
+      "foodType": "อาหารเช้า",
+      "rating": 4.2,
+      "arriveTime": "28min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "50off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "30",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product3,
+      "name": "แซนด์วิช-ซีซ้า",
+      "foodType": "อาหารเช้า",
+      "rating": 4.2,
+      "arriveTime": "28min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "50off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "30",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product3,
+      "name": "แซนด์วิช-ไส้กรอก+ไข่ดาว",
+      "foodType": "อาหารเช้า",
+      "rating": 4.2,
+      "arriveTime": "28min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "50off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "30",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product3,
+      "name": "แซนด์วิช-โบโลน่่า+ไข่ดาว",
+      "foodType": "อาหารเช้า",
       "rating": 4.2,
       "arriveTime": "28min",
       "distance": "2km",
@@ -190,12 +234,12 @@ class AppArray {
     }
   ];
 
-  //must try
-  var mustTryList = [
+  // dessert list
+  var dessertList = [
     {
       "image": foImageAssets.product4,
-      "name": "theZenGarden",
-      "foodType": "multiCuisine",
+      "name": "เค้กกล้วยหอม",
+      "foodType": "ขนมหวาน",
       "rating": 5.0,
       "arriveTime": "20min",
       "distance": "2km",
@@ -211,8 +255,8 @@ class AppArray {
     },
     {
       "image": foImageAssets.product5,
-      "name": "yinYummy",
-      "foodType": "mexicanContinental",
+      "name": "บราวนี้",
+      "foodType": "ขนมหวาน",
       "rating": 4.8,
       "arriveTime": "25min",
       "distance": "1.5km",
@@ -228,8 +272,118 @@ class AppArray {
     },
     {
       "image": foImageAssets.product3,
-      "name": "wokThisWay",
-      "foodType": "northIndian",
+      "name": "ปังไส้กรอก",
+      "foodType": "ขนมหวาน",
+      "rating": 4.2,
+      "arriveTime": "28min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "50off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "35",
+      "priceForPeople": "two",
+      "qty": 0,
+    }
+  ];
+
+  // dessert list
+  var dimsumList = [
+    {
+      "image": foImageAssets.product4,
+      "name": "ซาลาเปาหมูสับ+ไข่เค็ม",
+      "foodType": "ซาลาเปา",
+      "rating": 5.0,
+      "arriveTime": "20min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "30off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "30",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product5,
+      "name": "ซาลาเปาหมูสับ",
+      "foodType": "ซาลาเปา",
+      "rating": 4.8,
+      "arriveTime": "25min",
+      "distance": "1.5km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "45off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "35",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product3,
+      "name": "ขนมจีบหมู",
+      "foodType": "ขนมจีบ",
+      "rating": 4.2,
+      "arriveTime": "28min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "50off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "35",
+      "priceForPeople": "two",
+      "qty": 0,
+    }
+  ];
+
+  // break snack list
+  var breakSnackList = [
+    {
+      "image": foImageAssets.product4,
+      "name": "ชุดเบรก 1 ชิ้น เลือกขนมได้",
+      "foodType": "เบรก",
+      "rating": 5.0,
+      "arriveTime": "20min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "30off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "30",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product5,
+      "name": "ชุดเบรก 2 ชิ้น เลือกขนมได้",
+      "foodType": "เบรก",
+      "rating": 4.8,
+      "arriveTime": "25min",
+      "distance": "1.5km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "45off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "35",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product3,
+      "name": "ชุดเบรก 3 ชิ้น เลือกขนมได้",
+      "foodType": "เบรก",
       "rating": 4.2,
       "arriveTime": "28min",
       "distance": "2km",

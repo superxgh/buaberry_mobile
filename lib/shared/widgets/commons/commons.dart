@@ -7,3 +7,4 @@ export 'gradient_background.dart';
 export 'horizontal_dash_divider.dart';
 export 'icon_title_item.dart';
 export 'text_label.dart';
+export 'title_and_seeall_text.dart';

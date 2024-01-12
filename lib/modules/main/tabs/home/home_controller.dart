@@ -6,8 +6,9 @@ class HomeController extends GetxController {
   var foodBannerList = <FoodBannerModel>[].obs;
   var healthyList = <Product>[].obs;
   var breakfastList = <Product>[].obs;
-
-  var mustTryList = <Product>[].obs;
+  var dessertList = <Product>[].obs;
+  var dimsumList = <Product>[].obs;
+  var breakSnackList = <Product>[].obs;
   int current = 0;
 
   final CarouselController carouselController = CarouselController();
@@ -31,10 +32,14 @@ class HomeController extends GetxController {
       breakfastList
           .add(Product.fromJson(foAppArray.breakfastList[i]));
     }
-
-    instructionList.value = foAppArray.instructionList;
-    for (var i = 0; i < foAppArray.mustTryList.length; i++) {
-      mustTryList.add(Product.fromJson(foAppArray.breakfastList[i]));
+    for (var i = 0; i < foAppArray.dessertList.length; i++) {
+      dessertList.add(Product.fromJson(foAppArray.dessertList[i]));
+    }
+    for (var i = 0; i < foAppArray.dimsumList.length; i++) {
+      dimsumList.add(Product.fromJson(foAppArray.dimsumList[i]));
+    }
+    for (var i = 0; i < foAppArray.breakSnackList.length; i++) {
+      breakSnackList.add(Product.fromJson(foAppArray.breakSnackList[i]));
     }
     update();
   }

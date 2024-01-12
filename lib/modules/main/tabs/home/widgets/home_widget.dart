@@ -9,29 +9,18 @@ class HomeWidget {
   }
 
   // healthy list
-  Widget displayHealthyLabel() => titleAndSeeAll(trans(ThemeFont.healthyLabel));
+  Widget displayHealthyLabel() => TitleAndSeeAllText(title: ThemeFont.healthyLabel);
 
   // breakfast list
-  Widget displayBreakfastLabel() => titleAndSeeAll(trans(ThemeFont.breakfastLabel));
+  Widget displayBreakfastLabel() => TitleAndSeeAllText(title: ThemeFont.breakfastLabel);
 
-  //title and see all layout
-  Widget titleAndSeeAll(title) => Row(
-    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    children: [
-      TextLabel(
-        text: title,
-        fontFamily: FontFamily.LATO,
-        fontWeight: FontWeight.bold,
-        fontSize: FontSizes.f16,
-        color: appController.appTheme.foodTitleColor,
-      ),
-      TextLabel(
-        text: commonFonts.seeAll,
-        fontFamily: FontFamily.LATO,
-        fontWeight: FontWeight.bold,
-        fontSize: FontSizes.f16,
-        color: appController.appTheme.foodPrimaryColor,
-      ),
-    ],
-  ).marginSymmetric(horizontal: Insets.i15);
+  // dessert list
+  Widget displayDessertLabel() => TitleAndSeeAllText(title: ThemeFont.dessertLabel);
+
+  // dimsum list
+  Widget displayDimSumLabel() => TitleAndSeeAllText(title: ThemeFont.dimsumLabel);
+
+  // break snack list
+  Widget displayBreakSnackLabel() => TitleAndSeeAllText(title: ThemeFont.breakSnackLabel);
+
 }

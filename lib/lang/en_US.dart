@@ -23,6 +23,9 @@ Map<String, String> en_US = {
   ThemeFont.searchForDessert : 'Search for dessert.',
   ThemeFont.healthyLabel : 'Healthy list',
   ThemeFont.breakfastLabel : 'Breakfast list',
+  ThemeFont.dessertLabel : 'Dessert list',
+  ThemeFont.dimsumLabel : 'Dim-Sum list',
+  ThemeFont.breakSnackLabel : 'Break-Snack list',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',

@@ -15,6 +15,9 @@ class ThemeFont{
   static const String searchForDessert = 'searchForRestaurant';
   static const String healthyLabel = 'healthyLabel';
   static const String breakfastLabel = 'breakfastLabel';
+  static const String dessertLabel = 'dessertLabel';
+  static const String dimsumLabel = 'dimsumLabel';
+  static const String breakSnackLabel = 'breakSnackLabel';
 
   // =============================
   static const String profile_menu_orders_head = 'profileMenuOrdersHead';

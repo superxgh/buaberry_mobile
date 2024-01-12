@@ -1,6 +1,5 @@
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/tabs/home/widgets/banner/banner_list.dart';
-import 'package:buaberry_mobile/modules/main/tabs/home/widgets/healthy/healthy_list.dart';
 import 'widgets/home_widget.dart';
 
 class HomeTab extends GetView<HomeController> {
@@ -26,10 +25,13 @@ class HomeTab extends GetView<HomeController> {
           // Healthy list
           HomeWidget().displayHealthyLabel(),
           const VSpace(Sizes.s12),
-          const HealthyList(),
+          Obx(() {
+            return (controller.healthyList.length == 0)
+                ? Container()
+                : ColListLayout(productList: controller.healthyList)
+                .marginSymmetric(horizontal: Insets.i15);
+          }),
           const VSpace(Sizes.s20),
-
-
 
           // Breakfast list
           HomeWidget().displayBreakfastLabel(),
@@ -42,18 +44,40 @@ class HomeTab extends GetView<HomeController> {
           }),
           const VSpace(Sizes.s20),
 
-
-          HomeWidget().titleAndSeeAll(trans(ThemeFont.mustTry)),
-          const VSpace(Sizes.s15),
-
-          //must try
+          // dessert list
+          HomeWidget().displayDessertLabel(),
+          const VSpace(Sizes.s12),
           Obx(() {
-            return (controller.mustTryList.length == 0)
+            return (controller.dessertList.length == 0)
                 ? Container()
-                : RowListLayout(productList: controller.mustTryList)
-                    .marginSymmetric(horizontal: Insets.i15);
+                : RowListLayout(productList: controller.dessertList)
+                .marginSymmetric(horizontal: Insets.i15);
           }),
-          const VSpace(Sizes.s100)
+          const VSpace(Sizes.s20),
+
+          // dimsum list
+          HomeWidget().displayDimSumLabel(),
+          const VSpace(Sizes.s12),
+          Obx(() {
+            return (controller.dimsumList.length == 0)
+                ? Container()
+                : RowListLayout(productList: controller.dimsumList)
+                .marginSymmetric(horizontal: Insets.i15);
+          }),
+          const VSpace(Sizes.s20),
+
+          // breaksnack list
+          HomeWidget().displayBreakSnackLabel(),
+          const VSpace(Sizes.s12),
+          Obx(() {
+            return (controller.breakSnackList.length == 0)
+                ? Container()
+                : RowListLayout(productList: controller.breakSnackList)
+                .marginSymmetric(horizontal: Insets.i15);
+          }),
+          const VSpace(Sizes.s20)
+
+
         ],
       ),
     );

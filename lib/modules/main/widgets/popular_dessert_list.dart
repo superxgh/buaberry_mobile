@@ -9,7 +9,7 @@ class PopularDessertList extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          ...foAppArray.popularDessertList
+          ...foAppArray.popularList
               .map((e) => InkWell(
                     onTap: () =>
                         Get.toNamed(Routes.foShop, arguments: e['title']),

@@ -23,6 +23,9 @@ Map<String, String> th_TH = {
   ThemeFont.searchForDessert : 'ค้นหาขนม',
   ThemeFont.healthyLabel : 'เมนูสุุขภาพ',
   ThemeFont.breakfastLabel : 'เมนูอาหารเช้า',
+  ThemeFont.dessertLabel : 'เมนูขนม',
+  ThemeFont.dimsumLabel : 'เมนูขนมจีบ+ซาลาเปา',
+  ThemeFont.breakSnackLabel : 'เมนูของว่าง-อาหารเบรก',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',

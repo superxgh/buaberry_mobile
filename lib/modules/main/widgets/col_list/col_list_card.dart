@@ -2,14 +2,15 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-class HealthyCard extends StatelessWidget {
+class ColListCard extends StatelessWidget {
   final Product? product;
 
-  const HealthyCard({Key? key, this.product}) : super(key: key);
+  const ColListCard({Key? key, this.product}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: Get.width,
       margin: const EdgeInsets.only(bottom: Insets.i12),
       padding: const EdgeInsets.symmetric(
           horizontal: Insets.i15, vertical: Insets.i10),
