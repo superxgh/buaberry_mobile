@@ -1,4 +1,6 @@
-import 'common_fonts.dart';
+
+import 'package:buaberry_mobile/theme/common_fonts.dart';
+
 import 'common_image.dart';
 import 'common_svg.dart';
 import 'gif_assets.dart';

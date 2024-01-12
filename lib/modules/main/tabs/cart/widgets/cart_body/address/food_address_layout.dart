@@ -2,7 +2,6 @@
 import 'package:buaberry_mobile/config.dart';
 
 import 'address_layout.dart';
-import 'total_bill_pay.dart';
 
 class FoodAddressLayout extends StatelessWidget {
   const FoodAddressLayout({Key? key}) : super(key: key);
@@ -33,8 +32,8 @@ class FoodAddressLayout extends StatelessWidget {
                   AddressLayout(addressModel: foodCtrl.addressModel),
                 TextLabel(
                   text: foodCtrl.addressModel != null
-                       ? ThemeFont.change
-                       : ThemeFont.selectAddress ,
+                       ? commonFonts.change
+                       : commonFonts.selectShippingAddress ,
                   fontFamily: FontFamily.LATO,
                   fontWeight: FontWeight.bold,
                   fontSize: FontSizes.f16,
@@ -57,9 +56,6 @@ class FoodAddressLayout extends StatelessWidget {
                 .paddingSymmetric(horizontal: Insets.i20),
             Divider(color: appController.appTheme.borderColor)
                 .marginOnly(bottom: Insets.i8)
-                .paddingSymmetric(horizontal: Insets.i20),
-            const TotalBillPay()
-                .marginOnly(bottom: Insets.i12)
                 .paddingSymmetric(horizontal: Insets.i20),
             CustomButton(
               title: trans(ThemeFont.proceedToPay),

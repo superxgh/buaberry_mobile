@@ -13,6 +13,8 @@ class CommonFonts{
   final String deliveryFee = 'deliveryFee';
   final String taxesCharges = 'taxesCharges';
   final String totalPay = 'totalPay';
+  final String change = 'change';
+  final String selectShippingAddress = 'selectAddress';
 
   final String ultikit = "ultikit";
   final String search = "search";

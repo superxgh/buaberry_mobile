@@ -15,6 +15,8 @@ Map<String, String> en_US = {
   commonFonts.deliveryFee : 'Delivery fee',
   commonFonts.taxesCharges : 'Tax charges',
   commonFonts.totalPay : 'Total pay',
+  commonFonts.change : 'Change',
+  commonFonts.selectShippingAddress : 'Select address',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',
@@ -38,6 +40,7 @@ Map<String, String> en_US = {
   commonFonts.addItem : 'Add items',
   ThemeFont.deliveryInstruction : 'Delivery methods',
   ThemeFont.billDetail : 'Bill detail',
+  ThemeFont.proceedToPay : 'Check Out',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',

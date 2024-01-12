@@ -86,14 +86,12 @@ class ThemeFont{
   static const String applyCoupons = 'applyCoupons';
   static const String deliveryInstruction = 'deliveryInstruction';
   static const String billDetail = 'billDetail';
-  static const String change = 'change';
   static const String billAmount = 'billAmount';
   static const String proceedToPay = 'proceedToPay';
   static const String yourCartIsEmpty = 'yourCartIsEmpty';
   static const String address = 'address';
   static const String phone = 'phone';
   static const String delete = 'delete';
-  static const String selectAddress = 'selectAddress';
   static const String payment = 'payment';
   static const String expiry = 'expiry';
   static const String arrivingIn = 'arrivingIn';

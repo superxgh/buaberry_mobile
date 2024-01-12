@@ -47,33 +47,17 @@ class BillLayout extends StatelessWidget {
                                 text: e.value["title"].toString(),
                                 alignment: Alignment.centerLeft,
                                 fontFamily: FontFamily.LATO,
-                                fontWeight: e.key == 4
-                                    ? FontWeight.bold
-                                    : FontWeight.w400,
-                                fontSize: e.key == 4 ? FontSizes.f16 : FontSizes
-                                    .f14,
-                                color: e.key == 4
-                                    ? appController.appTheme.foodTitleColor
-                                    : appController.appTheme.foodContentColor,
+                                fontWeight: e.key == 3 ? FontWeight.bold : FontWeight.w400,
+                                fontSize: e.key == 3 ? FontSizes.f18 : FontSizes.f16 ,
+                                color: appController.appTheme.textColor,
                               ),
                               TextLabel(
-                                text: e.key == 2
-                                    ? trans(e.value["price"].toString())
-                                    : '${appController.priceSymbol}${double
-                                    .parse(e.value["price"].toString()) *
-                                    appController.rateValue}',
+                                text: e.value["price"].toString(),
                                 alignment: Alignment.centerLeft,
                                 fontFamily: FontFamily.LATO,
-                                fontWeight: e.key == 4
-                                    ? FontWeight.bold
-                                    : FontWeight.w400,
-                                fontSize: e.key == 4 ? FontSizes.f16 : FontSizes
-                                    .f14,
-                                color: e.key == 4
-                                    ? appController.appTheme.foodTitleColor
-                                    : e.key == 2
-                                    ? appController.appTheme.redColor
-                                    : appController.appTheme.foodContentColor,
+                                fontWeight: e.key == 3 ? FontWeight.bold : FontWeight.w400,
+                                fontSize: e.key == 3 ? FontSizes.f18 : FontSizes.f16 ,
+                                color: appController.appTheme.textColor,
                               ),
                             ],
                           ).marginOnly(bottom: Insets.i12),
