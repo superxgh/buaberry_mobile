@@ -20,6 +20,9 @@ class ThemeFont{
   static const String breakSnackLabel = 'breakSnackLabel';
   static const String dessertItemLabel = 'dessertItemLabel';
 
+  // Offer tab
+  static const String useCode = 'useCode';
+
   // =============================
   static const String profile_menu_orders_head = 'profileMenuOrdersHead';
   static const String profile_menu_orders = 'profileMenuOrders';
@@ -71,7 +74,6 @@ class ThemeFont{
   static const String recentSearch = 'recentSearch';
   static const String topCuisine = 'topCuisine';
   static const String newOpenly = 'newOpenly';
-  static const String useCode = 'useCode';
   static const String add = 'add';
   static const String selectUpto = 'selectUpto';
   static const String options = 'options';

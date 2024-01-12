@@ -25,7 +25,7 @@ class CouponCode extends StatelessWidget {
           fontFamily: FontFamily.LATO,
           fontWeight: FontWeight.w400,
           fontSize: FontSizes.f12,
-          color: appController.appTheme.white,
+          color: appController.appTheme.foodTitleColor,
         ).paddingSymmetric(horizontal: Insets.i10,vertical: Insets.i6)
       ],
     );

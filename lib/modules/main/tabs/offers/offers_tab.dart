@@ -10,11 +10,6 @@ class OffersTab extends GetView<OfferController> {
     SizeConfig().init(context);
     return SingleChildScrollView(
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-      //search text box
-      FoodTextBox(
-        controller: controller.controller,
-        hinText: trans(ThemeFont.searchForOffer),
-      ),
       const VSpace(Sizes.s20),
       //offers list
       Column(

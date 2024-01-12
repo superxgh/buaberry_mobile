@@ -1132,18 +1132,18 @@ class AppArray {
 
   var offerList = [{
     "offer":20,
-    "title":"onYourFirstOrder",
-    "desc":"aboveOrder",
+    "title":"ส่วนลด เดือนมกราคม 2567",
+    "desc":"ลดทั้งเดือน",
     "code":"SCD450"
   },{
     "offer":25,
-    "title":"onYourFirstOrder",
-    "desc":"hdfcCard",
+    "title":"ส่วนลด วันกุมภาพันธ์",
+    "desc":"ลดทั้งวัน",
     "code":"SCD450"
   },{
     "offer":40,
-    "title":"onYourFirstOrder",
-    "desc":"hdfcCard",
+    "title":"ส่วนลด วันสงกรานต์",
+    "desc":"ลดทั้งวัน",
     "code":"SCD450"
   }];
 
