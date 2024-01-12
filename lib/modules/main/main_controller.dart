@@ -7,8 +7,6 @@ class MainController extends GetxController {
 
   AppArray foAppArray = AppArray();
 
-  TextEditingController searchTextController = TextEditingController();
-
   var currentTab = MainTabs.Home.obs;
   late HomeTab homeTab;
   late FoodSearchTab searchTab;
@@ -17,7 +15,6 @@ class MainController extends GetxController {
   late ProfileTab profileTab;
 
 
-  List recentList =[];
 
 
   bool isShimmer = false;
@@ -35,7 +32,7 @@ class MainController extends GetxController {
 
   @override
   void onReady() async {
-    recentList = foAppArray.recentList;
+
     super.onReady();
   }
 

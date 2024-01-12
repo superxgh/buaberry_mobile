@@ -1,6 +1,4 @@
 import 'package:buaberry_mobile/config.dart';
-
-import '../home_widget.dart';
 import 'banner_widget.dart';
 
 class BannerData extends StatelessWidget {
@@ -11,8 +9,7 @@ class BannerData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<AppController>(builder: (appCtrl) {
-      return InkWell(
+    return InkWell(
         onTap: () => Get.toNamed(Routes.foShop),
         child: Container(
           margin: const EdgeInsets.only(right: Insets.i10),
@@ -55,6 +52,5 @@ class BannerData extends StatelessWidget {
           ),
         ),
       );
-    });
   }
 }

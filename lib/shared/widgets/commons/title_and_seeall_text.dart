@@ -3,7 +3,8 @@ import 'package:buaberry_mobile/config.dart';
 class TitleAndSeeAllText extends StatelessWidget {
 
   final String title;
-  const TitleAndSeeAllText({super.key, required this.title});
+  final bool? isShowSeeAll;
+  const TitleAndSeeAllText({super.key, required this.title, this.isShowSeeAll});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class TitleAndSeeAllText extends StatelessWidget {
           fontSize: FontSizes.f20,
           color: appController.appTheme.foodTitleColor,
         ),
-        TextLabel(
+        if (isShowSeeAll ?? true) TextLabel(
           text: commonFonts.seeAll,
           fontFamily: FontFamily.LATO,
           fontWeight: FontWeight.bold,

@@ -3,7 +3,9 @@
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/tabs/food_search/recent_search_card.dart';
 
-class FoodSearchTab extends GetView<MainController> {
+import 'food_search_widget.dart';
+
+class FoodSearchTab extends GetView<FoodSearchController> {
   const FoodSearchTab({super.key});
 
   @override
@@ -15,38 +17,15 @@ class FoodSearchTab extends GetView<MainController> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Column(
-              children: [
-                FoodTextBox(
-                  controller: controller.searchTextController,
-                  hinText: ThemeFont.searchForRestaurant,
-                ),
-                const VSpace(Sizes.s15),
-                TextLabel(
-                  text: ThemeFont.recentSearch,
-                  alignment: Alignment.centerLeft,
-                  fontFamily: FontFamily.LATO,
-                  fontWeight: FontWeight.bold,
-                  fontSize: FontSizes.f16,
-                  color: appController.appTheme.foodTitleColor,
-                ),
-                const VSpace(Sizes.s15),
-                //recent search
-                ...controller.recentList
-                    .map((e) => RecentSearchCard(data: e))
-                    .toList(),
-                const VSpace(Sizes.s20),
-                TextLabel(
-                  text: ThemeFont.topCuisine,
-                  fontFamily: FontFamily.LATO,
-                  fontWeight: FontWeight.bold,
-                  fontSize: FontSizes.f16,
-                  color: appController.appTheme.foodTitleColor,
-                ),
-                const VSpace(Sizes.s15),
-              ],
-            ),
-            const PopularDessertList()
+            FoodSearchWidget().searchForDessert(controller),
+            const VSpace(Sizes.s15),
+            FoodSearchWidget().displayRecentSearchLabel(),
+            const VSpace(Sizes.s15),
+            //recent search
+            ...controller.recentList
+                .map((e) => RecentSearchCard(data: e))
+                .toList(),
+            const VSpace(Sizes.s20)
           ],
         ),
       ),

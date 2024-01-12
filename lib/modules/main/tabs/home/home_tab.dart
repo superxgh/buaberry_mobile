@@ -1,5 +1,6 @@
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/tabs/home/widgets/banner/banner_list.dart';
+import 'package:buaberry_mobile/modules/main/tabs/home/widgets/popular_dessert_list.dart';
 import 'widgets/home_widget.dart';
 
 class HomeTab extends GetView<HomeController> {
