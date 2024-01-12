@@ -9,6 +9,7 @@ Map<String, String> en_US = {
   commonFonts.next : 'Next',
   commonFonts.login : 'Login',
   commonFonts.seeAll : 'SeeAll',
+  commonFonts.records : 'Records',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',
@@ -26,6 +27,7 @@ Map<String, String> en_US = {
   ThemeFont.dessertLabel : 'Dessert list',
   ThemeFont.dimsumLabel : 'Dim-Sum list',
   ThemeFont.breakSnackLabel : 'Break-Snack list',
+  ThemeFont.dessertItemLabel : 'Dessert items',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',

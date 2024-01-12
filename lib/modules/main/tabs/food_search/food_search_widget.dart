@@ -9,10 +9,17 @@ class FoodSearchWidget {
         hinText: ThemeFont.searchForDessert
     ).marginSymmetric(horizontal: Insets.i15, vertical: Insets.i15);
   }
+
   // recent search label
   Widget displayRecentSearchLabel() => TitleAndSeeAllText(
       title: ThemeFont.recentSearch,
       isShowSeeAll: false,
+  );
+  // dessert search label
+  Widget displayDessertSearchLabel(int recAmount) => TitleAndSeeAllText(
+      title: ThemeFont.dessertItemLabel,
+      isShowSeeAll: false,
+    recAmount: recAmount,
   );
 
 

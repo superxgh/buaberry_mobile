@@ -399,6 +399,61 @@ class AppArray {
     }
   ];
 
+  // dessert search list
+  var dessertSearchList = [
+    {
+      "image": foImageAssets.product4,
+      "name": "ชุดเบรก 1 ชิ้น เลือกขนมได้",
+      "foodType": "เบรก",
+      "rating": 5.0,
+      "arriveTime": "20min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "30off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "30",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product5,
+      "name": "ชุดเบรก 2 ชิ้น เลือกขนมได้",
+      "foodType": "เบรก",
+      "rating": 4.8,
+      "arriveTime": "25min",
+      "distance": "1.5km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "45off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "35",
+      "priceForPeople": "three",
+      "qty": 0,
+    },
+    {
+      "image": foImageAssets.product3,
+      "name": "ชุดเบรก 3 ชิ้น เลือกขนมได้",
+      "foodType": "เบรก",
+      "rating": 4.2,
+      "arriveTime": "28min",
+      "distance": "2km",
+      "isBestSeller": false,
+      "isNewOpen": false,
+      'offer': "50off",
+      "address": "626 Green Acres Road, Charlotte,",
+      "state": "United States",
+      "city": "North Carolina,",
+      "price": "35",
+      "priceForPeople": "two",
+      "qty": 0,
+    }
+  ];
+
   //shop
   var shopList = [
     {

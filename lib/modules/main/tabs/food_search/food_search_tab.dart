@@ -1,8 +1,5 @@
-
-
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/tabs/food_search/recent_search_card.dart';
-
 import 'food_search_widget.dart';
 
 class FoodSearchTab extends GetView<FoodSearchController> {
@@ -25,7 +22,22 @@ class FoodSearchTab extends GetView<FoodSearchController> {
             ...controller.recentList
                 .map((e) => RecentSearchCard(data: e))
                 .toList(),
-            const VSpace(Sizes.s20)
+            const VSpace(Sizes.s20),
+
+            // dessert search list
+            Obx(() {
+              return (controller.dessertSearchList.length == 0)
+                  ? Container()
+                  : Column(
+                    children: [
+                      FoodSearchWidget().displayDessertSearchLabel(controller.dessertSearchList.length),
+                      const VSpace(Sizes.s12),
+                      ColListLayout(productList: controller.dessertSearchList)
+                      .marginSymmetric(horizontal: Insets.i15),
+                    ],
+                  );
+            }),
+            const VSpace(Sizes.s20),
           ],
         ),
       ),
