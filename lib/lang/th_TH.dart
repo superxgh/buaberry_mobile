@@ -11,6 +11,10 @@ Map<String, String> th_TH = {
   commonFonts.seeAll : 'ทั้งหมด',
   commonFonts.records : 'รายการ',
   commonFonts.cart : 'ตะกร้า',
+  commonFonts.itemTotal : 'รวม',
+  commonFonts.deliveryFee : 'ค่าขนส่ง',
+  commonFonts.taxesCharges : 'ภาษี',
+  commonFonts.totalPay : 'รวมทั่งหมด',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'ล็อกอินเข้าสู่ระบบ',
@@ -32,6 +36,8 @@ Map<String, String> th_TH = {
 
   // Cart tab
   commonFonts.addItem : 'เพิ่มสินค้า',
+  ThemeFont.deliveryInstruction : 'วิธีการจัดส่ง',
+  ThemeFont.billDetail : 'รายละเอียดการเงิน',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',

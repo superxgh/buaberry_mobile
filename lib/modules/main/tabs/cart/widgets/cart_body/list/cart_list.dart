@@ -11,15 +11,6 @@ class CartList extends StatelessWidget {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          TextLabel(
-            text: ThemeFont.addItem,
-            alignment: Alignment.centerLeft,
-            fontFamily: FontFamily.LATO,
-            fontWeight: FontWeight.bold,
-            fontSize: FontSizes.f16,
-            color: appController.appTheme.foodTitleColor,
-          ),
-          const VSpace(Sizes.s10),
           ClipRRect(
               borderRadius: BorderRadius.circular(AppRadius.r8),
               child: Column(children: [

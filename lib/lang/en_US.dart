@@ -11,6 +11,10 @@ Map<String, String> en_US = {
   commonFonts.seeAll : 'SeeAll',
   commonFonts.records : 'Records',
   commonFonts.cart : 'Cart',
+  commonFonts.itemTotal : 'Total',
+  commonFonts.deliveryFee : 'Delivery fee',
+  commonFonts.taxesCharges : 'Tax charges',
+  commonFonts.totalPay : 'Total pay',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',
@@ -32,6 +36,8 @@ Map<String, String> en_US = {
 
   // Cart tab
   commonFonts.addItem : 'Add items',
+  ThemeFont.deliveryInstruction : 'Delivery methods',
+  ThemeFont.billDetail : 'Bill detail',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',

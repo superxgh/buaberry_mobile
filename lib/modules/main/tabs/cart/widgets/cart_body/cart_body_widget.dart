@@ -4,7 +4,6 @@ import 'package:buaberry_mobile/config.dart';
 import 'address/food_address_layout.dart';
 import 'bill/bill_detail_layout.dart';
 import 'list/cart_list.dart';
-import 'delivery/delivery_instruction_layout.dart';
 
 class CartBodyWidget extends GetView<CartController> {
   const CartBodyWidget({Key? key}) : super(key: key);
@@ -26,10 +25,6 @@ class CartBodyWidget extends GetView<CartController> {
                             : controller.cartData);
                   }
                 ),
-                const VSpace(Sizes.s20),
-
-                //delivery instruction
-                const DeliveryInstructionLayout(),
                 const VSpace(Sizes.s20),
 
                 //bill layout

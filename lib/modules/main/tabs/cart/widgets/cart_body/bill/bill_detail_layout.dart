@@ -35,54 +35,55 @@ class BillLayout extends StatelessWidget {
             ...foAppArray.billLayout
                 .asMap()
                 .entries
-                .map((e) => Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            TextLabel(
-                              text: e.value["title"].toString(),
-                              alignment: Alignment.centerLeft,
-                              fontFamily: FontFamily.LATO,
-                              fontWeight: FontWeight.bold,
-                              fontSize: FontSizes.f16,
-                              color: appController.appTheme.foodTitleColor,
-                            ),
-                            // Text(trans(e.value["title"].toString()),
-                            //     style: e.key == 4
-                            //         ? AppCss.latoSemiBold16.textColor(
-                            //             appCtrl.appTheme.foodTitleColor)
-                            //         : AppCss.latoMedium14.textColor(
-                            //             appCtrl.appTheme.foodContentColor)),
-                            TextLabel(
-                              text: e.key == 2
-                                  ? trans(e.value["price"].toString())
-                                  : '${appController.priceSymbol}${double.parse(e.value["price"].toString()) *
-                                  appController.rateValue}',
-                              alignment: Alignment.centerLeft,
-                              fontFamily: FontFamily.LATO,
-                              fontWeight: FontWeight.bold,
-                              fontSize: FontSizes.f16,
-                              color: appController.appTheme.foodTitleColor,
-                            ),
-                            // Text(
-                            //     e.key == 2
-                            //         ? trans(e.value["price"].toString())
-                            //         : '${appCtrl.priceSymbol}${double.parse(e.value["price"].toString()) *
-                            //         appCtrl.rateValue}',
-                            //     style: e.key == 4
-                            //         ? AppCss.latoSemiBold16.textColor(
-                            //             appCtrl.appTheme.foodTitleColor)
-                            //         : AppCss.latoMedium14.textColor(e.key == 2
-                            //             ? appCtrl.appTheme.redColor
-                            //             : appCtrl.appTheme.foodContentColor)),
-                          ],
-                        ).marginOnly(bottom: Insets.i12),
-                        if (e.key == 3)
-                          Divider(color: appController.appTheme.borderColor)
-                              .marginOnly(bottom: Insets.i12)
-                      ],
-                    ))
+                .map(
+                    (e) {
+                      logger.d(": e = $e");
+                      return Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              TextLabel(
+                                text: e.value["title"].toString(),
+                                alignment: Alignment.centerLeft,
+                                fontFamily: FontFamily.LATO,
+                                fontWeight: e.key == 4
+                                    ? FontWeight.bold
+                                    : FontWeight.w400,
+                                fontSize: e.key == 4 ? FontSizes.f16 : FontSizes
+                                    .f14,
+                                color: e.key == 4
+                                    ? appController.appTheme.foodTitleColor
+                                    : appController.appTheme.foodContentColor,
+                              ),
+                              TextLabel(
+                                text: e.key == 2
+                                    ? trans(e.value["price"].toString())
+                                    : '${appController.priceSymbol}${double
+                                    .parse(e.value["price"].toString()) *
+                                    appController.rateValue}',
+                                alignment: Alignment.centerLeft,
+                                fontFamily: FontFamily.LATO,
+                                fontWeight: e.key == 4
+                                    ? FontWeight.bold
+                                    : FontWeight.w400,
+                                fontSize: e.key == 4 ? FontSizes.f16 : FontSizes
+                                    .f14,
+                                color: e.key == 4
+                                    ? appController.appTheme.foodTitleColor
+                                    : e.key == 2
+                                    ? appController.appTheme.redColor
+                                    : appController.appTheme.foodContentColor,
+                              ),
+                            ],
+                          ).marginOnly(bottom: Insets.i12),
+                          if (e.key == 2)
+                            Divider(color: appController.appTheme.borderColor)
+                                .marginOnly(bottom: Insets.i12)
+                        ],
+                      );
+                    }
+                    )
                 .toList()
           ]),
         )

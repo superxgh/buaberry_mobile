@@ -8,11 +8,21 @@ class CartController extends GetxController {
   var cartList = <Product>[].obs;
   var cartData = <Product>[].obs;
   String name = "";
-  List deliveryInstruction = [];
   String selected = "";
   AddressModel? addressModel;
 
 
+  @override
+  void onReady() {
+    getData();
+    super.onReady();
+  }
+
+  bool isInCart(Product product) {
+    return cartList.isNotEmpty
+        ? cartList.any((element) => element.name! == product.name)
+        : false;
+  }
   //addToCart
   addToCart({Product? product}) {
     String name = product!.name.toString();
@@ -46,11 +56,6 @@ class CartController extends GetxController {
     update();
   }
 
-  bool isInCart(Product product) {
-    return cartList.isNotEmpty
-        ? cartList.any((element) => element.name! == product.name)
-        : false;
-  }
 
   double get cartTotal =>
       cartList.fold(
@@ -64,15 +69,8 @@ class CartController extends GetxController {
 
   getData() {
     name = Get.arguments ?? "";
-    update();
     cartData.value = foAppArray.cartData.map((e) => Product.fromJson(e)).toList();
-    deliveryInstruction = foAppArray.deliveryInstruction;
-    update();
   }
 
-  @override
-  void onReady() {
-    getData();
-    super.onReady();
-  }
+
 }

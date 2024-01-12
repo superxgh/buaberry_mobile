@@ -861,21 +861,10 @@ class AppArray {
     }
   ];
 
-  //delivery instruction
-  var deliveryInstruction = [
-    {"title": "leaveAtDoor", 'icon': foIconAssets.door, 'isChecked': false},
-    {
-      "title": "don'tRingDoorBell",
-      'icon': foIconAssets.bell,
-      'isChecked': false
-    }
-  ];
-
   //bill layout
   var billLayout = [
     {'price': 220.00, 'title': 'itemTotal'},
     {'price': 20.00, 'title': 'deliveryFee'},
-    {'price': "addTip", 'title': 'deliveryTip'},
     {'price': 50.00, 'title': 'taxesCharges'},
     {'price': 290.00, 'title': 'totalPay'}
   ];

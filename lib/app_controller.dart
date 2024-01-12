@@ -14,7 +14,7 @@ class AppController extends GetxController {
   int currVal = 1;
   String priceSymbol = "\$";
   dynamic currencyVal;
-  double rateValue = 0.0;
+  double rateValue = 1.0;
   List drawerList = [];
   final dateTime = DateTime.now().obs;
 

@@ -9,8 +9,10 @@ class CommonFonts{
   final String records = 'records';
   final String cart = 'cart';
   final String addItem = 'addItem';
-
-
+  final String itemTotal = 'itemTotal';
+  final String deliveryFee = 'deliveryFee';
+  final String taxesCharges = 'taxesCharges';
+  final String totalPay = 'totalPay';
 
   final String ultikit = "ultikit";
   final String search = "search";
