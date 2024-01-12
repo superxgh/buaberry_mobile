@@ -7,8 +7,8 @@ import 'cart_list.dart';
 import 'coupon_layout.dart';
 import 'delivery_instruction_layout.dart';
 
-class CartBody extends GetView<CartController> {
-  const CartBody({Key? key}) : super(key: key);
+class CartBodyWidget extends GetView<CartController> {
+  const CartBodyWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

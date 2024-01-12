@@ -1,7 +1,7 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'widgets/cart_body/cart_body.dart';
+import 'widgets/cart_body/cart_body_widget.dart';
 import 'widgets/cart_shimmer.dart';
 
 
@@ -20,11 +20,14 @@ class CartTab extends GetView<CartController> {
           fontSize: FontSizes.f20,
           color: appController.appTheme.foodTitleColor,
         ),
-        Obx(() {
-            return controller.isShimmer.value
-                  ? const CartShimmer()
-                  : const CartBody();
-          }
+        Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Obx(() {
+              return controller.isShimmer.value
+                    ? const CartShimmer()
+                    : const CartBodyWidget();
+            }
+          ),
         ),
       ],
     );

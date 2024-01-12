@@ -4,7 +4,7 @@ import 'package:buaberry_mobile/config.dart';
 class CartController extends GetxController {
 
 
-  var isShimmer = true.obs;
+  var isShimmer = false.obs;
 
   List<Product> cartList = [];
   List<Product>? cartData;
