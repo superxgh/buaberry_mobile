@@ -5,9 +5,8 @@ class CartController extends GetxController {
 
 
   var isShimmer = false.obs;
-
-  List<Product> cartList = [];
-  List<Product>? cartData;
+  var cartList = <Product>[].obs;
+  var cartData = <Product>[].obs;
   String name = "";
   List deliveryInstruction = [];
   String selected = "";
@@ -66,14 +65,13 @@ class CartController extends GetxController {
   getData() {
     name = Get.arguments ?? "";
     update();
-    cartData = foAppArray.cartData.map((e) => Product.fromJson(e)).toList();
+    cartData.value = foAppArray.cartData.map((e) => Product.fromJson(e)).toList();
     deliveryInstruction = foAppArray.deliveryInstruction;
     update();
   }
 
   @override
   void onReady() {
-    // TODO: implement onReady
     getData();
     super.onReady();
   }

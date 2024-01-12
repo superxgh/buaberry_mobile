@@ -30,6 +30,9 @@ Map<String, String> en_US = {
   ThemeFont.breakSnackLabel : 'Break-Snack list',
   ThemeFont.dessertItemLabel : 'Dessert items',
 
+  // Cart tab
+  commonFonts.addItem : 'Add items',
+
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',
   ThemeFont.enterPhoneNumber : 'Enter phone number',

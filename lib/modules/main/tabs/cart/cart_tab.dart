@@ -11,25 +11,28 @@ class CartTab extends GetView<CartController> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    return Column(
-      children: [
-        TextLabel(
-          text: commonFonts.cart,
-          fontFamily: FontFamily.LATO,
-          fontWeight: FontWeight.bold,
-          fontSize: FontSizes.f20,
-          color: appController.appTheme.foodTitleColor,
-        ),
-        Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Obx(() {
-              return controller.isShimmer.value
-                    ? const CartShimmer()
-                    : const CartBodyWidget();
-            }
+    return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
+      child: Column(
+        children: [
+          TextLabel(
+            text: commonFonts.cart,
+            fontFamily: FontFamily.LATO,
+            fontWeight: FontWeight.bold,
+            fontSize: FontSizes.f20,
+            color: appController.appTheme.foodTitleColor,
           ),
-        ),
-      ],
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Obx(() {
+                return controller.isShimmer.value
+                      ? const CartShimmer()
+                      : const CartBodyWidget();
+              }
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

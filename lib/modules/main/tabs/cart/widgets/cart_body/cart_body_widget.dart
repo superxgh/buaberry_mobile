@@ -1,32 +1,31 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-import 'food_address_layout.dart';
-import 'bill_detail_layout.dart';
-import 'cart_list.dart';
-import 'coupon_layout.dart';
-import 'delivery_instruction_layout.dart';
+import 'address/food_address_layout.dart';
+import 'bill/bill_detail_layout.dart';
+import 'list/cart_list.dart';
+import 'delivery/delivery_instruction_layout.dart';
 
 class CartBodyWidget extends GetView<CartController> {
   const CartBodyWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-          child: Padding(
+    return Padding(
             padding: const EdgeInsets.only(top: Insets.i15,bottom: Insets.i100),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 //cart list
-                CartList(
-                    cartList: controller.cartList.isNotEmpty
-                        ? controller.cartList
-                        : controller.cartData),
-                const VSpace(Sizes.s20),
-
-                //coupon layout
-                const CouponLayout(),
+                Obx(() {
+                  logger.d(": controller.cartList.isNotEmpty = ${controller.cartList.isNotEmpty}");
+                  logger.d(": controller.cartData.length = ${controller.cartData.length}");
+                    return CartList(
+                        cartList: controller.cartList.isNotEmpty
+                            ? controller.cartList
+                            : controller.cartData);
+                  }
+                ),
                 const VSpace(Sizes.s20),
 
                 //delivery instruction
@@ -38,8 +37,7 @@ class CartBodyWidget extends GetView<CartController> {
                 const VSpace(Sizes.s20),
                 const FoodAddressLayout(),
               ],
-            ),
-          )
+            )
         );
   }
 }

@@ -1,4 +1,5 @@
-import '../../../../../../../../config.dart';
+
+import 'package:buaberry_mobile/config.dart';
 
 class TotalBillPay extends StatelessWidget {
   const TotalBillPay({Key? key}) : super(key: key);

@@ -30,6 +30,9 @@ Map<String, String> th_TH = {
   ThemeFont.breakSnackLabel : 'เมนูของว่าง-อาหารเบรก',
   ThemeFont.dessertItemLabel : 'รายการขนม',
 
+  // Cart tab
+  commonFonts.addItem : 'เพิ่มสินค้า',
+
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',
   ThemeFont.enterPhoneNumber : 'Enter phone number',

@@ -8,6 +8,8 @@ class CommonFonts{
   final String login = 'login';
   final String records = 'records';
   final String cart = 'cart';
+  final String addItem = 'addItem';
+
 
 
   final String ultikit = "ultikit";
