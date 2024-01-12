@@ -14,12 +14,6 @@ class MainController extends GetxController {
   late OffersTab offersTab;
   late ProfileTab profileTab;
 
-
-
-
-  bool isShimmer = false;
-
-
   @override
   void onInit() {
     super.onInit();

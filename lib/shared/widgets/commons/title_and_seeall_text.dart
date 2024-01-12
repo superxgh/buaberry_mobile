@@ -13,7 +13,7 @@ class TitleAndSeeAllText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         TextLabel(
-          text: trans(title),
+          text: title,
           fontFamily: FontFamily.LATO,
           fontWeight: FontWeight.bold,
           fontSize: FontSizes.f20,

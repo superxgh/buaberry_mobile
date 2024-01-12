@@ -1,8 +1,8 @@
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/main/tabs/cart/cart_body/total_bill_pay.dart';
 
 import 'address_layout.dart';
+import 'total_bill_pay.dart';
 
 class FoodAddressLayout extends StatelessWidget {
   const FoodAddressLayout({Key? key}) : super(key: key);

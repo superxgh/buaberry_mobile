@@ -10,6 +10,7 @@ Map<String, String> en_US = {
   commonFonts.login : 'Login',
   commonFonts.seeAll : 'SeeAll',
   commonFonts.records : 'Records',
+  commonFonts.cart : 'Cart',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',

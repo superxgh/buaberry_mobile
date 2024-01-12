@@ -10,6 +10,7 @@ Map<String, String> th_TH = {
   commonFonts.login : 'เข้าสู่ระบบ',
   commonFonts.seeAll : 'ทั้งหมด',
   commonFonts.records : 'รายการ',
+  commonFonts.cart : 'ตะกร้า',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'ล็อกอินเข้าสู่ระบบ',

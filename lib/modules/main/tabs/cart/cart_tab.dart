@@ -1,20 +1,32 @@
 
 
 import 'package:buaberry_mobile/config.dart';
+import 'widgets/cart_body/cart_body.dart';
+import 'widgets/cart_shimmer.dart';
 
-import 'cart_body/cart_body.dart';
 
-class CartTab extends GetView<MainController> {
+class CartTab extends GetView<CartController> {
   const CartTab({super.key});
 
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    // return FoodCartBody();
-    return controller.getCurrentIndex(controller.currentTab.value) == 2
-        ? controller.isShimmer
-          ? const CartShimmer()
-        : const CartBody()
-        : const CartBody();
+    return Column(
+      children: [
+        TextLabel(
+          text: commonFonts.cart,
+          fontFamily: FontFamily.LATO,
+          fontWeight: FontWeight.bold,
+          fontSize: FontSizes.f20,
+          color: appController.appTheme.foodTitleColor,
+        ),
+        Obx(() {
+            return controller.isShimmer.value
+                  ? const CartShimmer()
+                  : const CartBody();
+          }
+        ),
+      ],
+    );
   }
 }

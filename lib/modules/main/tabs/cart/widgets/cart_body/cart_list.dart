@@ -1,5 +1,5 @@
-import '/../../config.dart';
-import '../dotted_button.dart';
+
+import 'package:buaberry_mobile/config.dart';
 
 class CartList extends StatelessWidget {
   final List<Product>? cartList;

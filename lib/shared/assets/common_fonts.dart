@@ -7,6 +7,7 @@ class CommonFonts{
   final String next = 'next';
   final String login = 'login';
   final String records = 'records';
+  final String cart = 'cart';
 
 
   final String ultikit = "ultikit";

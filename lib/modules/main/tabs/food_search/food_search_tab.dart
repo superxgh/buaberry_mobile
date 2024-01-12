@@ -1,6 +1,6 @@
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/main/tabs/food_search/recent_search_card.dart';
-import 'food_search_widget.dart';
+import 'package:buaberry_mobile/modules/main/tabs/food_search/widgets/recent_search_card.dart';
+import 'widgets/food_search_widget.dart';
 
 class FoodSearchTab extends GetView<FoodSearchController> {
   const FoodSearchTab({super.key});
