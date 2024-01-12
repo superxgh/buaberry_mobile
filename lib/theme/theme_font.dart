@@ -20,6 +20,10 @@ class ThemeFont{
   static const String breakSnackLabel = 'breakSnackLabel';
   static const String dessertItemLabel = 'dessertItemLabel';
 
+  // Cart tab
+  static const String coupons = 'coupons';
+  static const String applyCoupons = 'applyCoupons';
+
   // Offer tab
   static const String useCode = 'useCode';
 
@@ -84,8 +88,6 @@ class ThemeFont{
   static const String viewCart = 'viewCart';
   static const String edit = 'edit';
   static const String addItem = 'addItem';
-  static const String coupons = 'coupons';
-  static const String applyCoupons = 'applyCoupons';
   static const String deliveryInstruction = 'deliveryInstruction';
   static const String billDetail = 'billDetail';
   static const String billAmount = 'billAmount';

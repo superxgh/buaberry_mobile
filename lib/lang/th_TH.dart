@@ -41,6 +41,8 @@ Map<String, String> th_TH = {
   ThemeFont.deliveryInstruction : 'วิธีการจัดส่ง',
   ThemeFont.billDetail : 'รายละเอียดการเงิน',
   ThemeFont.proceedToPay : 'ชำระเงิน',
+  ThemeFont.coupons : 'คูปอง',
+  ThemeFont.applyCoupons : 'ใช้คูปอง',
 
   // Offer tab
   ThemeFont.useCode : 'รหัสส่วนลด',

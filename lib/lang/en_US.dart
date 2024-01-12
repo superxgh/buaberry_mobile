@@ -41,6 +41,8 @@ Map<String, String> en_US = {
   ThemeFont.deliveryInstruction : 'Delivery methods',
   ThemeFont.billDetail : 'Bill detail',
   ThemeFont.proceedToPay : 'Check Out',
+  ThemeFont.coupons : 'Coupons',
+  ThemeFont.applyCoupons : 'Apply coupons',
 
   // Offer tab
   ThemeFont.useCode : 'Discount code',

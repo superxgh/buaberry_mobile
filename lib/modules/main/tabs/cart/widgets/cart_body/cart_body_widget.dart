@@ -1,8 +1,7 @@
-
 import 'package:buaberry_mobile/config.dart';
-
 import 'address/food_address_layout.dart';
 import 'bill/bill_detail_layout.dart';
+import 'coupon/coupon_layout.dart';
 import 'list/cart_list.dart';
 
 class CartBodyWidget extends GetView<CartController> {
@@ -25,6 +24,11 @@ class CartBodyWidget extends GetView<CartController> {
                             : controller.cartData);
                   }
                 ),
+                const VSpace(Sizes.s20),
+
+
+                //coupon layout
+                const CouponLayout(),
                 const VSpace(Sizes.s20),
 
                 //bill layout
