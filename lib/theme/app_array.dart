@@ -1001,26 +1001,27 @@ class AppArray {
         }
       ]
     },
-    {
-      "title": ThemeFont.profile_menu_payments_head,
-      "profileList": [
-        {
-          "title": ThemeFont.profile_menu_ewallets,
-          "icon": foIconAssets.wallet,
-          "routeName": Routes.MAIN + Routes.PROFILE_WALLETS
-        },
-        {
-          "title": ThemeFont.profile_menu_book_bank,
-          "icon": foIconAssets.card,
-          "routeName": Routes.MAIN + Routes.PROFILE_SAVED_BOOK
-        }
-      ]
-    },
+    // {
+    //   "title": ThemeFont.profile_menu_payments_head,
+    //   "profileList": [
+    //     {
+    //       "title": ThemeFont.profile_menu_ewallets,
+    //       "icon": foIconAssets.wallet,
+    //       "routeName": Routes.MAIN + Routes.PROFILE_WALLETS
+    //     },
+    //     {
+    //       "title": ThemeFont.profile_menu_book_bank,
+    //       "icon": foIconAssets.card,
+    //       "routeName": Routes.MAIN + Routes.PROFILE_SAVED_BOOK
+    //     }
+    //   ]
+    // },
     {
       "title": ThemeFont.profile_menu_language_head,
       "profileList": [
         {
-          "title": "ENGLISH", "icon": foIconAssets.language,
+          "title": ThemeFont.profile_menu_english,
+          "icon": foIconAssets.language,
           "routeName": Routes.MAIN + Routes.PROFILE_ENGLISH
         }
       ]

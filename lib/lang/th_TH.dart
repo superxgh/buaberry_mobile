@@ -60,9 +60,9 @@ Map<String, String> th_TH = {
   ThemeFont.profile_menu_favourite_orders : 'รายการสั่งซื้อย่อย',
   ThemeFont.profile_menu_shipping_address : 'ที่อยู่รับสินค้า',
 
-  ThemeFont.profile_menu_payments_head : 'การชำระเงิน',
-  ThemeFont.profile_menu_ewallets : 'E-Wallets',
-  ThemeFont.profile_menu_book_bank : 'ธนาคาร',
+  // ThemeFont.profile_menu_payments_head : 'การชำระเงิน',
+  // ThemeFont.profile_menu_ewallets : 'E-Wallets',
+  // ThemeFont.profile_menu_book_bank : 'ธนาคาร',
 
   ThemeFont.profile_menu_language_head : 'ภาษา',
   ThemeFont.profile_menu_english : 'อังกฤษ',

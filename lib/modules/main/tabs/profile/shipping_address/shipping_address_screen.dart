@@ -2,6 +2,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
+import 'address_card.dart';
+
 class ShippingAddressScreen extends GetView<ShippingAddressController>  {
 
   ShippingAddressScreen({Key? key}) : super(key: key);
@@ -20,17 +22,20 @@ class ShippingAddressScreen extends GetView<ShippingAddressController>  {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          TextLabel(
-                            text: commonFonts.address,
-                            textExtend: "(${controller.addressList.length})",
-                            fontFamily: FontFamily.LATO,
-                            fontSize: FontSizes.f18,
-                            fontWeight: FontWeight.bold,
-                            color: appController.appTheme.textColor,
+                          Obx(() {
+                              return TextLabel(
+                                text: commonFonts.address,
+                                textExtend: "(${controller.addressList.length})",
+                                fontFamily: FontFamily.LATO,
+                                fontSize: FontSizes.f18,
+                                fontWeight: FontWeight.bold,
+                                color: appController.appTheme.textColor,
+                              );
+                            }
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                color: appController.appTheme.foodPrimaryColor,
+                                color: appController.appTheme.darkGreyColor,
                                 borderRadius: BorderRadius.circular(AppRadius.r5)
                             ),
                             child: TextLabel(

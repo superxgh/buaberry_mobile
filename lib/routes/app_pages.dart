@@ -48,30 +48,6 @@ class AppPages {
             page: () => ShippingAddressScreen()
         ),
       ]
-    ),
-    GetPage(
-        name: Routes.PROFILE_WALLETS,
-        page: () => FoodPaymentScreen()
-    ),
-    GetPage(
-        name: Routes.PROFILE_SAVED_BOOK,
-        page: () => FoodPaymentScreen()
-    ),
-    GetPage(
-        name: Routes.PROFILE_ENGLISH,
-        page: () => FoodPaymentScreen()
-    ),
-    // GetPage(
-    //   name: Routes.AUTH,
-    //   page: () => AuthScreen(),
-    //   binding: AuthBinding(),
-    //   children: [
-    //     GetPage(name: Routes.REGISTER, page: () => RegisterScreen()),
-    //     GetPage(name: Routes.LOGIN, page: () => LoginScreen()),
-    //   ],
-    // ),
-    // GetPage(name: Routes.HOME, page: () => HomeScreen(), binding: HomeBinding(), children: [
-    //   GetPage(name: Routes.CARDS, page: () => CardsScreen()),
-    // ]),
+    )
   ];
 }

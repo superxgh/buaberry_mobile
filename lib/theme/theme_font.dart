@@ -34,9 +34,9 @@ class ThemeFont{
   static const String profile_menu_favourite_orders = 'profileMenuFavouriteOrders';
   static const String profile_menu_shipping_address = 'profileMenuShippingAddress';
 
-  static const String profile_menu_payments_head = 'profileMenuPaymentsHead';
-  static const String profile_menu_ewallets = 'profileMenuEWallets';
-  static const String profile_menu_book_bank = 'profileMenuBookBank';
+  // static const String profile_menu_payments_head = 'profileMenuPaymentsHead';
+  // static const String profile_menu_ewallets = 'profileMenuEWallets';
+  // static const String profile_menu_book_bank = 'profileMenuBookBank';
 
   static const String profile_menu_language_head = 'profileMenuLanguageHead';
   static const String profile_menu_english = 'profileMenuEnglish';

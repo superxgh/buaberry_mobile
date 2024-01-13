@@ -61,9 +61,9 @@ Map<String, String> en_US = {
   ThemeFont.profile_menu_favourite_orders : 'Favourite orders',
   ThemeFont.profile_menu_shipping_address : 'Shipping address',
 
-  ThemeFont.profile_menu_payments_head : 'Payments',
-  ThemeFont.profile_menu_ewallets : 'E-Wallets',
-  ThemeFont.profile_menu_book_bank : 'Book bank',
+  // ThemeFont.profile_menu_payments_head : 'Payments',
+  // ThemeFont.profile_menu_ewallets : 'E-Wallets',
+  // ThemeFont.profile_menu_book_bank : 'Book bank',
 
   ThemeFont.profile_menu_language_head : 'Language',
   ThemeFont.profile_menu_english : 'English',
