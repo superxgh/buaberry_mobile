@@ -65,8 +65,12 @@ Map<String, String> en_US = {
   // ThemeFont.profile_menu_ewallets : 'E-Wallets',
   // ThemeFont.profile_menu_book_bank : 'Book bank',
 
+  // Profile/Language
   ThemeFont.profile_menu_language_head : 'Language',
+  ThemeFont.profile_menu_language_mg : 'Language management',
   ThemeFont.profile_menu_english : 'English',
+  ThemeFont.profile_menu_thai : 'Thai',
+  ThemeFont.changeLanguage : 'Change Language',
 
   // Profile/OrderHistory screen
   commonFonts.delivered : 'Delivered',
@@ -74,6 +78,8 @@ Map<String, String> en_US = {
 
   commonFonts.viewOrderDetail : 'View order detail',
   commonFonts.monitorOrder : 'Order monitoring',
+
+
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',

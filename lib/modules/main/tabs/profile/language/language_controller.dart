@@ -3,18 +3,25 @@
 import 'package:buaberry_mobile/config.dart';
 
 class LanguageController extends GetxController {
-  var addressList = <AddressModel>[].obs;
+
+  var selectedLanguage = ThemeFont.profile_menu_english.obs;
+  var  language = <String>[
+    ThemeFont.profile_menu_english,
+    ThemeFont.profile_menu_thai].obs;
 
   @override
   void onReady() {
-    getData();
+
     super.onReady();
   }
 
-  getData() {
-    for (int i = 0; i < foAppArray.addressList.length; i++) {
-      addressList.add(AddressModel.fromJson(foAppArray.addressList[i]));
-    }
+  void onClickRadioButton(value) {
+    logger.d(": value = $value");
+    selectedLanguage.value = value;
   }
 
+  void changeLanguage() {
+    logger.i("> changeLanguage(value)");
+    logger.d(": selectedLanguage.value = ${selectedLanguage.value}");
+  }
 }

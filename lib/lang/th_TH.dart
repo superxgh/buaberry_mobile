@@ -64,8 +64,12 @@ Map<String, String> th_TH = {
   // ThemeFont.profile_menu_ewallets : 'E-Wallets',
   // ThemeFont.profile_menu_book_bank : 'ธนาคาร',
 
+  // Profile/Language
   ThemeFont.profile_menu_language_head : 'ภาษา',
+  ThemeFont.profile_menu_language_mg : 'จัดการภาษา',
   ThemeFont.profile_menu_english : 'อังกฤษ',
+  ThemeFont.profile_menu_thai : 'ไทย',
+  ThemeFont.changeLanguage : 'เปลี่ยนภาษา',
 
   // Profile/OrderHistory screen
   commonFonts.delivered : 'จัดส่งแล้ว',

@@ -38,10 +38,15 @@ class ThemeFont{
   // static const String profile_menu_ewallets = 'profileMenuEWallets';
   // static const String profile_menu_book_bank = 'profileMenuBookBank';
 
+  // Language
   static const String profile_menu_language_head = 'profileMenuLanguageHead';
+  static const String profile_menu_language_mg = 'profileMenuLanguageMg';
   static const String profile_menu_english = 'profileMenuEnglish';
+  static const String profile_menu_thai = 'profileMenuThai';
+  static const String changeLanguage = 'changeLanguage';
 
   // ========================================
+  static const String saveAddress = 'saveAddress';
   static const String home = 'home';
   static const String ratings = "ratings";
   static const String searchForRestaurant = 'searchForRestaurant';
@@ -60,7 +65,6 @@ class ThemeFont{
   static const String resendAgain = 'resendAgain';
   static const String findRestaurant = 'findRestaurant';
   static const String pleaseEnterLocation = 'pleaseEnterLocation';
-  static const String saveAddress = 'saveAddress';
   static const String allowLocation = 'allowLocation';
   static const String enterAddress = 'enterAddress';
   static const String addressLocation = 'addressLocation';
