@@ -10,7 +10,7 @@ class BannerData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap: () => Get.toNamed(Routes.foShop),
+        onTap: () => Get.toNamed(Routes.HOME),
         child: Container(
           margin: const EdgeInsets.only(right: Insets.i10),
           decoration:

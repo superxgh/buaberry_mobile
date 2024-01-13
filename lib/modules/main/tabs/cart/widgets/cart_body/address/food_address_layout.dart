@@ -61,7 +61,7 @@ class FoodAddressLayout extends StatelessWidget {
               title: trans(ThemeFont.proceedToPay),
               color: appController.appTheme.foodPrimaryColor,
               width: MediaQuery.of(context).size.width,
-              onTap: ()=> Get.toNamed(Routes.foPayment,arguments: "290"),
+              onTap: ()=> Get.toNamed(Routes.HOME,arguments: "290"),
             )
           ],
         ),

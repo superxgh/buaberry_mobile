@@ -35,7 +35,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
         if (isAction) const HSpace(Sizes.s15),
         if (isAction)
           InkWell(
-            onTap: () => Get.toNamed(Routes.foFavourite),
+            onTap: () => Get.toNamed(Routes.HOME),
             child: SvgPicture.asset(commonSvgAssets.heart,
                 color: appController.appTheme.whiteColor),
           ),

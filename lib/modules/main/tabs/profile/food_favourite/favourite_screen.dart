@@ -24,7 +24,7 @@ class FavouriteScreen extends GetView<FavouriteController> {
                         itemCount: controller.productList.length,
                         itemBuilder: (context, index) {
                           return InkWell(
-                              onTap: () => Get.toNamed(Routes.foRestaurant),
+                              onTap: () => Get.toNamed(Routes.HOME),
                               child: RowListCard(
                                   product: controller.productList[index],
                                   isFullWidth: true));

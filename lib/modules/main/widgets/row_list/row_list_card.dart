@@ -12,7 +12,7 @@ class RowListCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: ()=> Get.toNamed(Routes.foRestaurant,arguments: product),
+      onTap: ()=> Get.toNamed(Routes.HOME,arguments: product),
       child: Container(
         margin: const EdgeInsets.only(right: Insets.i10),
         decoration: BoxDecoration(

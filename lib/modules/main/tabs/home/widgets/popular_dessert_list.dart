@@ -12,7 +12,7 @@ class PopularDessertList extends StatelessWidget {
           ...foAppArray.popularList
               .map((e) => InkWell(
                     onTap: () =>
-                        Get.toNamed(Routes.foShop, arguments: e['title']),
+                        Get.toNamed(Routes.HOME, arguments: e['title']),
                     child: Column(
                       children: [
                         Image.asset(

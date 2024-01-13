@@ -47,6 +47,11 @@ class AppPages {
             binding: ShippingAddressBinding(),
             page: () => ShippingAddressScreen()
         ),
+        GetPage(
+            name: Routes.PROFILE_LANGUAGE,
+            binding: LanguageBinding(),
+            page: () => LanguageScreen()
+        ),
       ]
     )
   ];

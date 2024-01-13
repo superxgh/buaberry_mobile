@@ -1022,7 +1022,7 @@ class AppArray {
         {
           "title": ThemeFont.profile_menu_english,
           "icon": foIconAssets.language,
-          "routeName": Routes.MAIN + Routes.PROFILE_ENGLISH
+          "routeName": Routes.MAIN + Routes.PROFILE_LANGUAGE
         }
       ]
     }

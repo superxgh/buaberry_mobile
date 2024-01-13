@@ -18,7 +18,7 @@ class ColListCard extends StatelessWidget {
           color: appController.appTheme.whiteColor,
           borderRadius: BorderRadius.circular(AppRadius.r10)),
       child: InkWell(
-        onTap:  ()=> Get.toNamed(Routes.foRestaurant,arguments: product),
+        onTap:  ()=> Get.toNamed(Routes.HOME,arguments: product),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
