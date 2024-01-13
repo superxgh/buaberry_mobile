@@ -47,6 +47,19 @@ Map<String, String> th_TH = {
   // Offer tab
   ThemeFont.useCode : 'รหัสส่วนลด',
 
+  // Profile tab
+  ThemeFont.profile_menu_orders_head : 'การสั่งซื้อสินค้า',
+  ThemeFont.profile_menu_orders_history : 'ประวัติการสั่งซื้อ',
+  ThemeFont.profile_menu_favourite_orders : 'รายการสั่งซื้อย่อย',
+  ThemeFont.profile_menu_shipping_address : 'ที่อยู่รับสินค้า',
+
+  ThemeFont.profile_menu_payments_head : 'การชำระเงิน',
+  ThemeFont.profile_menu_ewallets : 'E-Wallets',
+  ThemeFont.profile_menu_book_bank : 'ธนาคาร',
+
+  ThemeFont.profile_menu_language_head : 'ภาษา',
+  ThemeFont.profile_menu_english : 'อังกฤษ',
+
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',
   ThemeFont.enterPhoneNumber : 'Enter phone number',
@@ -66,18 +79,4 @@ Map<String, String> th_TH = {
   ThemeFont.mustTry : 'Must try',
   ThemeFont.recentSearch : 'Recent search',
 
-  ThemeFont.profile_menu_orders_head : 'Orders',
-  ThemeFont.profile_menu_orders : 'Orders',
-  ThemeFont.profile_menu_favourite_orders : 'Favourite orders',
-  ThemeFont.profile_menu_address_book : 'Address book',
-
-  ThemeFont.profile_menu_payments_head : 'Payments',
-  ThemeFont.profile_menu_wallets : 'Wallets',
-  ThemeFont.profile_menu_saved_book : 'Saved book',
-
-  ThemeFont.profile_menu_language_head : 'Language',
-  ThemeFont.profile_menu_english : 'English',
-
-  ThemeFont.profile_menu_landing_head : 'Landing',
-  ThemeFont.profile_menu_home : 'Home',
 };

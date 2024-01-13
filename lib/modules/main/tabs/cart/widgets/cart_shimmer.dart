@@ -10,9 +10,7 @@ class CartShimmer extends StatelessWidget {
     return Shimmer.fromColors(
         baseColor: appController.appTheme.darkGray.withOpacity(.3),
         highlightColor: appController.appTheme.darkGray.withOpacity(.1),
-        child: SingleChildScrollView(
-            child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const FoodShimmer(width: Sizes.s100, radius: AppRadius.r8),
           const VSpace(Sizes.s15),
           const VerticalFoodShimmer(),
@@ -54,6 +52,6 @@ class CartShimmer extends StatelessWidget {
           ]),
               //   .foodShimmerExtension(
               // hPadding: Insets.i15, radius: AppRadius.r8,vPadding: Insets.i18),
-        ]).marginSymmetric(horizontal: Insets.i15, vertical: Insets.i20)));
+        ]).marginSymmetric(horizontal: Insets.i15, vertical: Insets.i20));
   }
 }

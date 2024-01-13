@@ -11,7 +11,7 @@ class OrderHistoryScreen extends StatelessWidget {
       return Scaffold(
         backgroundColor: appController.appTheme.foodPrimaryLightColor,
         appBar: CommonAppBar(
-            name: trans(ThemeFont.profile_menu_orders)),
+            name: trans(ThemeFont.profile_menu_orders_history)),
         body: orderHistoryController.isShimmer
             ? const FoodHistoryShimmer()
             : ListView.builder(

@@ -27,22 +27,20 @@ class ThemeFont{
   // Offer tab
   static const String useCode = 'useCode';
 
-  // =============================
+  // Profile tab
   static const String profile_menu_orders_head = 'profileMenuOrdersHead';
-  static const String profile_menu_orders = 'profileMenuOrders';
+  static const String profile_menu_orders_history = 'profileMenuOrderHistory';
   static const String profile_menu_favourite_orders = 'profileMenuFavouriteOrders';
-  static const String profile_menu_address_book = 'profileMenuAddressBook';
+  static const String profile_menu_shipping_address = 'profileMenuShippingAddress';
 
   static const String profile_menu_payments_head = 'profileMenuPaymentsHead';
-  static const String profile_menu_wallets = 'profileMenuWallets';
-  static const String profile_menu_saved_book = 'profileMenuSavedCard';
+  static const String profile_menu_ewallets = 'profileMenuEWallets';
+  static const String profile_menu_book_bank = 'profileMenuBookBank';
 
   static const String profile_menu_language_head = 'profileMenuLanguageHead';
   static const String profile_menu_english = 'profileMenuEnglish';
 
-  static const String profile_menu_landing_head = 'profileMenuLandingHead';
-  static const String profile_menu_home = 'profileMenuHome';
-
+  // ========================================
   static const String home = 'home';
   static const String ratings = "ratings";
   static const String searchForRestaurant = 'searchForRestaurant';

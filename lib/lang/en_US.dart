@@ -47,6 +47,20 @@ Map<String, String> en_US = {
   // Offer tab
   ThemeFont.useCode : 'Discount code',
 
+  // Profile tab
+
+  ThemeFont.profile_menu_orders_head : 'Orders',
+  ThemeFont.profile_menu_orders_history : 'Orders History',
+  ThemeFont.profile_menu_favourite_orders : 'Favourite orders',
+  ThemeFont.profile_menu_shipping_address : 'Shipping address',
+
+  ThemeFont.profile_menu_payments_head : 'Payments',
+  ThemeFont.profile_menu_ewallets : 'E-Wallets',
+  ThemeFont.profile_menu_book_bank : 'Book bank',
+
+  ThemeFont.profile_menu_language_head : 'Language',
+  ThemeFont.profile_menu_english : 'English',
+
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',
   ThemeFont.enterPhoneNumber : 'Enter phone number',
@@ -66,18 +80,4 @@ Map<String, String> en_US = {
   ThemeFont.mustTry : 'Must try',
   ThemeFont.recentSearch : 'Recent search',
 
-  ThemeFont.profile_menu_orders_head : 'Orders',
-  ThemeFont.profile_menu_orders : 'Orders',
-  ThemeFont.profile_menu_favourite_orders : 'Favourite orders',
-  ThemeFont.profile_menu_address_book : 'Address book',
-
-  ThemeFont.profile_menu_payments_head : 'Payments',
-  ThemeFont.profile_menu_wallets : 'Wallets',
-  ThemeFont.profile_menu_saved_book : 'Saved book',
-
-  ThemeFont.profile_menu_language_head : 'Language',
-  ThemeFont.profile_menu_english : 'English',
-
-  ThemeFont.profile_menu_landing_head : 'Landing',
-  ThemeFont.profile_menu_home : 'Home',
 };

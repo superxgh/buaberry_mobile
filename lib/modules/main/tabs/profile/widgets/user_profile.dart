@@ -18,7 +18,7 @@ class UserProfile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextLabel(
-              text: "jacobMark",
+              text: "สมหญิง คนดี",
               alignment: Alignment.center,
               fontFamily: FontFamily.LATO,
               fontSize: FontSizes.f18,
@@ -27,7 +27,7 @@ class UserProfile extends StatelessWidget {
             ),
             const VSpace(Sizes.s5),
             TextLabel(
-              text: "email",
+              text: "somyingkondee@gmail.com",
               alignment: Alignment.center,
               fontFamily: FontFamily.LATO,
               fontSize: FontSizes.f14,

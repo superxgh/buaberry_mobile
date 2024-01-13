@@ -968,7 +968,7 @@ class AppArray {
       "title": ThemeFont.profile_menu_orders_head,
       "profileList": [
         {
-          "title": ThemeFont.profile_menu_orders,
+          "title": ThemeFont.profile_menu_orders_history,
           "icon": foIconAssets.order,
           "routeName": Routes.PROFILE_ORDER_HISTORY
         },
@@ -978,7 +978,7 @@ class AppArray {
           "routeName": Routes.PROFILE_FAVOURITE_ORDER
         },
         {
-          "title": ThemeFont.profile_menu_address_book,
+          "title": ThemeFont.profile_menu_shipping_address,
           "icon": foIconAssets.addressBook,
           "routeName": Routes.PROFILE_ADDRESS_BOOK
         }
@@ -988,12 +988,12 @@ class AppArray {
       "title": ThemeFont.profile_menu_payments_head,
       "profileList": [
         {
-          "title": ThemeFont.profile_menu_wallets,
+          "title": ThemeFont.profile_menu_ewallets,
           "icon": foIconAssets.wallet,
           "routeName": Routes.PROFILE_WALLETS
         },
         {
-          "title": ThemeFont.profile_menu_saved_book,
+          "title": ThemeFont.profile_menu_book_bank,
           "icon": foIconAssets.card,
           "routeName": Routes.PROFILE_SAVED_BOOK
         }
@@ -1004,13 +1004,7 @@ class AppArray {
       "profileList": [
         {"title": "ENGLISH", "icon": foIconAssets.language, "routeName": Routes.PROFILE_ENGLISH}
       ]
-    },
-    {
-      "title": "landing",
-      "profileList": [
-        {"title": "HOME", "icon": commonImageAssets.logo, "routeName": Routes.HOME}
-      ]
-    },
+    }
   ];
 
   //order history
