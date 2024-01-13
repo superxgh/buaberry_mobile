@@ -20,7 +20,6 @@ Map<String, String> en_US = {
   commonFonts.paid : 'Paid',
   commonFonts.bath : 'Bath',
   commonFonts.date : 'Date',
-  commonFonts.viewOrderDetail : 'View order detail',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',
@@ -69,6 +68,8 @@ Map<String, String> en_US = {
   commonFonts.delivered : 'Delivered',
   commonFonts.processing : 'Processing',
 
+  commonFonts.viewOrderDetail : 'View order detail',
+  commonFonts.monitorOrder : 'Order monitoring',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',

@@ -28,4 +28,8 @@ class OrderHistoryController extends GetxController {
   void viewOrderDetail() {
 
   }
+
+  void monitorOrderDetail() {
+
+  }
 }

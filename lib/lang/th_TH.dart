@@ -66,7 +66,9 @@ Map<String, String> th_TH = {
   // Profile/OrderHistory screen
   commonFonts.delivered : 'จัดส่งแล้ว',
   commonFonts.processing : 'กำลังดำเนินการ',
+
   commonFonts.viewOrderDetail : 'ดูรายละเอียดการสั่งซื้อ',
+  commonFonts.monitorOrder : 'ติดตามการสั่งซื้อ',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',

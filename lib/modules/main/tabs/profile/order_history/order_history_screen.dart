@@ -17,24 +17,32 @@ class OrderHistoryScreen extends GetView<OrderHistoryController> {
             return controller.isShimmer.value
                 ? const HistoryShimmer()
                 : ListView.builder(
-                        itemBuilder: (context, index) => Container(
-                              decoration: BoxDecoration(
-                                  color: appController.appTheme.whiteColor,
-                                  borderRadius: BorderRadius.circular(AppRadius.r8),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color:
-                                            appController.appTheme.foodShadowColor,
-                                        blurRadius: 6,
-                                        offset: const Offset(2, 3))
-                                  ]),
-                              child: HistoryCard(
-                                      orderHistoryModel:
-                                      controller.orderHistory[index])
-                                  .paddingSymmetric(
-                                      horizontal: Insets.i12, vertical: Insets.i15)
-                                  .paddingOnly(bottom: Insets.i20),
-                            ),
+                        itemBuilder: (context, index) => Column(
+                          children: [
+                            Container(
+                                  decoration: BoxDecoration(
+                                      color: appController.appTheme.whiteColor,
+                                      borderRadius: BorderRadius.circular(AppRadius.r8),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color:
+                                                appController.appTheme.foodShadowColor,
+                                            blurRadius: 6,
+                                            offset: const Offset(2, 3))
+                                      ]),
+                                  child: HistoryCard(
+                                          orderHistoryModel:
+                                          controller.orderHistory[index])
+                                      .paddingSymmetric(
+                                          horizontal: Insets.i12, vertical: Insets.i15)
+                                      .paddingOnly(bottom: Insets.i20),
+                                ),
+                            Container(
+                              height: 10.0,
+                              color: appController.appTheme.foodPrimaryLightColor,
+                            )
+                          ],
+                        ),
                         itemCount: controller.orderHistory.length)
                     .marginSymmetric(horizontal: Insets.i15, vertical: Insets.i20);
           }

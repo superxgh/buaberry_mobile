@@ -33,13 +33,19 @@ class HistoryCard extends GetView<OrderHistoryController> {
             .map((e) => HistoryItem(
                 totalLength: orderHistoryModel!.items!.length - 1,
                 index: e.key,
-                items: e.value))
+                items: e.value,
+                status: orderHistoryModel!.status!,
+        ))
             .toList(),
 
         Divider(color: appController.appTheme.dividerColor, thickness: 1),
         const VSpace(Sizes.s12),
-        if (orderHistoryModel!.status! == commonFonts.processing) OrderHistoryWidget().viewOrderButton(
+        if (orderHistoryModel!.status! == commonFonts.processing) OrderHistoryWidget().monitorOrderButton(
             onTap: () => controller.viewOrderDetail(),
+            title: commonFonts.monitorOrder
+        ),
+        if (orderHistoryModel!.status! == commonFonts.delivered) OrderHistoryWidget().viewOrderButton(
+            onTap: () => controller.monitorOrderDetail(),
             title: commonFonts.viewOrderDetail
         )
         // RatingReorder(rating: orderHistoryModel!.rating)

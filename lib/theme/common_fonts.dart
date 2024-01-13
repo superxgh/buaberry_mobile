@@ -20,6 +20,7 @@ class CommonFonts{
   final String paid = 'paid';
   final String bath = 'bath';
   final String date = 'date';
+  final String monitorOrder = 'monitorOrder';
   final String viewOrderDetail = 'viewOrderDetail';
 
   final String ultikit = "ultikit";
