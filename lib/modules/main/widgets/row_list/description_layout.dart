@@ -1,4 +1,3 @@
-
 import 'package:buaberry_mobile/config.dart';
 
 import 'arrival_time_distance.dart';
@@ -14,14 +13,13 @@ class DescriptionLayout extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         FittedBox(
-          child: TextLabel(
-            text: product!.name!,
-            fontFamily: FontFamily.LATO,
-            fontWeight: FontWeight.bold,
-            fontSize: FontSizes.f14,
-            color: appController.appTheme.foodTitleColor,
-          )
-        ),
+            child: TextLabel(
+          text: product!.name!,
+          fontFamily: FontFamily.LATO,
+          fontWeight: FontWeight.bold,
+          fontSize: FontSizes.f14,
+          color: appController.appTheme.foodTitleColor,
+        )),
         const VSpace(Sizes.s8),
         TextLabel(
           text: product!.foodType!,
@@ -35,11 +33,21 @@ class DescriptionLayout extends StatelessWidget {
         //     arrivalTime: trans(product!.arriveTime!),
         //     distance: trans(product!.distance!)),
         const VSpace(Sizes.s10),
+
+        TextLabel(
+          text: product!.price!,
+          textExtend: commonFonts.bath,
+          fontFamily: FontFamily.LATO,
+          fontWeight: FontWeight.w400,
+          fontSize: FontSizes.f12,
+          color: appController.appTheme.foodPrimaryColor,
+        ),
         if (product!.offer != "")
           Row(
             children: [
               Image.asset(foGifAssets.offer,
-                  color: appController.appTheme.foodPrimaryColor, height: Sizes.s20),
+                  color: appController.appTheme.foodPrimaryColor,
+                  height: Sizes.s20),
               const HSpace(Sizes.s5),
               TextLabel(
                 text: product!.offer!,

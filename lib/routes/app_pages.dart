@@ -42,11 +42,12 @@ class AppPages {
             binding: FavouriteBinding(),
             page: () => FavouriteScreen()
         ),
+        GetPage(
+            name: Routes.PROFILE_SHIPPING_ADDRESS,
+            binding: ShippingAddressBinding(),
+            page: () => ShippingAddressScreen()
+        ),
       ]
-    ),
-    GetPage(
-        name: Routes.PROFILE_ADDRESS_BOOK,
-        page: () => FoodAddressBookScreen()
     ),
     GetPage(
         name: Routes.PROFILE_WALLETS,

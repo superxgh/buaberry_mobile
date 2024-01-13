@@ -91,7 +91,6 @@ class ThemeFont{
   static const String billAmount = 'billAmount';
   static const String proceedToPay = 'proceedToPay';
   static const String yourCartIsEmpty = 'yourCartIsEmpty';
-  static const String address = 'address';
   static const String phone = 'phone';
   static const String delete = 'delete';
   static const String payment = 'payment';

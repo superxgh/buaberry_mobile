@@ -20,6 +20,7 @@ Map<String, String> en_US = {
   commonFonts.paid : 'Paid',
   commonFonts.bath : 'Bath',
   commonFonts.date : 'Date',
+  commonFonts.address : 'Address',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',

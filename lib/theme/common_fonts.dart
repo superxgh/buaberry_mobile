@@ -22,6 +22,7 @@ class CommonFonts{
   final String date = 'date';
   final String monitorOrder = 'monitorOrder';
   final String viewOrderDetail = 'viewOrderDetail';
+  final String address = 'address';
 
   final String ultikit = "ultikit";
   final String search = "search";

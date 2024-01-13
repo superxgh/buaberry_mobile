@@ -980,7 +980,7 @@ class AppArray {
         {
           "title": ThemeFont.profile_menu_shipping_address,
           "icon": foIconAssets.addressBook,
-          "routeName": Routes.MAIN + Routes.PROFILE_ADDRESS_BOOK
+          "routeName": Routes.MAIN + Routes.PROFILE_SHIPPING_ADDRESS
         }
       ]
     },
@@ -1059,31 +1059,25 @@ class AppArray {
   var favouriteList = [
     {
       "image": foImageAssets.product1,
-      "name": "cafeJack",
-      "foodType": "multiCuisine",
+      "name": "ซาลาเปาหมูสับ+ไข่เค็ม",
+      "foodType": "ซาลาเปา",
       "rating": 4.1,
-      "arriveTime": "35min",
-      "distance": "2km",
       "isBestSeller": true,
       "isNewOpen": false,
-      'offer': "50off",
-      "address": "626 Green Acres Road, Charlotte,",
-      "state": "United States",
-      "city": "North Carolina,",
+      'offer': "ซื้อ 10 แถม 1",
       "price": "20",
-      "priceForPeople": "two",
-      "qty": 0
+      "qty": 5
     },
     {
       "image": foImageAssets.product2,
-      "name": "earthWind",
-      "foodType": "mexicanContinental",
+      "name": "บราวนี่",
+      "foodType": "เค้ก",
       "rating": 4.2,
       "arriveTime": "28min",
       "distance": "2km",
       "isBestSeller": false,
       "isNewOpen": false,
-      'offer': "40off",
+      'offer': "",
       "address": "626 Green Acres Road, Charlotte,",
       "state": "United States",
       "city": "North Carolina,",
@@ -1093,14 +1087,14 @@ class AppArray {
     },
     {
       "image": foImageAssets.product5,
-      "name": "farmToTable",
-      "foodType": "mexicanContinental",
+      "name": "เค้กกล้วยหอม",
+      "foodType": "เค้ก",
       "rating": 4.2,
       "arriveTime": "28min",
       "distance": "2km",
       "isBestSeller": false,
       "isNewOpen": false,
-      'offer': "50off",
+      'offer': "",
       "address": "626 Green Acres Road, Charlotte,",
       "state": "United States",
       "city": "North Carolina,",
@@ -1110,14 +1104,14 @@ class AppArray {
     },
     {
       "image": foImageAssets.product4,
-      "name": "theSoupFactory",
-      "foodType": "multiCuisine",
+      "name": "วาฟเฟิล",
+      "foodType": "เค้ก",
       "rating": 4.1,
       "arriveTime": "35min",
       "distance": "4km",
       "isBestSeller": true,
       "isNewOpen": false,
-      'offer': "40off",
+      'offer': "",
       "address": "626 Green Acres Road, Charlotte,",
       "state": "United States",
       "city": "North Carolina,",
