@@ -36,7 +36,7 @@ class UserProfile extends StatelessWidget {
             ),
             const VSpace(Sizes.s10),
             TextLabel(
-              text: ThemeFont.edit,
+              text: commonFonts.edit,
               alignment: Alignment.center,
               fontFamily: FontFamily.LATO,
               fontSize: FontSizes.f14,

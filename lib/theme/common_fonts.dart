@@ -23,6 +23,11 @@ class CommonFonts{
   final String monitorOrder = 'monitorOrder';
   final String viewOrderDetail = 'viewOrderDetail';
   final String address = 'address';
+  final String edit = 'edit';
+  final String addNew = 'add';
+  final String delete = 'delete';
+
+
 
   final String ultikit = "ultikit";
   final String search = "search";

@@ -70,7 +70,7 @@ class AddressCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppRadius.r5)
                 ),
                 child: TextLabel(
-                  text : ThemeFont.edit,
+                  text : commonFonts.edit,
                   alignment: Alignment.center,
                   fontFamily: FontFamily.LATO,
                   fontSize: FontSizes.f14,
@@ -85,7 +85,7 @@ class AddressCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppRadius.r5)
                 ),
                 child: TextLabel(
-                  text : ThemeFont.delete,
+                  text : commonFonts.delete,
                   alignment: Alignment.center,
                   fontFamily: FontFamily.LATO,
                   fontSize: FontSizes.f14,

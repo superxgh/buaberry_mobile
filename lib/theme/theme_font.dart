@@ -2,6 +2,7 @@
 
 class ThemeFont{
 
+
   // Login Screen
   static const String login_input_screen_text = 'login_input_head_screen_text';
 
@@ -76,7 +77,6 @@ class ThemeFont{
   static const String recentSearch = 'recentSearch';
   static const String topCuisine = 'topCuisine';
   static const String newOpenly = 'newOpenly';
-  static const String add = 'add';
   static const String selectUpto = 'selectUpto';
   static const String options = 'options';
   static const String showMore = 'showMore';
@@ -84,7 +84,6 @@ class ThemeFont{
   static const String price = 'price';
   static const String items = 'items';
   static const String viewCart = 'viewCart';
-  static const String edit = 'edit';
   static const String addItem = 'addItem';
   static const String deliveryInstruction = 'deliveryInstruction';
   static const String billDetail = 'billDetail';
@@ -92,7 +91,6 @@ class ThemeFont{
   static const String proceedToPay = 'proceedToPay';
   static const String yourCartIsEmpty = 'yourCartIsEmpty';
   static const String phone = 'phone';
-  static const String delete = 'delete';
   static const String payment = 'payment';
   static const String expiry = 'expiry';
   static const String arrivingIn = 'arrivingIn';

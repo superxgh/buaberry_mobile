@@ -21,7 +21,7 @@ class AddButton extends StatelessWidget {
             Icon(FontAwesomeIcons.plus,color: appController.appTheme.white,size: Sizes.s12),
             const HSpace(Sizes.s5),
             TextLabel(
-              text: ThemeFont.add,
+              text: commonFonts.addNew,
               alignment: Alignment.centerLeft,
               fontFamily: FontFamily.LATO,
               fontWeight: FontWeight.w400,

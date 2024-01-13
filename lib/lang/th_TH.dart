@@ -21,6 +21,9 @@ Map<String, String> th_TH = {
   commonFonts.bath : 'บาท',
   commonFonts.date : 'วันที่',
   commonFonts.address : 'ที่อยู่',
+  commonFonts.addNew : 'เพิ่มข้อมูล',
+  commonFonts.delete : 'ลบ',
+  commonFonts.edit : 'แก้ไข',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'ล็อกอินเข้าสู่ระบบ',

@@ -21,6 +21,9 @@ Map<String, String> en_US = {
   commonFonts.bath : 'Bath',
   commonFonts.date : 'Date',
   commonFonts.address : 'Address',
+  commonFonts.addNew : 'Add new',
+  commonFonts.delete : 'Delete',
+  commonFonts.edit : 'Edit',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',
