@@ -6,7 +6,7 @@ import 'theme_font.dart';
 
 class AppArray {
   var bottomList = [
-    {'icon': foSvgAssets.foodHome, 'title': "home"},
+    {'icon': foSvgAssets.home, 'title': "home"},
     {'icon': foSvgAssets.foodSearch, 'title': "search"},
     {'icon': foSvgAssets.foodCart, 'title': "cart"},
     {'icon': foSvgAssets.foodOffer, 'title': "offers"},
@@ -872,20 +872,37 @@ class AppArray {
   //address list
   var addressList = [
     {
-      'address': 'address1',
-      'pinCode': 21104,
-      'state': "state",
-      "phone": "+1 5454512315",
-      "addressType": "home",
-      "icon": foSvgAssets.foodHome
+      "icon": foSvgAssets.home,
+      "addressType": "บ้านพัก",
+      'address': '20/8 หมู่ที่ 6',
+      'subDistrict': 'ต.ขามใหญ่',
+      'district' : 'อ.เมือง',
+      'province': "อุบลราชธานี",
+      'pinCode': 34000,
+      'gpsPosition': 'xxxxxxx',
+      "phone": "095-864-5468",
     },
     {
-      'address': 'address1',
-      'pinCode': 21104,
-      'state': "state",
-      "phone": "+1 5454512315",
-      "addressType": "office",
-      "icon": foSvgAssets.city
+      "icon": foSvgAssets.city,
+      "addressType": "ที่ทำงาน",
+      'address': '20/8 หมู่ที่ 6',
+      'subDistrict': 'ต.ขามใหญ่',
+      'district' : 'อ.เมือง',
+      'province': "อุบลราชธานี",
+      'pinCode': 34000,
+      'gpsPosition': 'xxxxxxx',
+      "phone": "095-864-5468",
+    },
+    {
+      "icon": foSvgAssets.home,
+      "addressType": "จุดรับสินค้า",
+      'address': '20/8 หมู่ที่ 6',
+      'subDistrict': 'ต.ขามใหญ่',
+      'district' : 'อ.เมือง',
+      'province': "อุบลราชธานี",
+      'pinCode': 34000,
+      'gpsPosition': 'xxxxxxx',
+      "phone": "095-864-5468",
     },
   ];
 

@@ -11,7 +11,7 @@ class SplashController extends GetxController {
   @override
   void onInit() async {
     timer = Timer(
-        const Duration(seconds: 5),
+        const Duration(seconds: 1),
             () =>  Get.toNamed(Routes.MAIN));
     super.onInit();
   }

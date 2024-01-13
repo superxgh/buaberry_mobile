@@ -1,6 +1,6 @@
 class FOSvgAssets {
 final String send = 'assets/food_ordering_theme/svg/send.svg';
-final String foodHome = 'assets/food_ordering_theme/svg/foodHome.svg';
+final String home = 'assets/food_ordering_theme/svg/foodHome.svg';
 final String foodSearch = 'assets/food_ordering_theme/svg/foodSearch.svg';
 final String foodCart = 'assets/food_ordering_theme/svg/foodCart.svg';
 final String foodOffer = 'assets/food_ordering_theme/svg/foodOffer.svg';
