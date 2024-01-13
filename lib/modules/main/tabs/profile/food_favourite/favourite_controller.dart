@@ -2,10 +2,10 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-class FoodFavouriteController extends GetxController {
+class FavouriteController extends GetxController {
   List<Product> productList = [];
   String name = "";
-  bool isShimmer = false;
+  var isShimmer = true.obs;
 
   @override
   void onReady() {
@@ -16,7 +16,7 @@ class FoodFavouriteController extends GetxController {
   }
 
   getData()async {
-    isShimmer = true;
+    isShimmer.value = true;
     update();
 
     name = Get.arguments ?? "";
@@ -26,7 +26,7 @@ class FoodFavouriteController extends GetxController {
 
     update();
     await Future.delayed(Durations.ms150);
-    isShimmer = false;
+    isShimmer.value = false;
     update();
   }
 }

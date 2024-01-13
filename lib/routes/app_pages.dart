@@ -37,12 +37,12 @@ class AppPages {
             binding: OrderHistoryBinding(),
             page: () => OrderHistoryScreen()
         ),
+        GetPage(
+            name: Routes.PROFILE_FAVOURITE_ORDER,
+            binding: FavouriteBinding(),
+            page: () => FavouriteScreen()
+        ),
       ]
-    ),
-
-    GetPage(
-        name: Routes.PROFILE_FAVOURITE_ORDER,
-        page: () => FoodFavouriteScreen()
     ),
     GetPage(
         name: Routes.PROFILE_ADDRESS_BOOK,
