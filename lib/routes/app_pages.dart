@@ -52,6 +52,11 @@ class AppPages {
             binding: LanguageBinding(),
             page: () => LanguageScreen()
         ),
+        GetPage(
+            name: Routes.CART_COUPON,
+            binding: CouponBinding(),
+            page: () => CouponScreen()
+        ),
       ]
     )
   ];

@@ -24,6 +24,9 @@ class ThemeFont{
   // Cart tab
   static const String coupons = 'coupons';
   static const String applyCoupons = 'applyCoupons';
+  static const String couponMg = 'couponMg';
+  static const String inputCoupon = 'inputCoupon';
+  static const String useCouponCode = 'useCouponCode';
 
   // Offer tab
   static const String useCode = 'useCode';
@@ -44,6 +47,8 @@ class ThemeFont{
   static const String profileMenuEnglish = 'profileMenuEnglish';
   static const String profileMenuThai = 'profileMenuThai';
   static const String changeLanguage = 'changeLanguage';
+
+
 
   // ========================================
   static const String saveAddress = 'saveAddress';

@@ -50,6 +50,9 @@ Map<String, String> en_US = {
   ThemeFont.proceedToPay : 'Check Out',
   ThemeFont.coupons : 'Coupons',
   ThemeFont.applyCoupons : 'Apply coupons',
+  ThemeFont.couponMg : 'Coupon management',
+  ThemeFont.inputCoupon : 'Input coupon',
+  ThemeFont.useCouponCode : 'Use coupon code',
 
   // Offer tab
   ThemeFont.useCode : 'Discount code',

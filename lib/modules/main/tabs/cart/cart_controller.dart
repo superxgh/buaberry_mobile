@@ -20,6 +20,7 @@ class CartController extends GetxController {
 
   void openCouponScreen() {
     logger.i("> openCouponScreen()");
+    Get.toNamed(Routes.MAIN + Routes.CART_COUPON);
   }
 
   bool isInCart(Product product) {
