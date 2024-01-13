@@ -1,6 +1,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
+import 'grocery_shimmer.dart';
+
 class ColumnFoodShimmer extends StatelessWidget {
   final bool iSFullWidth;
   const ColumnFoodShimmer({Key? key,this.iSFullWidth = true}) : super(key: key);
