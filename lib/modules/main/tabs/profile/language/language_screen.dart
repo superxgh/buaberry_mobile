@@ -16,7 +16,7 @@ class LanguageScreen extends GetView<LanguageController> {
             child: Column(
               children: [
                 TextLabel(
-                  text: ThemeFont.profile_menu_language_mg,
+                  text: ThemeFont.profileMenuLanguageMg,
                   fontFamily: FontFamily.LATO,
                   fontSize: FontSizes.f18,
                   fontWeight: FontWeight.bold,

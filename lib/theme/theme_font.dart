@@ -4,11 +4,11 @@ class ThemeFont{
 
 
   // Login Screen
-  static const String login_input_screen_text = 'login_input_head_screen_text';
+  static const String loginInputScreenText = 'loginInputScreenText';
 
-  static const String login_with_username_pasword = 'login_with_username_pasword';
-  static const String login_enter_username = 'login_enter_username';
-  static const String login_enter_password = 'login_enter_password';
+  static const String loginWithUsernamePassword = 'loginWithUsernamePassword';
+  static const String loginEnterUsername = 'loginEnterUsername';
+  static const String loginEnterPassword = 'loginEnterPassword';
 
   static const String loginWith = 'loginWith';
 
@@ -29,20 +29,20 @@ class ThemeFont{
   static const String useCode = 'useCode';
 
   // Profile tab
-  static const String profile_menu_orders_head = 'profileMenuOrdersHead';
-  static const String profile_menu_order_history = 'profileMenuOrderHistory';
-  static const String profile_menu_favourite_orders = 'profileMenuFavouriteOrders';
-  static const String profile_menu_shipping_address = 'profileMenuShippingAddress';
+  static const String profileMenuOrdersHead = 'profileMenuOrdersHead';
+  static const String profileMenuOrderHistory = 'profileMenuOrderHistory';
+  static const String profileMenuFavouriteOrders = 'profileMenuFavouriteOrders';
+  static const String profileMenuShippingAddress = 'profileMenuShippingAddress';
 
-  // static const String profile_menu_payments_head = 'profileMenuPaymentsHead';
-  // static const String profile_menu_ewallets = 'profileMenuEWallets';
-  // static const String profile_menu_book_bank = 'profileMenuBookBank';
+  // static const String profileMenuPaymentsHead = 'profileMenuPaymentsHead';
+  // static const String profileMenuEWallets = 'profileMenuEWallets';
+  // static const String profileMenuBookBank = 'profileMenuBookBank';
 
   // Language
-  static const String profile_menu_language_head = 'profileMenuLanguageHead';
-  static const String profile_menu_language_mg = 'profileMenuLanguageMg';
-  static const String profile_menu_english = 'profileMenuEnglish';
-  static const String profile_menu_thai = 'profileMenuThai';
+  static const String profileMenuLanguageHead = 'profileMenuLanguageHead';
+  static const String profileMenuLanguageMg = 'profileMenuLanguageMg';
+  static const String profileMenuEnglish = 'profileMenuEnglish';
+  static const String profileMenuThai = 'profileMenuThai';
   static const String changeLanguage = 'changeLanguage';
 
   // ========================================

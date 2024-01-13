@@ -26,11 +26,11 @@ Map<String, String> th_TH = {
   commonFonts.edit : 'แก้ไข',
 
   // Login screen
-  ThemeFont.login_input_screen_text : 'ล็อกอินเข้าสู่ระบบ',
+  ThemeFont.loginInputScreenText : 'ล็อกอินเข้าสู่ระบบ',
 
-  ThemeFont.login_with_username_pasword : 'เข้าสู่ระบบโดยใช้ชื่อผู้ใช้งานและรหัสผ่าน',
-  ThemeFont.login_enter_username : 'กรุณากรอกชื่อผู้ใช้งาน',
-  ThemeFont.login_enter_password : 'กรุณากรอกรหัสผ่าน',
+  ThemeFont.loginWithUsernamePassword : 'เข้าสู่ระบบโดยใช้ชื่อผู้ใช้งานและรหัสผ่าน',
+  ThemeFont.loginEnterUsername : 'กรุณากรอกชื่อผู้ใช้งาน',
+  ThemeFont.loginEnterPassword : 'กรุณากรอกรหัสผ่าน',
 
   ThemeFont.loginWith : 'เข้าสู่ระบบโดย',
 
@@ -55,20 +55,20 @@ Map<String, String> th_TH = {
   ThemeFont.useCode : 'รหัสส่วนลด',
 
   // Profile tab
-  ThemeFont.profile_menu_orders_head : 'การสั่งซื้อสินค้า',
-  ThemeFont.profile_menu_order_history : 'ประวัติการสั่งซื้อ',
-  ThemeFont.profile_menu_favourite_orders : 'รายการสั่งซื้อย่อย',
-  ThemeFont.profile_menu_shipping_address : 'ที่อยู่รับสินค้า',
+  ThemeFont.profileMenuOrdersHead : 'การสั่งซื้อสินค้า',
+  ThemeFont.profileMenuOrderHistory : 'ประวัติการสั่งซื้อ',
+  ThemeFont.profileMenuFavouriteOrders : 'รายการสั่งซื้อย่อย',
+  ThemeFont.profileMenuShippingAddress : 'ที่อยู่รับสินค้า',
 
-  // ThemeFont.profile_menu_payments_head : 'การชำระเงิน',
-  // ThemeFont.profile_menu_ewallets : 'E-Wallets',
-  // ThemeFont.profile_menu_book_bank : 'ธนาคาร',
+  // ThemeFont.profileMenuPaymentsHead : 'การชำระเงิน',
+  // ThemeFont.profileMenuEWallets : 'E-Wallets',
+  // ThemeFont.profileMenuBookBank : 'ธนาคาร',
 
   // Profile/Language
-  ThemeFont.profile_menu_language_head : 'ภาษา',
-  ThemeFont.profile_menu_language_mg : 'จัดการภาษา',
-  ThemeFont.profile_menu_english : 'อังกฤษ',
-  ThemeFont.profile_menu_thai : 'ไทย',
+  ThemeFont.profileMenuLanguageHead : 'ภาษา',
+  ThemeFont.profileMenuLanguageMg : 'จัดการภาษา',
+  ThemeFont.profileMenuEnglish : 'อังกฤษ',
+  ThemeFont.profileMenuThai : 'ไทย',
   ThemeFont.changeLanguage : 'เปลี่ยนภาษา',
 
   // Profile/OrderHistory screen

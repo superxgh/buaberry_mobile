@@ -26,11 +26,11 @@ Map<String, String> en_US = {
   commonFonts.edit : 'Edit',
 
   // Login screen
-  ThemeFont.login_input_screen_text : 'Login to system',
+  ThemeFont.loginInputScreenText : 'Login to system',
 
-  ThemeFont.login_with_username_pasword : 'Login with username and password',
-  ThemeFont.login_enter_username : 'Enter username',
-  ThemeFont.login_enter_password : 'Enter password',
+  ThemeFont.loginWithUsernamePassword : 'Login with username and password',
+  ThemeFont.loginEnterUsername : 'Enter username',
+  ThemeFont.loginEnterPassword : 'Enter password',
 
   ThemeFont.loginWith : 'Login with',
 
@@ -56,20 +56,20 @@ Map<String, String> en_US = {
 
   // Profile tab
 
-  ThemeFont.profile_menu_orders_head : 'Orders',
-  ThemeFont.profile_menu_order_history : 'Orders History',
-  ThemeFont.profile_menu_favourite_orders : 'Favourite orders',
-  ThemeFont.profile_menu_shipping_address : 'Shipping address',
+  ThemeFont.profileMenuOrdersHead : 'Orders',
+  ThemeFont.profileMenuOrderHistory : 'Orders History',
+  ThemeFont.profileMenuFavouriteOrders : 'Favourite orders',
+  ThemeFont.profileMenuShippingAddress : 'Shipping address',
 
-  // ThemeFont.profile_menu_payments_head : 'Payments',
-  // ThemeFont.profile_menu_ewallets : 'E-Wallets',
-  // ThemeFont.profile_menu_book_bank : 'Book bank',
+  // ThemeFont.profileMenuPaymentsHead : 'Payments',
+  // ThemeFont.profileMenuEWallets : 'E-Wallets',
+  // ThemeFont.profileMenuBookBank : 'Book bank',
 
   // Profile/Language
-  ThemeFont.profile_menu_language_head : 'Language',
-  ThemeFont.profile_menu_language_mg : 'Language management',
-  ThemeFont.profile_menu_english : 'English',
-  ThemeFont.profile_menu_thai : 'Thai',
+  ThemeFont.profileMenuLanguageHead : 'Language',
+  ThemeFont.profileMenuLanguageMg : 'Language management',
+  ThemeFont.profileMenuEnglish : 'English',
+  ThemeFont.profileMenuThai : 'Thai',
   ThemeFont.changeLanguage : 'Change Language',
 
   // Profile/OrderHistory screen

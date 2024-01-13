@@ -11,7 +11,7 @@ class FavouriteScreen extends GetView<FavouriteController> {
     return Scaffold(
           backgroundColor: appController.appTheme.foodPrimaryLightColor,
           appBar:
-              CommonAppBar(name: ThemeFont.profile_menu_favourite_orders),
+              CommonAppBar(name: ThemeFont.profileMenuFavouriteOrders),
           body: Obx(() {
               return controller.isShimmer.value
                   ? const FoodShopShimmer()

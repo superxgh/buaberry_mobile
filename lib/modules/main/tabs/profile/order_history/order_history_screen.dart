@@ -12,7 +12,7 @@ class OrderHistoryScreen extends GetView<OrderHistoryController> {
     return Scaffold(
         backgroundColor: appController.appTheme.foodPrimaryLightColor,
         appBar: CommonAppBar(
-            name: trans(ThemeFont.profile_menu_order_history)),
+            name: trans(ThemeFont.profileMenuOrderHistory)),
         body: Obx(() {
             return controller.isShimmer.value
                 ? const HistoryShimmer()

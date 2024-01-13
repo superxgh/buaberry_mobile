@@ -982,20 +982,20 @@ class AppArray {
   //var profile list
   var profileList = [
     {
-      "title": ThemeFont.profile_menu_orders_head,
+      "title": ThemeFont.profileMenuOrdersHead,
       "profileList": [
         {
-          "title": ThemeFont.profile_menu_order_history,
+          "title": ThemeFont.profileMenuOrderHistory,
           "icon": foIconAssets.order,
           "routeName": Routes.MAIN + Routes.PROFILE_ORDER_HISTORY
         },
         {
-          "title": ThemeFont.profile_menu_favourite_orders,
+          "title": ThemeFont.profileMenuFavouriteOrders,
           "icon": foIconAssets.placeholder,
           "routeName": Routes.MAIN + Routes.PROFILE_FAVOURITE_ORDER
         },
         {
-          "title": ThemeFont.profile_menu_shipping_address,
+          "title": ThemeFont.profileMenuShippingAddress,
           "icon": foIconAssets.addressBook,
           "routeName": Routes.MAIN + Routes.PROFILE_SHIPPING_ADDRESS
         }
@@ -1017,10 +1017,10 @@ class AppArray {
     //   ]
     // },
     {
-      "title": ThemeFont.profile_menu_language_head,
+      "title": ThemeFont.profileMenuLanguageHead,
       "profileList": [
         {
-          "title": ThemeFont.profile_menu_english,
+          "title": ThemeFont.profileMenuEnglish,
           "icon": foIconAssets.language,
           "routeName": Routes.MAIN + Routes.PROFILE_LANGUAGE
         }

@@ -4,10 +4,10 @@ import 'package:buaberry_mobile/config.dart';
 
 class LanguageController extends GetxController {
 
-  var selectedLanguage = ThemeFont.profile_menu_english.obs;
+  var selectedLanguage = ThemeFont.profileMenuEnglish.obs;
   var  language = <String>[
-    ThemeFont.profile_menu_english,
-    ThemeFont.profile_menu_thai].obs;
+    ThemeFont.profileMenuEnglish,
+    ThemeFont.profileMenuThai].obs;
 
   @override
   void onReady() {

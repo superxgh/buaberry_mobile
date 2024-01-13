@@ -18,6 +18,10 @@ class CartController extends GetxController {
     super.onReady();
   }
 
+  void openCouponScreen() {
+    logger.i("> openCouponScreen()");
+  }
+
   bool isInCart(Product product) {
     return cartList.isNotEmpty
         ? cartList.any((element) => element.name! == product.name)

@@ -28,7 +28,9 @@ class CartBodyWidget extends GetView<CartController> {
 
 
                 //coupon layout
-                const CouponLayout(),
+                CouponLayout(
+                  onTap: () => controller.openCouponScreen()
+                ),
                 const VSpace(Sizes.s20),
 
                 //bill layout
