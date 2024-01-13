@@ -15,6 +15,12 @@ class CommonFonts{
   final String totalPay = 'totalPay';
   final String change = 'change';
   final String selectShippingAddress = 'selectAddress';
+  final String delivered = 'delivered';
+  final String processing = 'processing';
+  final String paid = 'paid';
+  final String bath = 'bath';
+  final String date = 'date';
+  final String viewOrderDetail = 'viewOrderDetail';
 
   final String ultikit = "ultikit";
   final String search = "search";

@@ -1,5 +1,3 @@
-
-
 import 'package:buaberry_mobile/config.dart';
 
 class CustomButton extends StatelessWidget {
@@ -34,7 +32,8 @@ class CustomButton extends StatelessWidget {
       this.icon,
       this.width,
       this.border,
-      this.fontWeight = FontWeight.w700,this.boxShadow})
+      this.fontWeight = FontWeight.w700,
+      this.boxShadow})
       : super(key: key);
 
   @override
@@ -53,16 +52,13 @@ class CustomButton extends StatelessWidget {
           child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             if (icon != null)
               Row(children: [icon ?? const HSpace(0), const HSpace(10)]),
-            Text(
-                title,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: fontSize,
-                  color: fontColor ?? appController.appTheme.textColor,
-                  fontFamily: GoogleFonts.lato().fontFamily.toString(),
-                  fontWeight: fontWeight!,
-                ),
-            )
+            TextLabel(
+                text: title,
+                alignment: Alignment.center,
+                fontSize: fontSize,
+                color: fontColor ?? appController.appTheme.textColor,
+                fontFamily: FontFamily.LATO,
+                fontWeight: fontWeight!)
           ])),
     );
   }

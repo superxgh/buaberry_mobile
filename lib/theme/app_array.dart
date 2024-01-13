@@ -968,19 +968,19 @@ class AppArray {
       "title": ThemeFont.profile_menu_orders_head,
       "profileList": [
         {
-          "title": ThemeFont.profile_menu_orders_history,
+          "title": ThemeFont.profile_menu_order_history,
           "icon": foIconAssets.order,
-          "routeName": Routes.PROFILE_ORDER_HISTORY
+          "routeName": Routes.MAIN + Routes.PROFILE_ORDER_HISTORY
         },
         {
           "title": ThemeFont.profile_menu_favourite_orders,
           "icon": foIconAssets.placeholder,
-          "routeName": Routes.PROFILE_FAVOURITE_ORDER
+          "routeName": Routes.MAIN + Routes.PROFILE_FAVOURITE_ORDER
         },
         {
           "title": ThemeFont.profile_menu_shipping_address,
           "icon": foIconAssets.addressBook,
-          "routeName": Routes.PROFILE_ADDRESS_BOOK
+          "routeName": Routes.MAIN + Routes.PROFILE_ADDRESS_BOOK
         }
       ]
     },
@@ -990,19 +990,22 @@ class AppArray {
         {
           "title": ThemeFont.profile_menu_ewallets,
           "icon": foIconAssets.wallet,
-          "routeName": Routes.PROFILE_WALLETS
+          "routeName": Routes.MAIN + Routes.PROFILE_WALLETS
         },
         {
           "title": ThemeFont.profile_menu_book_bank,
           "icon": foIconAssets.card,
-          "routeName": Routes.PROFILE_SAVED_BOOK
+          "routeName": Routes.MAIN + Routes.PROFILE_SAVED_BOOK
         }
       ]
     },
     {
       "title": ThemeFont.profile_menu_language_head,
       "profileList": [
-        {"title": "ENGLISH", "icon": foIconAssets.language, "routeName": Routes.PROFILE_ENGLISH}
+        {
+          "title": "ENGLISH", "icon": foIconAssets.language,
+          "routeName": Routes.MAIN + Routes.PROFILE_ENGLISH
+        }
       ]
     }
   ];
@@ -1011,43 +1014,43 @@ class AppArray {
   var orderHistory = [
     {
       "image": foImageAssets.product8,
-      "name": "theSoupFactory",
+      "name": "OR:1020033321",
       "rating": 0.0,
-      "address": "orderHistoryAddress",
+      "address": "20/3 หมู่ที่ 3 ต.ขามใหม่ อ.เมือง จ.อุบลฯ",
       "price": "30",
-      "date": "date1",
-      "status": "delivered",
+      "date": "1/1/2567",
+      "status": "processing",
       "items": [
-        {"quantity": 1, "name": "vegCheeseQuesadillas"},
-        {"quantity": 1, "name": "barbarescaPasta"},
-        {"quantity": 1, "name": "sproutsSalad"}
+        {"quantity": 1, "name": "บราวนี่"},
+        {"quantity": 2, "name": "เค้กกล้วยหอม"},
+        {"quantity": 5, "name": "คุกกี้กรอบ"}
       ],
     },
     {
       "image": foImageAssets.product1,
-      "name": "earthWind",
+      "name": "OR:1020033322",
       "rating": 0.0,
-      "address": "orderHistoryAddress",
+      "address": "20/3 หมู่ที่ 3 ต.ขามใหม่ อ.เมือง จ.อุบลฯ",
       "price": "50",
-      "date": "date2",
+      "date": "2/1/2567",
       "status": "delivered",
       "items": [
-        {"quantity": 1, "name": "cheeseSticks"},
-        {"quantity": 1, "name": "barbarescaPasta"}
+        {"quantity": 8, "name": "วาฟเฟิล"},
+        {"quantity": 6, "name": "ข้าวโพดนึ่ง"}
       ],
     },
     {
       "image": foImageAssets.nearBy3,
-      "name": "farmToTable",
+      "name": "OR:1020033323",
       "rating": 4.0,
-      "address": "orderHistoryAddress",
+      "address": "20/3 หมู่ที่ 3 ต.ขามใหม่ อ.เมือง จ.อุบลฯ",
       "price": "30",
-      "date": "date1",
+      "date": "3/1/2567",
       "status": "delivered",
       "items": [
-        {"quantity": 1, "name": "vegCheeseQuesadillas"},
-        {"quantity": 1, "name": "barbarescaPasta"},
-        {"quantity": 1, "name": "sproutsSalad"}
+        {"quantity": 6, "name": "แซนวิช"},
+        {"quantity": 7, "name": "ฝอยทอง"},
+        {"quantity": 1, "name": "ปังแยม"}
       ],
     }
   ];

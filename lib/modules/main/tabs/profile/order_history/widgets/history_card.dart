@@ -1,13 +1,9 @@
 
 
 import 'package:buaberry_mobile/config.dart';
-import 'package:buaberry_mobile/modules/main/widgets/orders/rating_reorder.dart';
+import 'package:buaberry_mobile/modules/main/tabs/profile/order_history/widgets/order_history_widget.dart';
 
-import 'hisory_name_detail.dart';
-import 'history_item.dart';
-import 'history_status.dart';
-
-class HistoryCard extends StatelessWidget {
+class HistoryCard extends GetView<OrderHistoryController> {
   final OrderHistoryModel? orderHistoryModel;
 
   const HistoryCard({Key? key, this.orderHistoryModel}) : super(key: key);
@@ -21,11 +17,11 @@ class HistoryCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(children: [
-                FoodRestaurantWidget().imageLayout(orderHistoryModel!.image!),
+                RestaurantWidget().imageLayout(orderHistoryModel!.image!),
                 const HSpace(Sizes.s10),
                 HistoryNameDetail(orderHistoryModel: orderHistoryModel)
               ]),
-              HistoryStatus(status: trans(orderHistoryModel!.status!))
+              HistoryStatus(status: orderHistoryModel!.status!)
             ],
           ),
         ),
@@ -39,9 +35,14 @@ class HistoryCard extends StatelessWidget {
                 index: e.key,
                 items: e.value))
             .toList(),
+
         Divider(color: appController.appTheme.dividerColor, thickness: 1),
         const VSpace(Sizes.s12),
-        RatingReorder(rating: orderHistoryModel!.rating)
+        if (orderHistoryModel!.status! == commonFonts.processing) OrderHistoryWidget().viewOrderButton(
+            onTap: () => controller.viewOrderDetail(),
+            title: commonFonts.viewOrderDetail
+        )
+        // RatingReorder(rating: orderHistoryModel!.rating)
       ],
     );
   }

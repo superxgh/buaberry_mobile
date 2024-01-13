@@ -32,13 +32,14 @@ class AppPages {
       page: () => MainScreen(),
       binding: MainBinding(),
       children: [
-
+        GetPage(
+            name: Routes.PROFILE_ORDER_HISTORY,
+            binding: OrderHistoryBinding(),
+            page: () => OrderHistoryScreen()
+        ),
       ]
     ),
-    GetPage(
-        name: Routes.PROFILE_ORDER_HISTORY,
-        page: () => OrderHistoryScreen()
-    ),
+
     GetPage(
         name: Routes.PROFILE_FAVOURITE_ORDER,
         page: () => FoodFavouriteScreen()

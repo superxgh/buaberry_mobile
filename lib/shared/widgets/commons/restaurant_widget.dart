@@ -1,6 +1,6 @@
 import 'package:buaberry_mobile/config.dart';
 
-class FoodRestaurantWidget {
+class RestaurantWidget {
   // name layout
   Widget nameLayout(name) => TextLabel(
         text: name,

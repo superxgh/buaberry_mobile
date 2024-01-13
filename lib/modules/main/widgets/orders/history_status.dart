@@ -12,15 +12,17 @@ class HistoryStatus extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppRadius.r8)),
       child: Row(
         children: [
-          Image.asset(foIconAssets.check, height: Sizes.s20),
-          const HSpace(Sizes.s5),
+          if (status! != commonFonts.processing) Image.asset(foIconAssets.check, height: Sizes.s20),
+          if (status! != commonFonts.processing) const HSpace(Sizes.s5),
           TextLabel(
             text: status!,
             alignment: Alignment.center,
             fontFamily: FontFamily.LATO,
             fontSize: FontSizes.f14,
             fontWeight: FontWeight.w400,
-            color: appController.appTheme.foodTitleColor,
+            color: status! == commonFonts.processing
+                    ? appController.appTheme.redColor
+                    : appController.appTheme.foodTitleColor,
           )
         ],
       ),

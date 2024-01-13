@@ -29,7 +29,7 @@ class ThemeFont{
 
   // Profile tab
   static const String profile_menu_orders_head = 'profileMenuOrdersHead';
-  static const String profile_menu_orders_history = 'profileMenuOrderHistory';
+  static const String profile_menu_order_history = 'profileMenuOrderHistory';
   static const String profile_menu_favourite_orders = 'profileMenuFavouriteOrders';
   static const String profile_menu_shipping_address = 'profileMenuShippingAddress';
 
@@ -104,8 +104,6 @@ class ThemeFont{
   static const String homeAddress = 'homeAddress';
   static const String userAddressName = 'userAddressName';
   static const String account = 'account';
-  static const String paid = 'paid';
-  static const String date = 'date';
   static const String rateFood = 'rateFood';
   static const String reorder = 'reorder';
   static const String off = 'off';

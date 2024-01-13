@@ -33,15 +33,17 @@ class HistoryNameDetail extends StatelessWidget {
         children: [
           Row(children: [
             TextLabel(
-              text: ThemeFont.paid,
+              text: commonFonts.paid,
               alignment: Alignment.center,
               fontFamily: FontFamily.LATO,
               fontSize: FontSizes.f16,
               fontWeight: FontWeight.w400,
               color: appController.appTheme.foodTitleColor,
             ),
+            const HSpace(Sizes.s10),
             TextLabel(
-              text: appController.priceSymbol + trans((double.parse(orderHistoryModel!.price!) * appController.rateValue).toStringAsFixed(2).toString()),
+              text: (double.parse(orderHistoryModel!.price!) * appController.rateValue).toStringAsFixed(2).toString(),
+              textExtend: commonFonts.bath,
               alignment: Alignment.center,
               fontFamily: FontFamily.LATO,
               fontSize: FontSizes.f16,
@@ -53,13 +55,14 @@ class HistoryNameDetail extends StatelessWidget {
           Row(
             children: [
               TextLabel(
-                text: ThemeFont.date,
+                text: commonFonts.date,
                 alignment: Alignment.center,
                 fontFamily: FontFamily.LATO,
                 fontSize: FontSizes.f16,
                 fontWeight: FontWeight.w400,
                 color: appController.appTheme.foodTitleColor,
               ),
+              const HSpace(Sizes.s10),
               TextLabel(
                 text: orderHistoryModel!.date!,
                 alignment: Alignment.center,

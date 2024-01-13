@@ -39,7 +39,7 @@ class CommonCardList extends StatelessWidget {
             children: [
               InkWell(
                 onTap: imageOnTap,
-                child: FoodRestaurantWidget()
+                child: RestaurantWidget()
                     .imageLayout(product!.image!),
               ),
               const HSpace(Sizes.s10),

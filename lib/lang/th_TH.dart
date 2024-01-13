@@ -17,6 +17,9 @@ Map<String, String> th_TH = {
   commonFonts.totalPay : 'รวมทั่งหมด',
   commonFonts.change : 'เปลี่ยน',
   commonFonts.selectShippingAddress : 'กรุณาเลือกที่อยู่ในการจัดส่ง',
+  commonFonts.paid : 'ชำระเงินแล้ว',
+  commonFonts.bath : 'บาท',
+  commonFonts.date : 'วันที่',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'ล็อกอินเข้าสู่ระบบ',
@@ -49,7 +52,7 @@ Map<String, String> th_TH = {
 
   // Profile tab
   ThemeFont.profile_menu_orders_head : 'การสั่งซื้อสินค้า',
-  ThemeFont.profile_menu_orders_history : 'ประวัติการสั่งซื้อ',
+  ThemeFont.profile_menu_order_history : 'ประวัติการสั่งซื้อ',
   ThemeFont.profile_menu_favourite_orders : 'รายการสั่งซื้อย่อย',
   ThemeFont.profile_menu_shipping_address : 'ที่อยู่รับสินค้า',
 
@@ -59,6 +62,11 @@ Map<String, String> th_TH = {
 
   ThemeFont.profile_menu_language_head : 'ภาษา',
   ThemeFont.profile_menu_english : 'อังกฤษ',
+
+  // Profile/OrderHistory screen
+  commonFonts.delivered : 'จัดส่งแล้ว',
+  commonFonts.processing : 'กำลังดำเนินการ',
+  commonFonts.viewOrderDetail : 'ดูรายละเอียดการสั่งซื้อ',
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'กรุณากรอก',

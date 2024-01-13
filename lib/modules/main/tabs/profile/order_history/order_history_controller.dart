@@ -3,8 +3,8 @@
 import 'package:buaberry_mobile/config.dart';
 
 class OrderHistoryController extends GetxController {
-  List<OrderHistoryModel> orderHistory = [];
-  bool isShimmer = false;
+  var orderHistory = <OrderHistoryModel>[].obs;
+  var isShimmer = false.obs;
 
   @override
   void onReady() {
@@ -14,16 +14,18 @@ class OrderHistoryController extends GetxController {
   }
 
   getData() async {
-    isShimmer = true;
+    isShimmer.value = true;
     update();
     for (int i = 0; i < foAppArray.orderHistory.length; i++) {
       orderHistory.add(OrderHistoryModel.fromJson(foAppArray.orderHistory[i]));
     }
-    update();
+    // update();
     await Future.delayed(Durations.ms150);
-    isShimmer = false;
-    update();
+    isShimmer.value = false;
+    // update();
   }
 
+  void viewOrderDetail() {
 
+  }
 }

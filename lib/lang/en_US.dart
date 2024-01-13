@@ -17,6 +17,10 @@ Map<String, String> en_US = {
   commonFonts.totalPay : 'Total pay',
   commonFonts.change : 'Change',
   commonFonts.selectShippingAddress : 'Select address',
+  commonFonts.paid : 'Paid',
+  commonFonts.bath : 'Bath',
+  commonFonts.date : 'Date',
+  commonFonts.viewOrderDetail : 'View order detail',
 
   // Login screen
   ThemeFont.login_input_screen_text : 'Login to system',
@@ -50,7 +54,7 @@ Map<String, String> en_US = {
   // Profile tab
 
   ThemeFont.profile_menu_orders_head : 'Orders',
-  ThemeFont.profile_menu_orders_history : 'Orders History',
+  ThemeFont.profile_menu_order_history : 'Orders History',
   ThemeFont.profile_menu_favourite_orders : 'Favourite orders',
   ThemeFont.profile_menu_shipping_address : 'Shipping address',
 
@@ -60,6 +64,11 @@ Map<String, String> en_US = {
 
   ThemeFont.profile_menu_language_head : 'Language',
   ThemeFont.profile_menu_english : 'English',
+
+  // Profile/OrderHistory screen
+  commonFonts.delivered : 'Delivered',
+  commonFonts.processing : 'Processing',
+
 
   // ===========================================
   ThemeFont.enterYourPhoneNumber : 'Enter your phone number',

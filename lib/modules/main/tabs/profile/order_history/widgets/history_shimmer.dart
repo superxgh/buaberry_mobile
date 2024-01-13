@@ -2,8 +2,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-class FoodHistoryShimmer extends StatelessWidget {
-  const FoodHistoryShimmer({Key? key}) : super(key: key);
+class HistoryShimmer extends StatelessWidget {
+  const HistoryShimmer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
