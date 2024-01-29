@@ -17,7 +17,7 @@ class HistoryCard extends GetView<OrderHistoryController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(children: [
-                RestaurantWidget().imageLayout(orderHistoryModel!.image!),
+                ImageWidget().productLayout(orderHistoryModel!.image!),
                 const HSpace(Sizes.s10),
                 HistoryNameDetail(orderHistoryModel: orderHistoryModel)
               ]),

@@ -1,4 +1,3 @@
-
 import 'package:buaberry_mobile/config.dart';
 
 class BillLayout extends StatelessWidget {

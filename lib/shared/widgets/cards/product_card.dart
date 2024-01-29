@@ -1,15 +1,13 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-import 'cart_add_remove.dart';
-
-class CommonCardList extends StatelessWidget {
+class ProductCard extends StatelessWidget {
   final Product? product;
   final GestureTapCallback? onTap;
   final GestureTapCallback? imageOnTap;
   final bool isRatingShow,isShadow;
 
-  const CommonCardList(
+  const ProductCard(
       {Key? key,
       this.product,
       this.imageOnTap,
@@ -39,8 +37,8 @@ class CommonCardList extends StatelessWidget {
             children: [
               InkWell(
                 onTap: imageOnTap,
-                child: RestaurantWidget()
-                    .imageLayout(product!.image!),
+                child: ImageWidget()
+                    .productLayout(product!.image!),
               ),
               const HSpace(Sizes.s10),
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [

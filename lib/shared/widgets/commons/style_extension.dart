@@ -1,7 +1,7 @@
 
 import 'package:buaberry_mobile/config.dart';
 
-extension FoodExtension on Widget {
+extension StyleExtension on Widget {
   //offer list extension
   Widget offerListExtension() {
     return Container(

@@ -1,6 +1,5 @@
 
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-
 import 'app_binding.dart';
 import 'config.dart';
 import 'di.dart';

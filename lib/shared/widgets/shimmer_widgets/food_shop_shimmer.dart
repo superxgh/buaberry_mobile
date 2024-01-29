@@ -2,6 +2,8 @@
 
 import 'package:buaberry_mobile/config.dart';
 
+import 'column_food_shimmer.dart';
+
 class FoodShopShimmer extends StatelessWidget {
   const FoodShopShimmer({Key? key}) : super(key: key);
 
