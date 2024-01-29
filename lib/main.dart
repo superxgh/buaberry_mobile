@@ -5,7 +5,7 @@ import 'config.dart';
 import 'di.dart';
 
 void main() async {
-  logger.i(">>> App starting");
+  logger.i(">>> App starting...");
   WidgetsFlutterBinding.ensureInitialized();
   await DenpendencyInjection.init();
   runApp(App());
