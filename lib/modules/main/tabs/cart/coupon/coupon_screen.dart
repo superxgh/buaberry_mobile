@@ -1,6 +1,5 @@
 import 'package:buaberry_mobile/config.dart';
 
-import 'coupon_controller.dart';
 
 class CouponScreen extends GetView<CouponController> {
   CouponScreen({Key? key}) : super(key: key);
@@ -16,7 +15,7 @@ class CouponScreen extends GetView<CouponController> {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                FoodTextBox(hinText: ThemeFont.inputCoupon)
+                CustomTextField(hinText: ThemeFont.inputCoupon)
                     .marginSymmetric(horizontal: Insets.i15, vertical: Insets.i15),
                 CustomButton(
                   title: ThemeFont.useCouponCode,

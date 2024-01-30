@@ -1,6 +1,5 @@
 export 'commons/commons.dart';
 export 'buttons/buttons.dart';
-export 'shimmer_widgets/shimmer_widgets.dart';
 export 'social/social.dart';
 export 'image_widget.dart';
 export 'texts/texts.dart';
