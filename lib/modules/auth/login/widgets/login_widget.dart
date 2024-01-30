@@ -3,7 +3,7 @@ import 'package:buaberry_mobile/config.dart';
 class FoodLoginWidget {
 
   Widget displayInputText() => TextLabel(
-        text: ThemeFont.loginInputScreenText,
+        text: ThemeFont.login_input_screen_text,
         alignment: Alignment.center,
         fontFamily: FontFamily.LATO,
         fontSize: FontSizes.f30,
@@ -12,7 +12,7 @@ class FoodLoginWidget {
   );
 
   Widget loginWithUsernameAndPasswordLabel() => TextLabel(
-      text: ThemeFont.loginWithUsernamePassword,
+      text: ThemeFont.login_with_username_pasword,
       alignment: Alignment.center,
       fontFamily: FontFamily.LATO,
       fontSize: FontSizes.f18,
@@ -20,12 +20,12 @@ class FoodLoginWidget {
       color: appController.appTheme.foodContentColor
   );
 
-  Widget usernameTextBox() => FoodTextBox(
-      hinText: trans(ThemeFont.loginEnterUsername))
+  Widget usernameTextBox() => CustomTextField(
+      hinText: trans(ThemeFont.login_enter_username))
       .marginSymmetric(horizontal: Insets.i15);
 
-  Widget passwordTextBox() => FoodTextBox(
-      hinText: trans(ThemeFont.loginEnterPassword))
+  Widget passwordTextBox() => CustomTextField(
+      hinText: trans(ThemeFont.login_enter_password))
       .marginSymmetric(horizontal: Insets.i15);
 
   Widget loginWith() => TextLabel(

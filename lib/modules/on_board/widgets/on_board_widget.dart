@@ -16,8 +16,9 @@ class OnBoardWidget {
 
   Widget onBoardUpperTitle() => Padding(
         padding: EdgeInsets.only(top: Get.height / 9.5),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-          LogoLayout(
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center, children: [
+          ImageWidget().logoLayout(
               isCenter: true,
               logo: foImageAssets.foLogo,
               title: ThemeFont.buaberry,

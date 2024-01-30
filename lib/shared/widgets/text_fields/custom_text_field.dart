@@ -7,14 +7,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class FoodTextBox extends StatelessWidget {
+class CustomTextField extends StatelessWidget {
   final TextEditingController? controller;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final String hinText;
   final FormFieldValidator<String>? validator;
 
-  const FoodTextBox(
+  const CustomTextField(
       {Key? key,
         this.controller,
         this.suffixIcon,

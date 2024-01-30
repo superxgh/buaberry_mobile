@@ -1,5 +1,5 @@
-
 import 'package:buaberry_mobile/config.dart';
+import 'social_button_layout.dart';
 
 class SocialLoginLayout extends StatelessWidget {
 

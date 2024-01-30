@@ -1,6 +1,6 @@
 import 'package:buaberry_mobile/config.dart';
 import 'package:buaberry_mobile/modules/main/tabs/profile/widgets/profile_list_card.dart';
-import 'package:buaberry_mobile/shared/widgets/commons/food_extension.dart';
+import 'package:buaberry_mobile/shared/widgets/commons/style_extension.dart';
 
 
 class ProfileListLayout extends StatelessWidget {

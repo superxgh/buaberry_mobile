@@ -19,7 +19,7 @@ class CartList extends StatelessWidget {
                     .entries
                     .map((e) => Column(
                           children: [
-                            CommonCardList(
+                            ProductCard(
                               isShadow: false,
                                 product: e.value, isRatingShow: false),
                             if (e.key != foodCartController.cartList.length - 1)

@@ -24,12 +24,12 @@ class RowListCard extends StatelessWidget {
             Stack(
               alignment: Alignment.topRight,
               children: [
-                RowListWidget().imageLayout(product!.image!,isFullWidth),
+                ImageWidget().imageLayout(product!.image!,isFullWidth),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     if (product!.isBestSeller! || product!.isNewOpen!)
-                      RowListWidget().bestSeller(product!.isBestSeller!),
+                      ImageWidget().bestSeller(product!.isBestSeller!),
                     const VSpace(Sizes.s5),
                     RatingLayout(
                         color: appController.appTheme.whiteColor,

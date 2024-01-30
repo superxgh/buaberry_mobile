@@ -1,14 +1,22 @@
-import 'package:logger/logger.dart';
+library logger;
 
-// var logger = Logger(
-//   printer: PrettyPrinter(),
-// );
+import 'package:logger/logger.dart';
 
 var logger = Logger(
   printer: SimplePrinter(
       colors: true, // Colorful log messages
       printTime: true),
 );
+
+// var logger = Logger(
+//   printer: PrettyPrinter(),
+// );
+
+// var logger = Logger(
+//   printer: SimplePrinter(
+//       colors: true, // Colorful log messages
+//       printTime: true),
+// );
 
 // var loggerWithBlock = Logger(
 //   printer: PrettyPrinter(

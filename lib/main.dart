@@ -1,12 +1,11 @@
 
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-
 import 'app_binding.dart';
 import 'config.dart';
 import 'di.dart';
 
 void main() async {
-  logger.i(">>> App starting");
+  logger.i(">>> App starting...");
   WidgetsFlutterBinding.ensureInitialized();
   await DenpendencyInjection.init();
   runApp(App());
