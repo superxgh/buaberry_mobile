@@ -1,2 +1,2 @@
 export 'logger.dart';
-export 'regex.dart';
+export 'regex_validator.dart';

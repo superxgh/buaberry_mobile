@@ -20,11 +20,19 @@ class FoodLoginWidget {
       color: appController.appTheme.foodContentColor
   );
 
-  Widget usernameTextBox() => CustomTextField(
+  Widget usernameTextBox(
+          {required TextEditingController controller,
+          required FormFieldValidator<String> validator}) => CustomTextField(
+      validator: validator,
+      controller: controller,
       hinText: trans(ThemeFont.loginEnterUsername))
       .marginSymmetric(horizontal: Insets.i15);
 
-  Widget passwordTextBox() => CustomTextField(
+  Widget passwordTextBox(
+          {required TextEditingController controller,
+          required FormFieldValidator<String> validator}) => CustomTextField(
+      validator: validator,
+      controller: controller,
       hinText: trans(ThemeFont.loginEnterPassword))
       .marginSymmetric(horizontal: Insets.i15);
 

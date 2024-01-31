@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import 'api.dart';
+import '../api.dart';
 
 class BaseProvider extends GetConnect {
   @override
