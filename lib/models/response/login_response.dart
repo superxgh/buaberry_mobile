@@ -10,6 +10,8 @@ class LoginResponse {
   factory LoginResponse.fromRawJson(String str) =>
       LoginResponse.fromJson(json.decode(str));
 
+  get user => null;
+
   String toRawJson() => json.encode(toJson());
 
   factory LoginResponse.fromJson(Map<String, dynamic> json) => LoginResponse(

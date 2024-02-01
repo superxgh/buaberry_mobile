@@ -7,14 +7,20 @@ class LoginController extends GetxController {
 
   final ApiRepository apiRepository;
   LoginController({required this.apiRepository});
+  final name = 'LoginController'.obs;
 
   final formLoginKey = GlobalKey<FormState>();
   final textUsernameController = TextEditingController();
   final textPasswordController = TextEditingController();
 
   @override
+  void onInit() {
+    super.onInit();
+    name.value = 'LoginController->onInit()';
+  }
+
+  @override
   void onReady() async {
-    super.onReady();
 
     await Future.delayed(Duration(milliseconds: 2000));
     var storage = Get.find<SharedPreferences>();
@@ -27,6 +33,7 @@ class LoginController extends GetxController {
     // } catch (e) {
     //   Get.toNamed(Routes.AUTH);
     // }
+    super.onReady();
   }
 
   Future<void> login() async {
