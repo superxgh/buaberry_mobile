@@ -1,5 +1,6 @@
+import 'models.dart';
 
-class LoginResponse {
+class UserM {
 
   String mobileNumber;
   String username;
@@ -7,7 +8,7 @@ class LoginResponse {
   String token;
 
 //<editor-fold desc="Data Methods">
-  LoginResponse({
+  UserM({
     required this.mobileNumber,
     required this.username,
     this.image,
@@ -17,12 +18,12 @@ class LoginResponse {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      (other is LoginResponse &&
-          runtimeType == other.runtimeType &&
-          mobileNumber == other.mobileNumber &&
-          username == other.username &&
-          image == other.image &&
-          token == other.token);
+          (other is LoginResponse &&
+              runtimeType == other.runtimeType &&
+              mobileNumber == other.mobileNumber &&
+              username == other.username &&
+              image == other.image &&
+              token == other.token);
 
   @override
   int get hashCode =>
@@ -41,13 +42,13 @@ class LoginResponse {
         '}';
   }
 
-  LoginResponse copyWith({
+  UserM copyWith({
     String? mobileNumber,
     String? username,
     String? image,
     String? token,
   }) {
-    return LoginResponse(
+    return UserM(
       mobileNumber: mobileNumber ?? this.mobileNumber,
       username: username ?? this.username,
       image: image ?? this.image,
@@ -64,8 +65,8 @@ class LoginResponse {
     };
   }
 
-  factory LoginResponse.fromMap(Map<String, dynamic> map) {
-    return LoginResponse(
+  factory UserM.fromMap(Map<String, dynamic> map) {
+    return UserM(
       mobileNumber: map['mobileNumber'] as String,
       username: map['username'] as String,
       image: map['image'] as String,

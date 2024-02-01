@@ -18,16 +18,12 @@ void main() {
     Get.put(controller); // onInit was called
 
     logger.i("> 3. Initial variable for login method.");
-      controller.textUsernameController.text = 'u001';
-      controller.textPasswordController.text = 'pw001';
-      logger.d(": controller.textUsernameController.text = ${controller.textUsernameController.text}");
-      logger.d(": controller.textPasswordController.text = ${controller.textPasswordController.text}");
+    controller.setUsernamePasswordText('u001', 'pw001');
 
     logger.i("> 4. Call login method on controller.");
-      LoginRequest data = LoginRequest(
-          username: controller.textUsernameController.text,
-          userpw: controller.textPasswordController.text);
-      final res = await controller.apiRepository.login(data);
+    final res = await controller.loginProcess(
+        username: controller.textUsernameController.text,
+        userpw: controller.textPasswordController.text);
       logger.d(": res = $res");
       expect(res?.username, 'u001');
 

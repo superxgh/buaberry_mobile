@@ -73,6 +73,11 @@ class LoginController extends GetxController {
     return (username, userpw);
   }
 
+  void setUsernamePasswordText(String username, String userpw) {
+    textUsernameController.text = username;
+    textPasswordController.text = userpw;
+  }
+
   Future<LoginResponse?> loginProcess({
     required String username,
     required String userpw}) async {
