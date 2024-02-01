@@ -61,4 +61,11 @@ class LoginController extends GetxController {
       }
     }
   }
+
+  @override
+  void onClose() {
+    name.value = '';
+    super.onInit();
+  }
+
 }

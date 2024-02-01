@@ -8,7 +8,11 @@ import 'package:get/get_connect/http/src/request/request.dart';
 
 FutureOr<dynamic> responseInterceptor(
     Request request, Response response) async {
-  EasyLoading.dismiss();
+
+  logger.i(">>> responseInterceptor()");
+  logger.d(": response.statusCode = ${response.statusCode}");
+
+  // EasyLoading.dismiss();
 
   if (response.statusCode != 200) {
     handleErrorStatus(response);

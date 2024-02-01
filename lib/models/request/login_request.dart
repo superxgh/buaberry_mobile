@@ -6,6 +6,11 @@ class LoginRequest {
     required this.password,
   });
 
+  @override
+  String toString() {
+    return 'LoginRequest{username: $username, password: $password}';
+  }
+
   String username;
   String password;
 
