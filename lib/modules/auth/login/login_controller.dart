@@ -15,12 +15,15 @@ class LoginController extends GetxController {
 
   @override
   void onInit() {
+    logger.i(">>> LoginController->onInit()");
     super.onInit();
     name.value = 'LoginController->onInit()';
   }
 
   @override
   void onReady() async {
+
+    logger.i(">>> LoginController->onReady()");
 
     await Future.delayed(Duration(milliseconds: 2000));
     var storage = Get.find<SharedPreferences>();
@@ -39,17 +42,19 @@ class LoginController extends GetxController {
   Future<void> login() async {
     logger.i(">>> login()");
     if (formLoginKey.currentState!.validate()) {
-      String usernameTxt = textUsernameController.text;
-      String passwordTxt = textPasswordController.text;
 
-      logger.d(": username = $usernameTxt");
-      logger.d(": passowrd = $passwordTxt");
+      String username;
+      String userpw;
 
-      LoginRequest data = LoginRequest(
-          username: usernameTxt,
-          password: usernameTxt);
+      // Get username and password text.
+      (username,userpw) = getUsernamePasswordText();
+      logger.d(": username = $username");
+      logger.d(": userpw = $userpw");
 
-      final res = await apiRepository.login(data);
+      // login to system.
+      final res = await loginProcess(
+          username: username,
+          userpw: userpw);
       logger.d(": res = $res");
 
       final prefs = Get.find<SharedPreferences>();
@@ -60,6 +65,22 @@ class LoginController extends GetxController {
         CommonWidget.toast("Can not login.");
       }
     }
+  }
+
+  (String, String) getUsernamePasswordText() {
+    String username = textUsernameController.text;
+    String userpw = textPasswordController.text;
+    return (username, userpw);
+  }
+
+  Future<LoginResponse?> loginProcess({
+    required String username,
+    required String userpw}) async {
+    LoginRequest data = LoginRequest(
+        username: username,
+        userpw: userpw);
+    final res = await apiRepository.login(data);
+    return res;
   }
 
   @override

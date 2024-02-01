@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:buaberry_mobile/models/models.dart';
-import 'package:buaberry_mobile/models/response/users_response.dart';
 import 'package:buaberry_mobile/shared/library/logger.dart';
 import 'api.dart';
 
@@ -13,7 +12,7 @@ class ApiRepository {
     logger.i(">>> ApiRepository->login()");
     final res = await userApiProvider.login(ApiConstants.userLogin, data);
     if (res.statusCode == 200) {
-      return LoginResponse.fromJson(res.body);
+      return LoginResponse.fromMap(res.body);
     }
   }
 

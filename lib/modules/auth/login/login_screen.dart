@@ -3,6 +3,7 @@ import '../../../config.dart';
 class LoginScreen extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
+    logger.i(">>> LoginScreen->build()");
     SizeConfig().init(context);
     return Scaffold(
         backgroundColor: appController.appTheme.foodPrimaryLightColor,

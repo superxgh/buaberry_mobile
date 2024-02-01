@@ -13,7 +13,9 @@ FutureOr<Request> requestInterceptor(request) async {
   // request.headers['Authorization'] = 'Bearer $token';
 
   logger.d(": request.headers = ${request.headers}");
-  logger.i("loading...");
+  logger.d(": request.url = ${request.url}");
+  logger.d(": request.method = ${request.method}");
+  logger.i("sending...");
 
   // EasyLoading.show(status: 'loading...');
   return request;
