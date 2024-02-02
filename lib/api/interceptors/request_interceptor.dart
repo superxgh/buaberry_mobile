@@ -15,8 +15,9 @@ FutureOr<Request> requestInterceptor(request) async {
   logger.d(": request.headers = ${request.headers}");
   logger.d(": request.url = ${request.url}");
   logger.d(": request.method = ${request.method}");
+  logger.d(": request.bodyBytes = ${request.bodyBytes}");
   logger.i("sending...");
 
-  // EasyLoading.show(status: 'loading...');
+  EasyLoading.show(status: 'loading...');
   return request;
 }

@@ -43,22 +43,18 @@ class LoginController extends GetxController {
     logger.i(">>> login()");
     if (formLoginKey.currentState!.validate()) {
 
+      // Get username and password text.
       String username;
       String userpw;
-
-      // Get username and password text.
       (username,userpw) = getUsernamePasswordText();
-      logger.d(": username = $username");
-      logger.d(": userpw = $userpw");
 
       // login to system.
       final res = await loginProcess(
           username: username,
           userpw: userpw);
-      logger.d(": res = $res");
 
       final prefs = Get.find<SharedPreferences>();
-      if (res!.token.isNotEmpty) {
+      if ((res != null) && (res.token.isNotEmpty)) {
         prefs.setString(StorageConstants.token, res.token);
         Get.toNamed(Routes.HOME);
       } else {
@@ -81,10 +77,13 @@ class LoginController extends GetxController {
   Future<LoginResponse?> loginProcess({
     required String username,
     required String userpw}) async {
+    logger.d(": username = $username");
+    logger.d(": userpw = $userpw");
     LoginRequest data = LoginRequest(
         username: username,
         userpw: userpw);
     final res = await apiRepository.login(data);
+    logger.d(": res = $res");
     return res;
   }
 

@@ -12,7 +12,7 @@ FutureOr<dynamic> responseInterceptor(
   logger.i(">>> responseInterceptor()");
   logger.d(": response.statusCode = ${response.statusCode}");
 
-  // EasyLoading.dismiss();
+  EasyLoading.dismiss();
 
   if (response.statusCode != 200) {
     handleErrorStatus(response);

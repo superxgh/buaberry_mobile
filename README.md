@@ -25,3 +25,12 @@ link: https://fvm.app/docs/getting_started/configuration/
 ```
 
 Test....
+Right click on D/EGL_emulation ... in your RUN console window
+Click "Fold Lines Like This"
+Edit the filter that's just been added to only contain D/EGL_emulation.
+All these lines will be removed from the RUN console window now
+
+### Problems
+
+#### Flutter app cannot connect to backen via http
+    
